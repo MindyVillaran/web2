@@ -1,0 +1,125 @@
+.llama {background-color: #C2A366;}
+
+#body {width: 350px;
+		height: 200px;
+		border-radius:80px;
+		position:relative;
+		top: 300px;
+		left: 125px;}
+
+#tail {width: 50px;
+		height: 90px;
+		border-radius: 25px / 45px;
+		position:absolute;
+		left: 320px;
+		top: 23px;
+		transform-origin: 50% 0;
+		-webkit-transform: rotate(-35deg);}
+		
+.leg {background-color: #C2A366;
+	border-radius:10px;
+	position:absolute;
+	width: 70px;
+	height: 120px;
+	top: 170px;}
+
+#leg-front1 {left: 80px;}
+#leg-front2 {background-color: #887247; z-index: -10; left: 50px;}
+#leg-back1 {left: 230px;}
+#leg-back2 {background-color: #887247; z-index: -10; left: 200px;}	
+
+.foot {position:absolute;
+	width: 35px;
+	height: 20px;
+	top: 120px;
+	left:17px;}
+
+#front-1-foot {left: 17px; background-color: #887247;}
+#front-2-foot {background-color: #3A311F; z-index: -10;}
+#back-1-foot {left: 17px; background-color: #887247;}
+#back-2-foot {background-color: #3A311F; z-index: -10;}	
+
+		
+	   
+#neck {width: 80px;
+		height: 120px;
+		border-radius:10px;
+		position:absolute;
+		top:-60px;
+		left:10px;}
+
+#neck2 {width: 80px;
+		height: 170px;
+		border-radius:30px;
+		position:absolute;
+		top:-120px;}	
+
+#head {background-color:#D4BF94;
+		width: 90px;
+		height: 50px;
+		position:absolute;
+		border-radius:15px;
+		z-index:-10;
+		left: -70px;
+		top: 15px;}	
+	
+#nose {width: 0;
+		height: 0;
+		border-top: 20px solid #887247;
+		border-right: 20px solid transparent;
+		position: absolute;
+		top:25px;
+		left: -69px;}
+
+#smile {width: 20px;
+		height: 20px;
+		border-radius:10px;
+		border-bottom: solid 3px #887247;
+		position: absolute;
+		top:31px;
+		left: -70px;}				
+				
+#ear1 {	background-color:#C2A366;
+		width: 20px;
+		height: 60px;
+		border-radius: 10px / 30px;
+		position:absolute;
+		left: 85px;
+		top: -50px;
+		transform-origin: 50% 0;
+		-webkit-transform: rotate(-35deg);}
+
+#ear2 {background-color:#C2A366;
+		width: 20px;
+		height: 60px;
+		border-radius: 10px / 30px;
+		position:absolute;
+		left: 110px;
+		top: -50px;
+		transform-origin: 50% 0;
+		-webkit-transform: rotate(-15deg); }					
+						
+#eye {background-color:black;
+		width: 15px;
+		height: 15px;
+		position:absolute;
+		border-radius:10px;
+		left: 45px;
+		top: 7px;}	
+
+#eye-shine {background-color:white;
+		width: 4px;
+		height: 4px;
+		position:absolute;
+		border-radius:3.5px;
+		left: 9px;
+		top: 2px;}	
+		
+							
+						
+	
+		
+
+		
+		
+				

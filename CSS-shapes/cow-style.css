@@ -1,0 +1,224 @@
+body {background-color:#A1A1A1;}
+
+/*-------- body --------*/
+
+#body{background-color:white;
+	width: 400px;
+	height: 300px;
+	border-radius:130px;
+	position: relative;
+	top: 150px;
+	left:150px;}
+	
+#spot1 {background-color:black;
+		width: 180px;
+		height: 180px;
+		border-radius:90px;
+		position: absolute;
+		top: 20px;
+		left: 20px;}	
+		
+#spot2 {background-color:black;
+		width: 140px;
+		height: 140px;
+		border-radius:70px;
+		position: absolute;
+		top: 20px;
+		left: 240px;}	
+
+/*-------------------- Head -----------------*/
+
+#head {background-color:white;
+		width: 120px;
+		height: 170px;
+		border-radius:70px;
+		position: absolute;
+		top: -35px;
+		left: -50px;}
+
+/*---- Nose ----*/
+#nose {background-color:pink;
+		width: 140px;
+		height: 80px;
+		border-radius:70px;
+		position: absolute;
+		top: 110px;
+		left: -10px;
+		z-index: 10;}
+
+.nostril {background-color:black;
+		width: 15px;
+		height: 15px;
+		border-radius:8px;
+		position: absolute;}	
+			
+#nostril1 {top: 40px;
+		left: 40px;}	
+		
+#nostril2 {top: 40px;
+ 		left: 80px;}	
+				
+/*---- Face ----*/
+
+.eye {background-color:black;
+		width: 15px;
+		height: 35px;
+		border-radius: 10px / 17px;
+		position: absolute;}
+
+#eye1 { top: 85px;
+		left:33px;}			
+#eye2 { top: 85px;
+		left:68px;}	
+		
+.eye-shine {background-color:white;
+		width: 5px;
+		height: 10px;
+		border-radius: 2.5px / 5px;
+		position: absolute;}
+
+#eye1-shine { left:10px;}		
+#eye2-shine {left:10px;}
+								
+									
+#spot3 {background-color:black;
+		width: 70px;
+		height: 70px;
+		border-radius:35px;
+		position: absolute;
+		top: 5px;
+		left: 5px;}	
+		
+/*---- Top of head ----*/
+
+.ear {width: 70px;
+		height: 30px;
+		border-radius: 35px / 15px;
+		position: absolute;}
+
+#ear-left { background-color:black;
+		top: 5px;
+		left:-50px;
+		-webkit-transform: rotate(15deg)}	
+				
+#ear-right { background-color:white;
+		top: 5px;
+		left:90px;
+		-webkit-transform: rotate(-15deg)}	
+		
+.ear-inside { background-color:pink;
+		width: 50px;
+		height: 15px;
+		border-radius: 25px / 7px;
+		position: absolute;
+		top: 15px;
+		left:10px;}
+		
+.horn {background-color:#887247;
+		width: 15px;
+		height: 35px;
+		border-radius: 10px / 17px;
+		position: absolute;
+		top: -20px;
+		z-index: -10;}
+		
+#horn1{left: 25px;}	
+#horn2{left: 70px;}		
+
+/*-------------------- legs and udders -----------------------*/
+
+
+#tail {width:55px;
+	height: 15px;
+	background-color: white;
+	position: absolute;
+	top: 55px;
+	left:357px;
+	z-index: -10;
+	transform-origin: 50% 0;
+	-webkit-transform: rotate(30deg);}
+	
+#tail-fluff {background-color: black;
+		width: 70px;
+		height: 30px;
+		border-radius: 35px / 15px;
+		position: absolute;
+		top: -8px;
+		left: 45px;}	
+
+#udder {background-color: pink;
+	width: 80px;
+	height: 80px;
+	border-radius: 40px;
+	z-index: -10;
+	position: absolute;
+	top: 240px;
+	left: 190px;}
+
+.udder-hanging {background-color:pink;
+		width: 12px;
+		height: 35px;
+		border-radius: 5px / 10px;
+		position: absolute;
+		top: 60px;}
+		
+#udder1 {left: 8px;
+	transform-origin: 50% 0;
+	-webkit-transform: rotate(17deg);}
+
+#udder2 {left: 26px;}
+
+#udder3	{left: 48px;
+	transform-origin: 50% 0;
+		-webkit-transform: rotate(-15deg);}	
+
+/*---- legs ----*/		
+
+.leg-b {width:25px;
+	height: 30px;
+	background-color: white;
+	position: absolute;
+	top: 25px;
+	left:0px;}
+	
+#leg-front1-bottom {transform-origin: 0% 0;
+	-webkit-transform: rotate(-15deg);}	
+		
+.leg {width:25px;
+	height: 30px;
+	background-color: white;
+	position: absolute;
+	top: 290px;}
+	
+#leg-front1 {left: 110px;}	
+#leg-front2 {left: 160px;}
+#leg-back1 {left: 210px;
+	z-index: -15;}
+#leg-back2 {left: 260px;}
+	
+.foot {width:25px;
+	height: 10px;
+	background-color: black;
+	position: absolute;
+	top: 30px;
+	left:0px;}
+
+		
+	
+				
+			
+			
+	
+		
+					
+
+			
+		
+		
+		
+		
+		
+		
+		
+		
+		
