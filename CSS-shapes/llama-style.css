@@ -11,7 +11,7 @@
 		height: 90px;
 		border-radius: 25px / 45px;
 		position:absolute;
-		left: 320px;
+		left: 300px;
 		top: 23px;
 		transform-origin: 50% 0;
 		-webkit-transform: rotate(-35deg);}
@@ -79,22 +79,19 @@
 		top:31px;
 		left: -70px;}				
 				
-#ear1 {	background-color:#C2A366;
+
+.ear{background-color:#C2A366;
 		width: 20px;
 		height: 60px;
 		border-radius: 10px / 30px;
 		position:absolute;
-		left: 85px;
+	
+}#ear1 {left: 65px;
 		top: -50px;
 		transform-origin: 50% 0;
 		-webkit-transform: rotate(-35deg);}
 
-#ear2 {background-color:#C2A366;
-		width: 20px;
-		height: 60px;
-		border-radius: 10px / 30px;
-		position:absolute;
-		left: 110px;
+#ear2 {left: 100px;
 		top: -50px;
 		transform-origin: 50% 0;
 		-webkit-transform: rotate(-15deg); }					
