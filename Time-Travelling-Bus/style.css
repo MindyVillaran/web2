@@ -51,6 +51,35 @@ table {
 
 /*------------------------main bus body------------------------*/
 
+body { background-color: #99FFFF;}
+
+.cloud {background-color:white;
+	width:100px;
+	height: 50px;
+	z-index: -10000;
+	position: absolute;}
+	
+#cloud1{ top: 100px;
+	left: 100px;}	
+	
+#cloud2{ top: 200px;
+	left: 50px;}
+
+#cloud3{ top: 100px;
+	left: 600px;}	
+
+@-webkit-keyframes cloud-move-forward {
+     0% {left: 100% ;}
+	 100% {left: -300% ;}}
+	 
+ @-webkit-keyframes cloud-move-backward {
+      0% {left: -300% ;}
+ 	 100% {left: 100% ;}}	 
+	
+.cloud-forward { -webkit-animation:cloud-move-forward .5s linear infinite;}
+.cloud-backward {-webkit-animation:cloud-move-backward 1s linear infinite;}	
+		
+	
 .bus-body {width:650px;
 	height:380px;
 	background-color:#E6B800;

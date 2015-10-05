@@ -9,6 +9,8 @@ $("#lever2").on("click",function(e) {
   $("#minute").addClass("animatedF-minute-hand");
   $("#hour").removeClass("animatedB-hour-hand");
   $("#minute").removeClass("animatedB-minute-hand");
+  $(".cloud").addClass("cloud-forward");
+  $(".cloud").removeClass("cloud-backward");
 });
 
 $("#lever1").on("click",function(e) { 
@@ -20,12 +22,14 @@ $("#lever1").on("click",function(e) {
   $("#minute").addClass("animatedB-minute-hand");
   $("#hour").removeClass("animatedF-hour-hand");
   $("#minute").removeClass("animatedF-minute-hand");
+  $(".cloud").removeClass("cloud-forward");
+  $(".cloud").addClass("cloud-backward");
 });
 
 
 // Extending Animations to the Handle
 
-$(".handle").on("click",function(e) { 
+  $(".handle").on("click",function(e) { 
   $("#bus-body").addClass("move");
   $("#bus-body").removeClass("reset");
   $(".fire").show();
@@ -34,9 +38,11 @@ $(".handle").on("click",function(e) {
   $("#minute").addClass("animatedF-minute-hand");
   $("#hour").removeClass("animatedB-hour-hand");
   $("#minute").removeClass("animatedB-minute-hand");
+  $(".cloud").addClass("cloud-forward");
+  $(".cloud").removeClass("cloud-backward");
 });
 
-$(".handle").on("click",function(e) { 
+  $(".handle").on("click",function(e) { 
   $("#bus-body").removeClass("move");
   $("#bus-body").addClass("reset");
   $(".fire").hide();
@@ -45,5 +51,8 @@ $(".handle").on("click",function(e) {
   $("#minute").addClass("animatedB-minute-hand");
   $("#hour").removeClass("animatedF-hour-hand");
   $("#minute").removeClass("animatedF-minute-hand");
+  $(".cloud").removeClass("cloud-forward");
+  $(".cloud").addClass("cloud-backward");
 });
+
 
