@@ -1,0 +1,435 @@
+* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/*------------------------main bus body------------------------*/
+
+#bus-body {width:650px;
+	height:380px;
+	background-color:#E6B800;
+	position: relative;
+	top: 120px;
+	left: 200px;
+	border-radius: 80px 80px 0px 0px;
+}
+
+#exhaust-pipe {width: 70px;
+	height: 20px;
+	background-color: gray;
+	bottom: 20px;
+	left: -35px;
+	z-index: -10;
+	position: absolute;}
+	
+/*--#fire {background-color: orange;
+	height: 50px;
+	width: 90px;
+	position: absolute;
+	left: -100px;
+	bottom: -15px;}--*/
+	
+
+
+/*----------- accessories -----------*/
+
+.side-window { width: 60px;
+	height: 70px;
+	background-color:#C2E6E6;
+	position: absolute;
+	border: 8px solid #E6B800;
+	top: 98px;
+}	
+	
+	
+#window1 {left: 10px;}
+#window2 {left:79px;}
+#window3 {left:148px;}
+
+.window-shine-small {width: 7px;
+	height: 70px;
+	-webkit-transform: skew(-15deg);
+	background: white;
+	position: absolute;
+	left: 26px;}
+
+.window-part {width:60px;
+	height: 4px;
+	background-color: gray;
+	top: 33px;
+	position: absolute;}
+	
+.side-stripe {width:210px;
+	height: 10px;
+	background-color: black;
+	top: 200px;
+	left: 10px;
+	position: absolute;}
+	
+#stripe2 {height: 8px;
+	top: 240px;}	
+	
+#name {width:210px;
+	top: 205px;
+	left: 18px;
+	position: absolute;}
+
+p	{font-family: arial;
+	font-weight: bold;
+	color: black;
+	font-size: 14px;}
+
+#door-hole {height: 275px;
+	width: 100px;
+	background-color: #292929;
+	position: absolute;
+	bottom: 0px;
+	left: 235px;}
+
+.door { width: 39px;
+	height: 266px;
+	background-color:#C2E6E6;
+	position: absolute;
+	border: 6px solid gray;
+	bottom: -1px;
+}	
+
+#door-right{left: 50px;}	
+
+.window-shine {width: 8px;
+	height: 266px;
+	-webkit-transform: skew(-6deg);
+	background: white;
+	position: absolute;
+	left: 14px}
+	
+#clock-whole {position: absolute;
+	width: 200px;
+	height: 200px;
+	top: -100px;
+	left: 240px;
+	z-index: -1;}
+	
+#support-left {
+	width: 0;
+	height: 0;
+	border-bottom: 90px solid gray;
+	border-left: 90px solid transparent;
+	position: absolute;
+	top: 20px; left:-50px;}
+	
+#support-right {
+	width: 0;
+	height: 0;
+	border-bottom: 90px solid gray;
+	border-right: 90px solid transparent;
+	position: absolute;
+	top: 20px; left:70px;}
+
+#clock {width: 100px;
+	height: 100px;
+	position: absolute;
+	border-radius: 60px;
+	background-color: white;
+	border: 7px solid #333333;}
+	
+.hand {width: 5px;
+	height: 33px;
+	background-color: #333333;
+	position: absolute;
+	top: 20px; left:55px;
+	transform-origin: 50% 100%;}
+
+#hour {transform: rotate(90deg);}
+
+#minute {background-color:black;
+	transform: rotate(-10deg);}			
+	
+
+/*------------------------ bus front ------------------------*/
+	
+	
+#bus-front {width:270px;
+	height:380px;
+	background-color:#FFD633;
+	position: absolute;
+	right: 0px;
+	border-radius: 80px 80px 0px 0px;
+}
+
+#window {width:225px;
+	height:175px;
+	background-color:#D1FFFF;
+	position: absolute;
+	bottom: 155px;
+	right: 20px;
+	border-radius: 20px 20px 0px 0px;
+}
+
+.toplight-container {
+	width: 67px;
+	height: 35px;
+	background-color:#333333;
+	position: absolute;
+	top: 9px;}
+
+#container1 {
+	border-radius: 60px 0px 0px 0px;
+	left: 25px;}
+	
+#container2 {
+	border-radius: 0px 60px 0px 0px;
+	right: 25px;}
+
+
+.top-light {width: 18px;
+	height: 18px;
+	border-radius: 9px;
+	position: absolute;
+	top: 8px;}
+	
+#yellow1 {background-color:yellow;
+	left: 16px;}
+
+#red1 {background-color:red;
+	right: 7px;}
+
+#yellow2 {background-color:yellow;
+	right: 16px;}
+
+#red2 {background-color:red;
+	left: 7px;}
+
+
+/*----------- lever-controls -----------*/
+
+
+
+#lever-panel-whole {position: absolute;
+	width: 200px;
+	height: 150px;
+	bottom: 0px;
+	left: 12px;}
+
+#flat-panel {background-color:gray;
+	height: 60px;
+	width: 120px;
+	position: absolute;
+	bottom: 0px;
+	left: 70px;
+    border-radius: 0px 80px 80px 0px;
+}	
+
+#circle-side {
+	height:40px;
+    width:70px;
+    border-radius: 70px 80px 0 0;
+    background-color:#666666;
+ 	position: absolute;
+ 	bottom: 20px;
+ 	left: -25px;
+}
+
+#lever1 {  
+width:14px;
+height:65px;
+position: absolute;
+background-color: red;  
+top: -62px;
+right: 43px;
+transform: rotate(-8deg);
+}
+
+#lever2 {  width:14px;
+height:65px;
+position: absolute; 
+top: -62px;
+left: 27px;
+background-color: green;
+transform: rotate(-8deg);
+ 
+}
+
+#lever2:hover {
+  transform: rotate(-20deg);
+  transform-origin: 50% 100%;
+  transition: .3s ease; 
+}
+
+#lever1:hover {
+  transform: rotate(-20deg);
+  transform-origin: 50% 100%;
+  transition: .3s ease; 
+}
+
+.handle {
+  width: 15px;
+  height: 20px;
+  background-color: #333333;
+  padding: 2px;}
+
+.handle:hover {
+  background-color: black;}
+
+
+/*----------- nose - accessories -----------*/
+
+
+#nose-side {width:265px;
+	height:180px;
+	background-color: #E6B800;
+	position: absolute;
+	bottom: 0px;
+	left: 25px;
+	border-radius: 30px 50px 0px 0px;
+}
+
+#perspective {
+	width: 210px;
+	height: 50px;
+	right: 0px;
+	top:1px;
+	-webkit-transform: skew(50deg);
+	background-color: #E6B800;
+	position: absolute;
+	border-radius: 20px 20px 0px 0px;}
+
+#nose {width:220px;
+	height:140px;
+	background-color:#FFD633;
+	position: absolute;
+	bottom: 0px;
+	right: -50px;
+	border-radius: 30px 50px 0px 0px;
+}
+
+.light {width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background-color:#D1FFFF;
+	position: absolute;
+	top: 55px;}
+	
+#light1 {left: 20px;}	
+#light2 {right: 20px;}
+
+#grill-whole {
+	position: absolute;
+	top:30px;
+	left:25px;
+}
+.grill {width:85px;
+	height: 5px;
+	background-color: #333333;
+	margin: 4px;}	
+	
+.glow {
+	border-bottom: 370px solid #FFFFA3;
+	border-left: 40px solid transparent;
+	border-right: 40px solid transparent;
+	height: 0;
+	width: 10px;
+	position: absolute;
+	opacity: .4;
+	transform: rotate(270deg);
+	top: -120px;}
+	
+#glow1{left: 170px;}	
+#glow2{left: 330px;}		
+	
+
+/*------------------------wheels------------------------*/
+
+.wheel {background-color: #333333;
+	width: 76px;
+	height: 86px;
+	border-radius: 38px / 43px;
+	position: absolute;
+	bottom: -25px;
+	left: 10px;}
+	
+.wheel-hub {background-color: gray;
+	width: 35px;
+	height: 40px;
+	border-radius: 15px / 20px;
+	position: absolute;
+	bottom: 22px;
+	left: 20px;
+}	
+
+#wheelback-right { left: 50px;}
+#wheelback-left { left: 140px; 
+	background-color: black;
+	z-index: -10;}
+#wheelfront-left { left: 100px;  
+	background-color: black;
+	z-index: -10;}
+	
+	
+	
+h1 {position: absolute;
+	font: 30px Helvetica;
+	top: 550px ;}	
+
+a { text-decoration: none;
+	color: green;}
+	
+a:hover { text-decoration: underline;
+	color: blue;}	
+
+
+
+
+
+
+
+
+
+
+
