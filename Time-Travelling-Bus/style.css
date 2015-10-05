@@ -51,7 +51,7 @@ table {
 
 /*------------------------main bus body------------------------*/
 
-#bus-body {width:650px;
+.bus-body {width:650px;
 	height:380px;
 	background-color:#E6B800;
 	position: relative;
@@ -59,6 +59,9 @@ table {
 	left: 200px;
 	border-radius: 80px 80px 0px 0px;
 }
+
+#b2 {top: 0px;
+	left:  0px;}
 
 #exhaust-pipe {width: 70px;
 	height: 20px;
@@ -68,13 +71,22 @@ table {
 	z-index: -10;
 	position: absolute;}
 	
-/*--#fire {background-color: orange;
+.fire {background-color: orange;
 	height: 50px;
 	width: 90px;
 	position: absolute;
 	left: -100px;
-	bottom: -15px;}--*/
-	
+    display: none;
+    -webkit-animation:flame-move .2s linear infinite;}
+ 
+@-webkit-keyframes flame-move {
+     0% {bottom: -14px;}
+     40% {bottom: -9px;}
+     60% {bottom: -14px;}
+     100% {bottom: -9px;}  
+  }
+
+ .appear { display: block;}
 
 
 /*----------- accessories -----------*/
@@ -86,7 +98,6 @@ table {
 	border: 8px solid #E6B800;
 	top: 98px;
 }	
-	
 	
 #window1 {left: 10px;}
 #window2 {left:79px;}
@@ -123,7 +134,8 @@ table {
 p	{font-family: arial;
 	font-weight: bold;
 	color: black;
-	font-size: 14px;}
+	font-size: 14px;
+	-webkit-font-smoothing: antialiased;}
 
 #door-hole {height: 275px;
 	width: 100px;
@@ -178,7 +190,7 @@ p	{font-family: arial;
 	border-radius: 60px;
 	background-color: white;
 	border: 7px solid #333333;}
-	
+
 .hand {width: 5px;
 	height: 33px;
 	background-color: #333333;
@@ -186,11 +198,38 @@ p	{font-family: arial;
 	top: 20px; left:55px;
 	transform-origin: 50% 100%;}
 
+  
 #hour {transform: rotate(90deg);}
 
-#minute {background-color:black;
-	transform: rotate(-10deg);}			
+#minute {background-color:black;}	
+
+
+/*----------- forwards -------------*/
+
+.animatedF-minute-hand{	
+	-webkit-animation:turn-clock-F .5s linear 4;}
 	
+.animatedF-hour-hand{	
+	-webkit-animation:turn-clock-F .2s linear 8;}
+ 
+@-webkit-keyframes turn-clock-F {
+     0%  { -webkit-transform: rotate(0deg)}
+	 100% { -webkit-transform: rotate(360deg)}}	
+
+
+/*----------- backwards -------------*/
+	 
+.animatedB-minute-hand{	
+	-webkit-animation:turn-clock-B .5s linear 5;}
+	
+.animatedB-hour-hand{	
+	-webkit-animation:turn-clock-B .2s linear 9;}
+ 
+@-webkit-keyframes turn-clock-B {
+     0%  { -webkit-transform: rotate(360deg)}
+	 100% { -webkit-transform: rotate(0deg)}}	
+	 
+	 			
 
 /*------------------------ bus front ------------------------*/
 	
@@ -407,21 +446,26 @@ transform: rotate(-8deg);
 #wheelback-left { left: 140px; 
 	background-color: black;
 	z-index: -10;}
+	
 #wheelfront-left { left: 100px;  
 	background-color: black;
 	z-index: -10;}
 	
-	
-	
-h1 {position: absolute;
-	font: 25px Helvetica;
-	top: 420px ;}	
 
-a { text-decoration: none;
-	color: green;}
+/*------------------------wheels------------------------*/	 
 	
-a:hover { text-decoration: underline;
-	color: blue;}	
+	
+.move {transition: 2s ease; 
+        transform: translate(400px);
+		z-index: 100000;}
+        
+  
+.reset {transition: 4s ease; 
+        transform: translate(0px);
+		z-index: 1000000;}    
+	
+	
+	
 
 
 
