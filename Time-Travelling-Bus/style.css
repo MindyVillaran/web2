@@ -54,6 +54,14 @@ table {
 body { background-color: #33CCFF 
 ;}
 
+.night {background-color: #00007A;
+    transition: background-color 4s ease;
+	}
+	
+.day {background-color: #33CCFF;
+	    transition: background-color 4s ease;
+		}	
+
 .cloud {background-color:white;
 	width:100px;
 	height: 50px;
@@ -232,10 +240,9 @@ p	{font-family: arial;
 	position: absolute;
 	top: 20px; left:55px;
 	transform-origin: 50% 100%;}
-
+	
   
 #hour {transform: rotate(90deg);}
-
 #minute {background-color:black;}	
 
 

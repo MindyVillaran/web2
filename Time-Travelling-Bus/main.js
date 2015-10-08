@@ -11,6 +11,8 @@ $("#lever2").on("click",function(e) {
   $("#minute").removeClass("animatedB-minute-hand");
   $(".cloud").addClass("cloud-forward");
   $(".cloud").removeClass("cloud-backward");
+  $("body").addClass("night");
+  $("body").removeClass("day")
 });
 
 $("#lever1").on("click",function(e) { 
@@ -24,6 +26,8 @@ $("#lever1").on("click",function(e) {
   $("#minute").removeClass("animatedF-minute-hand");
   $(".cloud").removeClass("cloud-forward");
   $(".cloud").addClass("cloud-backward");
+  $("body").removeClass("night");
+  $("body").addClass("day")  
 });
 
 
@@ -40,6 +44,8 @@ $("#lever1").on("click",function(e) {
   $("#minute").removeClass("animatedB-minute-hand");
   $(".cloud").addClass("cloud-forward");
   $(".cloud").removeClass("cloud-backward");
+  $("body").addClass("night");
+  $("body").removeClass("day")
 });
 
   $(".handle").on("click",function(e) { 
@@ -53,7 +59,10 @@ $("#lever1").on("click",function(e) {
   $("#minute").removeClass("animatedF-minute-hand");
   $(".cloud").removeClass("cloud-forward");
   $(".cloud").addClass("cloud-backward");
+  $("body").removeClass("night"); 
+  $("body").addClass("day")    
 });
+
 
 // Lights on
 
@@ -61,11 +70,14 @@ var LightsOn = false
 
 $("#blue-button").on("click",function(e) {
     if(LightsOn) {
-        LightsOn = true;
-        $(".light").removeClass("light-on")};
-			
+        LightsOn =true;
+        $(".light").removeClass("light-on");
+    } else {
+   	  LightsOn =false;
+      $(".light").addClass("light-on");}
+		
 	$(".glow").toggle();
-	$(".light").addClass("light-on"); });
+});
 
   
   
