@@ -55,4 +55,19 @@ $("#lever1").on("click",function(e) {
   $(".cloud").addClass("cloud-backward");
 });
 
+// Lights on
+
+var LightsOn = false
+
+$("#blue-button").on("click",function(e) {
+    if(LightsOn) {
+        LightsOn = true;
+        $(".light").removeClass("light-on")};
+			
+	$(".glow").toggle();
+	$(".light").addClass("light-on"); });
+
+  
+  
+
 
