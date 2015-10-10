@@ -72,35 +72,57 @@ transition: background-color 4s ease;}
 transition: background-color 4s ease;}
 	 	
 
+.cloud-holder{ width: 1000px;
+	height: auto;
+	position: absolute;}
+	
 .cloud {background-color:white;
 	width: 100px;
 	height: 50px;
 	border-radius: 50px / 25px;
 	z-index: -10000;
-	position: absolute;}
+	position: absolute;
+	opacity: .9;}
 	
-#cloud1{ top: 100px;
-	left: 100px;}	
-	
-#cloud2{ top: 200px;
-	left: 50px;}
-
-#cloud3{ top: 100px;
-	left: 600px;}
-	
+#cloud1{ top: 120px;
+	left: -100px;}		
+#cloud2{ top: 190px;
+	left: 1250px;}
+#cloud3{ top: -50px;
+	left: 200px;}	
 #cloud4{ top: 80px;
-	left: 900px;}		
+	left: 900px;}	
+	
+.cloud-part1 {background-color:white;
+	width: 140px;
+	height: 60px;
+	border-radius: 70px / 30px;
+	z-index: -10000;
+	top: 10px;
+	left:50px;
+	position: absolute;
+	opacity: .9;}	
 
+.cloud-part2 {background-color:white;
+	width: 110px;
+	height: 80px;
+	border-radius: 55px / 40px;
+	z-index: -10000;
+	top: -20px;
+	left: 30px;
+	position: absolute;
+	opacity: .9;}	
+	
 @-webkit-keyframes cloud-move-forward {
      0% {left: 100% ;}
-	 100% {left: -300% ;}}
+	 100% {left: -100% ;}}
 	 
  @-webkit-keyframes cloud-move-backward {
-      0% {left: -300% ;}
+      0% {left: -100% ;}
  	 100% {left: 100% ;}}	 
 	
-.cloud-forward { -webkit-animation:cloud-move-forward .5s linear infinite;}
-.cloud-backward {-webkit-animation:cloud-move-backward 1s linear 3;}
+.cloud-forward { -webkit-animation:cloud-move-forward .45s linear infinite;}
+.cloud-backward {-webkit-animation:cloud-move-backward .7s linear 3;}
 	
 		
 /*-----------------main bus--------------*/

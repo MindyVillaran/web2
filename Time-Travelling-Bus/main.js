@@ -10,8 +10,8 @@ $("#lever2").on("click",function(e) {
   $("#minute").addClass("animatedF-minute-hand");
   $("#hour").removeClass("animatedB-hour-hand");
   $("#minute").removeClass("animatedB-minute-hand");
-  $(".cloud").addClass("cloud-forward");
-  $(".cloud").removeClass("cloud-backward");
+  $(".cloud-holder").addClass("cloud-forward");
+  $(".cloud-holder").removeClass("cloud-backward");
   $("body").addClass("night");
   $("body").removeClass("day");  
   $(".ground").addClass("nightg"); 
@@ -31,8 +31,8 @@ $("#lever1").on("click",function(e) {
   $("#minute").addClass("animatedB-minute-hand");
   $("#hour").removeClass("animatedF-hour-hand");
   $("#minute").removeClass("animatedF-minute-hand");
-  $(".cloud").removeClass("cloud-forward");
-  $(".cloud").addClass("cloud-backward");
+  $(".cloud-holder").removeClass("cloud-forward");
+  $(".cloud-holder").addClass("cloud-backward");
   $("body").removeClass("night");
   $("body").addClass("day"); 
   $(".ground").removeClass("nightg"); 
@@ -55,8 +55,8 @@ $("#lever1").on("click",function(e) {
   $("#minute").addClass("animatedF-minute-hand");
   $("#hour").removeClass("animatedB-hour-hand");
   $("#minute").removeClass("animatedB-minute-hand");
-  $(".cloud").addClass("cloud-forward");
-  $(".cloud").removeClass("cloud-backward");
+  $(".cloud-holder").addClass("cloud-forward");
+  $(".cloud-holder").removeClass("cloud-backward");
   $("body").addClass("night");
   $("body").removeClass("day");
   $(".ground").addClass("nightg"); 
@@ -75,8 +75,8 @@ $("#lever1").on("click",function(e) {
   $("#minute").addClass("animatedB-minute-hand");
   $("#hour").removeClass("animatedF-hour-hand");
   $("#minute").removeClass("animatedF-minute-hand");
-  $(".cloud").removeClass("cloud-forward");
-  $(".cloud").addClass("cloud-backward");
+  $(".cloud-holder").removeClass("cloud-forward");
+  $(".cloud-holder").addClass("cloud-backward");
   $("body").removeClass("night"); 
   $("body").addClass("day");    
   $(".ground").removeClass("nightg"); 
