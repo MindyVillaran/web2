@@ -40,18 +40,16 @@ blockquote, q {
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
-	content: none;
-}
+	content: none;}
 table {
 	border-collapse: collapse;
-	border-spacing: 0;
-}
+	border-spacing: 0;}
 
 
 
 
 
-/*------------------------main bus body------------------------*/
+/*------------------------main bg + bus------------------------*/
 
 body { background-color: #33CCFF;}
 
@@ -102,16 +100,10 @@ transition: background-color 4s ease;}
  	 100% {left: 100% ;}}	 
 	
 .cloud-forward { -webkit-animation:cloud-move-forward .5s linear infinite;}
-.cloud-backward {-webkit-animation:cloud-move-backward 1s linear 3;}	
-		
+.cloud-backward {-webkit-animation:cloud-move-backward 1s linear 3;}
 	
-.bus-body {width:650px;
-	height:380px;
-	background-color:#E6B800;
-	position: relative;
-	top: 120px;
-	left: 200px;
-	border-radius: 80px 80px 0px 0px;}
+		
+/*-----------------main bus--------------*/
 	
 .whole-bus-move {top: 0px;
 	position: absolute;
@@ -132,6 +124,14 @@ transition: background-color 4s ease;}
       40% {top: 7px;}
        60% {top: 4px;}
         100% {top: 7px;} } 		
+
+.bus-body {width:650px;
+	height:380px;
+	background-color:#E6B800;
+	position: relative;
+	top: 120px;
+	left: 200px;
+	border-radius: 80px 80px 0px 0px;}
 
 #b2 {top: 0px;
 	left:  0px;}
@@ -212,18 +212,20 @@ p	{font-family: arial;
 
 #door-hole {height: 275px;
 	width: 100px;
-	background-color: #292929;
+	background-color: black;
 	position: absolute;
 	bottom: 0px;
 	left: 235px;}
+
+#door-hole:hover {transition: 1.7s ease; 
+	background-color: #3E5266;}	
 
 .door { width: 39px;
 	height: 266px;
 	background-color:#C2E6E6;
 	position: absolute;
 	border: 6px solid gray;
-	bottom: -1px;
-}	
+	bottom: -1px;}	
 
 #door-right{left: 50px;}	
 
@@ -246,20 +248,17 @@ p	{font-family: arial;
 	left: 240px;
 	z-index: -1;}
 	
-#support-left {
-	width: 0;
+.support {width: 0;
 	height: 0;
 	border-bottom: 90px solid gray;
+	position: absolute;}
+
+#support-left {
 	border-left: 90px solid transparent;
-	position: absolute;
 	top: 20px; left:-50px;}
 	
 #support-right {
-	width: 0;
-	height: 0;
-	border-bottom: 90px solid gray;
 	border-right: 90px solid transparent;
-	position: absolute;
 	top: 20px; left:70px;}
 
 #clock {width: 100px;
@@ -343,23 +342,41 @@ p	{font-family: arial;
 	border-radius: 0px 60px 0px 0px;
 	right: 25px;}
 
-.top-light {width: 18px;
-	height: 18px;
-	border-radius: 9px;
+.top-light {width: 16px;
+	height: 16px;
+	border-radius: 8px;
 	position: absolute;
-	top: 8px;}
+	top: 10px;}
 	
-#yellow1 {background-color:yellow;
-	left: 16px;}
+#yellow1 {background-color:#CCA300;
+	left: 18px;}
 
-#red1 {background-color:red;
-	right: 7px;}
+#red1 {background-color:#CC0000;
+	right: 8px;}
 
-#yellow2 {background-color:yellow;
-	right: 16px;}
+#yellow2 {background-color:#CCA300;
+	right: 18px;}
 
-#red2 {background-color:red;
-	left: 7px;}
+#red2 {background-color:#CC0000;
+	left: 8px;}
+	
+#red2:hover{transition: .3s ease; 
+	transform: scale(1.5);
+	background-color: red;}	
+	
+#red1:hover{transition: .3s ease; 
+	transform: scale(1.5);
+	background-color: red;}
+
+#yellow2:hover{transition: .3s ease; 
+	transform: scale(1.5);
+	background-color: yellow;}	
+	
+#yellow1:hover{transition: .3s ease; 
+	transform: scale(1.5);
+	background-color: yellow;}	
+	
+		
 
 
 /*----------- lever-controls -----------*/
