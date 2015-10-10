@@ -60,7 +60,7 @@ body { background-color: #33CCFF;}
 	  transition: background-color 4s ease;}
 	 
 .ground {width: 100%;
-	height:400px;
+	height:500px;
 	position: absolute;
 	top: 532px;
 	background-color: #2EB82E;}	 
@@ -143,6 +143,20 @@ transition: background-color 4s ease;}
 	left: -35px;
 	z-index: -10;
 	position: absolute;}
+	
+/*.grow-shadow {
+	    display: inline-block;
+	    vertical-align: middle;
+	    -webkit-transform: translateZ(0);
+	    transform: translateZ(0);
+	    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	    -webkit-backface-visibility: hidden;
+	    backface-visibility: hidden;
+	    -moz-osx-font-smoothing: grayscale;
+	    -webkit-transition-duration: 0.3s;
+	    transition-duration: 0.3s;
+	    -webkit-transition-property: box-shadow, transform;
+	    transition-property: box-shadow, transform;}*/
 	
 .fire {background-color: orange;
 	height: 50px;
@@ -276,9 +290,7 @@ p	{font-family: arial;
 	transform-origin: 50% 100%;}
 	
   
-#hour {transform: rotate(90deg);}
-#minute {background-color:black;}	
-
+#hour {transform: rotate(90deg);}		
 
 /*----------- forwards -------------*/
 
@@ -360,19 +372,19 @@ p	{font-family: arial;
 #red2 {background-color:#CC0000;
 	left: 8px;}
 	
-#red2:hover{transition: .3s ease; 
+#red2:hover{transition: .2s ease; 
 	transform: scale(1.5);
 	background-color: red;}	
 	
-#red1:hover{transition: .3s ease; 
+#red1:hover{transition: .2s ease; 
 	transform: scale(1.5);
 	background-color: red;}
 
-#yellow2:hover{transition: .3s ease; 
+#yellow2:hover{transition: .2s ease; 
 	transform: scale(1.5);
 	background-color: yellow;}	
 	
-#yellow1:hover{transition: .3s ease; 
+#yellow1:hover{transition: .2s ease; 
 	transform: scale(1.5);
 	background-color: yellow;}	
 	
@@ -389,27 +401,43 @@ p	{font-family: arial;
 
 #flat-panel {background-color:gray;
 	height: 60px;
-	width: 120px;
+	width: 110px;
 	position: absolute;
 	bottom: 0px;
-	left: 85px;
+	left: 91px;
     border-radius: 0px 80px 80px 0px;
 }
 
-#button-holder {width: 30px;
-	height: 15px;
+#move-label {font-family: arial;
+	font-weight: bold;
+	font-size: 10px;
+	color: black;
+	position: absolute;
+	top: 14px;
+	left: 50px;} 
+
+#button-holder {width: 53px;
+	height: 22px;
 	background-color: gray;
 	position: absolute;
 	bottom: 25px;
-	left: 29px;
+	left: 12px;
 	z-index: 100;}
+
+#light-label {font-family: arial;
+	font-weight: bold;
+	font-size: 10px;
+	color: black;
+	position: absolute;
+	top: 8px;
+	left: 8px;} 
 	
-#blue-button {width: 20px;
-	height: 12px;
+#blue-button {width: 23px;
+	height: 15px;
 	background-color: blue;
 	position: absolute;
 	top: -12px;
-	left: 5px;
+	left: 15px;
     border-radius: 5px 5px 0px 0px;
 }
 
@@ -418,7 +446,7 @@ p	{font-family: arial;
 
 #circle-side {
 	height:40px;
-    width:70px;
+    width:60px;
     border-radius: 70px 80px 0 0;
     background-color:#666666;
  	position: absolute;
@@ -431,7 +459,7 @@ height:65px;
 position: absolute;
 background-color: red;  
 top: -62px;
-right: 43px;
+right: 39px;
 transform: rotate(-8deg);
 }
 
@@ -439,7 +467,7 @@ transform: rotate(-8deg);
 height:65px;
 position: absolute; 
 top: -62px;
-left: 27px;
+left: 20px;
 background-color: green;
 transform: rotate(-8deg);
 }
@@ -481,7 +509,7 @@ transform: rotate(-8deg);
 	position: absolute;
 	bottom: 0px;
 	left: 25px;
-	border-radius: 30px 50px 0px 0px;
+	border-radius: 0px 50px 0px 0px;
 }
 
 #perspective {
@@ -492,7 +520,7 @@ transform: rotate(-8deg);
 	-webkit-transform: skew(50deg);
 	background-color: #E6B800;
 	position: absolute;
-	border-radius: 20px 20px 0px 0px;}
+	border-radius: 0px 20px 0px 0px;}
 
 #nose {width:220px;
 	height:140px;
