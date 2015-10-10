@@ -1,5 +1,7 @@
 // (Move Bus, Activate Fire, Turn Clock, Change Background) - with Levers
 
+// Forewards
+
 $("#lever2").on("click",function(e) { 
   $("#bus-body").addClass("move");
   $("#bus-body").removeClass("reset");
@@ -14,7 +16,12 @@ $("#lever2").on("click",function(e) {
   $("body").removeClass("day");  
   $(".ground").addClass("nightg"); 
   $(".ground").removeClass("dayg"); 
+  $(".whole-bus").addClass("whole-bus-move")
+  $(".whole-bus").removeClass("whole-bus-moveB")
 });
+
+
+// Backwards
 
 $("#lever1").on("click",function(e) { 
   $("#bus-body").removeClass("move");
@@ -30,12 +37,17 @@ $("#lever1").on("click",function(e) {
   $("body").addClass("day"); 
   $(".ground").removeClass("nightg"); 
   $(".ground").addClass("dayg"); 
+  $(".whole-bus").addClass("whole-bus-moveB")
+  $(".whole-bus").removeClass("whole-bus-move")
+  
 });
 
 
 // Activating Same Animations with the Lever Handle
 
-  $(".handle").on("click",function(e) { 
+// Forewards
+
+ $(".handle").on("click",function(e) { 
   $("#bus-body").addClass("move");
   $("#bus-body").removeClass("reset");
   $(".fire").show();
@@ -49,9 +61,13 @@ $("#lever1").on("click",function(e) {
   $("body").removeClass("day");
   $(".ground").addClass("nightg"); 
   $(".ground").removeClass("dayg"); 
+  $(".whole-bus").addClass("whole-bus-move")
+  $(".whole-bus").removeClass("whole-bus-moveB")
 });
 
-  $(".handle").on("click",function(e) { 
+// Backwards
+
+ $(".handle").on("click",function(e) { 
   $("#bus-body").removeClass("move");
   $("#bus-body").addClass("reset");
   $(".fire").hide();
@@ -65,6 +81,8 @@ $("#lever1").on("click",function(e) {
   $("body").addClass("day");    
   $(".ground").removeClass("nightg"); 
   $(".ground").addClass("dayg");
+  $(".whole-bus").addClass("whole-bus-moveB")
+  $(".whole-bus").removeClass("whole-bus-move")  
 });
 
 

@@ -49,6 +49,8 @@ table {
 
 
 
+
+
 /*------------------------main bus body------------------------*/
 
 body { background-color: #33CCFF;}
@@ -109,8 +111,27 @@ transition: background-color 4s ease;}
 	position: relative;
 	top: 120px;
 	left: 200px;
-	border-radius: 80px 80px 0px 0px;
-}
+	border-radius: 80px 80px 0px 0px;}
+	
+.whole-bus-move {top: 0px;
+	position: absolute;
+	-webkit-animation:vib .4s linear infinite;}
+	
+.whole-bus-moveB {
+	position: absolute;
+	-webkit-animation:vib2 .4s linear 8;}	
+ 
+@-webkit-keyframes vib {
+        0% {top: 4px;}
+        40% {top: 7px;}
+        60% {top: 4px;}
+        100% {top: 7px;} } 
+		
+@-webkit-keyframes vib2 {
+       0% {top: 4px;}
+      40% {top: 7px;}
+       60% {top: 4px;}
+        100% {top: 7px;} } 		
 
 #b2 {top: 0px;
 	left:  0px;}
@@ -343,8 +364,6 @@ p	{font-family: arial;
 
 /*----------- lever-controls -----------*/
 
-
-
 #lever-panel-whole {position: absolute;
 	width: 200px;
 	height: 150px;
@@ -378,7 +397,7 @@ p	{font-family: arial;
 }
 
 #blue-button:hover {background-color: #00007A;
-	top: -7px;}
+	top: -8px;}
 
 #circle-side {
 	height:40px;
@@ -406,7 +425,6 @@ top: -62px;
 left: 27px;
 background-color: green;
 transform: rotate(-8deg);
- 
 }
 
 #lever2:hover {
@@ -468,16 +486,6 @@ transform: rotate(-8deg);
 	border-radius: 30px 50px 0px 0px;
 }
 
-.light {width: 30px;
-	height: 30px;
-	border-radius: 15px;
-	background-color:white;
-	position: absolute;
-	top: 55px;}
-		
-#light1 {left: 20px;}	
-#light2 {right: 20px;}
-
 #grill-whole {
 	position: absolute;
 	top:30px;
@@ -488,6 +496,17 @@ transform: rotate(-8deg);
 	background-color: #333333;
 	margin: 4px;}	
 	
+	
+.light {width: 30px;
+	height: 30px;
+	border-radius: 15px;
+	background-color:white;
+	position: absolute;
+	top: 55px;}
+		
+#light1 {left: 20px;}	
+#light2 {right: 20px;}
+
 .glow {
 	border-bottom: 370px solid #FFFFA3;
 	border-left: 40px solid transparent;
@@ -497,7 +516,7 @@ transform: rotate(-8deg);
 	position: absolute;
 	opacity: .4;
 	transform: rotate(270deg);
-	top: -120px;
+	top: -115px;
 	display: none;}
 	
 #glow1{left: 170px;}	
