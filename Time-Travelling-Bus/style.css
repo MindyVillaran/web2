@@ -51,20 +51,31 @@ table {
 
 /*------------------------main bus body------------------------*/
 
-body { background-color: #33CCFF 
-;}
+body { background-color: #33CCFF;}
 
-.night {background-color: #00007A;
-    transition: background-color 4s ease;
-	}
+.night {background-color: #194775;
+    transition: background-color 4s ease;}
 	
 .day {background-color: #33CCFF;
-	    transition: background-color 4s ease;
-		}	
+	  transition: background-color 4s ease;}
+	 
+.ground {width: 100%;
+	height:400px;
+	position: absolute;
+	top: 532px;
+	background-color: #2EB82E;}	 
+
+.dayg {	background-color: #2EB82E;
+transition: background-color 4s ease;}
+
+.nightg {	background-color: #006600;
+transition: background-color 4s ease;}
+	 	
 
 .cloud {background-color:white;
-	width:100px;
+	width: 100px;
 	height: 50px;
+	border-radius: 50px / 25px;
 	z-index: -10000;
 	position: absolute;}
 	
@@ -75,7 +86,10 @@ body { background-color: #33CCFF
 	left: 50px;}
 
 #cloud3{ top: 100px;
-	left: 600px;}	
+	left: 600px;}
+	
+#cloud4{ top: 80px;
+	left: 900px;}		
 
 @-webkit-keyframes cloud-move-forward {
      0% {left: 100% ;}
@@ -366,7 +380,6 @@ p	{font-family: arial;
 #blue-button:hover {background-color: #00007A;
 	top: -7px;}
 
-
 #circle-side {
 	height:40px;
     width:70px;
@@ -421,8 +434,7 @@ transform: rotate(-8deg);
 	font-family: arial;
 	font-size: 13px;
 	color: gray;
-	padding: 3px;
-}  
+	padding: 4px;}  
 
 
 /*----------- nose - accessories -----------*/
@@ -459,12 +471,10 @@ transform: rotate(-8deg);
 .light {width: 30px;
 	height: 30px;
 	border-radius: 15px;
-	background-color:#BFE8E8;
+	background-color:white;
 	position: absolute;
 	top: 55px;}
-	
-.light-on {background-color: white;}
-	
+		
 #light1 {left: 20px;}	
 #light2 {right: 20px;}
 
