@@ -7,10 +7,31 @@ $(".title").on("arrived",function() {
 $(".text-block").on("arrived",function() {
   $(this).addClass("text-block-arrived");
 }); 
-  
-$(".text-block2").on("arrived",function() {
-  $(this).addClass("quote-arrived");
+
+$(".text-block").on("departed",function() {
+  $(this).removeClass("text-block-arrived");
 }); 
 
+$(".text-block").on("rearrived",function() {
+  $(this).addClass("text-block-arrived");
+}); 
 
+$(".text-block").on("redeparted",function() {
+  $(this).removeClass("text-block-arrived");
+}); 
+  
+$(".text-block2").on("arrived",function() {
+  $(this).addClass("text-block2-arrived");
+}); 
 
+$(".img1").on("arrived",function() {
+  $(this).addClass("img1-arrived");
+}); 
+
+$(".img2").on("arrived",function() {
+  $(this).addClass("img2-arrived");
+});
+
+$(".img3").on("arrived",function() {
+  $(this).addClass("img3-arrived");
+});
