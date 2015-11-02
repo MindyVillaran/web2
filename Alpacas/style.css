@@ -3,15 +3,14 @@
   padding: 0;
 }
 
-body { font-family: Helvetica; font-size:16px; color:white; }
+body { font-family: Georgia; font-size:16px; color:white; }
 
 
-#one {background-color: red;
-  background-image: url(https://www.thealpacagroupnw.com/wp-content/uploads/alpaca-cute.jpg);}
+#one {background-image: url(https://www.thealpacagroupnw.com/wp-content/uploads/alpaca-cute.jpg);}
   
-#two {background-color: blue;}
+#two {background-color:  #00CC99;}
 
-#three {background-color: green;}
+#three {background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/b0/Alpaca_headshot.jpg);}
 
 #four {background-color: yellow;}
 
@@ -20,12 +19,7 @@ body { font-family: Helvetica; font-size:16px; color:white; }
   position:relative;
 }
 
-.title {
-  position:absolute;
-  left:50%;
-  top:80%;
-  transform: translate(-50%, -50%);
-}
+
 
 .parallax-image {	
   background-size:cover;
@@ -33,16 +27,52 @@ body { font-family: Helvetica; font-size:16px; color:white; }
   background-repeat: no-repeat;
   background-attachment:fixed;
   width:100%;
-  height:100vh}
+  height:100vh;}
 
+.title {
+	  position:absolute;
+      left:50%;
+      top:80%;
+	  transform: translate(-50%, -50%);
+      opacity:0;
+	  font-size:30px;}
+	  	  
+.title-arrived {
+	opacity:1;
+ 	transition: opacity 3s ease-in-out;}
 	
 	
 
+.text-block {
+	  position:relative;
+	  width:400px;
+	  font-size:18px;
+	  padding:100px 0px 0px 70px;
+	  transform: translate(-200vw, 0);
+	  line-height:1.5em;
+	  transition: transform 2s ease-out;
+  		}	
+	
+.text-block-arrived {
+	transform: translate(0,0);
+}
+		
+	
+.text-block2 {
+	  position:absolute;
+	  left:50%;
+	  top:50%;
+	  transform: translate(-50%, -50%);
+	  width:610px;
+	  font-size:35px;
+	  line-height:1.5em;
+	  font-style: italic;
+	  opacity:0;}
 
 
-
-
-
+.quote-arrived {
+	opacity:1;
+ 	transition: opacity 2s ease-out;}
 
 
 
