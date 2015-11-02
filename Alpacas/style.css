@@ -79,17 +79,14 @@ body { font-family: Georgia; font-size:16px; color:white; }
 	
 .img1 {
   transform: translate(100vw, 0);
-  transition: transform 1s ease-out;
-
-  }
+  transition: transform 1s ease-out;}
 
 .img1-arrived{
     transform: translate(0, 0);
     position:absolute;
-    right: 30px; 
-    top:50px ;
-    margin-right:30px
-}
+	right:10%;
+    margin-right:40px; 
+    top:170px;}
 
 
 
@@ -103,6 +100,10 @@ body { font-family: Georgia; font-size:16px; color:white; }
 
 .img2-arrived{
     transform: translate(0, 0vw);
+    position:absolute;
+	right:10%;
+    margin-right:125px; 
+    top:420px;
 }
 
 
@@ -112,5 +113,9 @@ body { font-family: Georgia; font-size:16px; color:white; }
 
 .img3-arrived{
     transform: translate(0, 0);
+    position:absolute;
+	right:10%;
+    margin-right:290px; 
+    top:280px;
 }
 

@@ -7,18 +7,6 @@ $(".title").on("arrived",function() {
 $(".text-block").on("arrived",function() {
   $(this).addClass("text-block-arrived");
 }); 
-
-$(".text-block").on("departed",function() {
-  $(this).removeClass("text-block-arrived");
-}); 
-
-$(".text-block").on("rearrived",function() {
-  $(this).addClass("text-block-arrived");
-}); 
-
-$(".text-block").on("redeparted",function() {
-  $(this).removeClass("text-block-arrived");
-}); 
   
 $(".text-block2").on("arrived",function() {
   $(this).addClass("text-block2-arrived");
