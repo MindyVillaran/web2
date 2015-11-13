@@ -105,14 +105,17 @@ $(".so-when").on("arrived",function() {
   //$(".factory").addClass("factory-arriving");
   //}); 
 
-$(".shirt").on("arrived",function() {
-    $(this).affix();	
+$("#large").on("arrived",function() {
+    $(".shirt").affix();	
 }); 
 
 $("#white-page").on("arriving",function() {
   $(".shirt").unaffix();
 }); 
 
+$("#green-page").on("rearriving",function() {
+  $(".shirt").unaffix();
+}); 
 
 
 //---------------page eleven----------------
