@@ -10,11 +10,15 @@
 .green {background-color: #95e597;}
 .dk-blue {background-color: #3f90a5;}
 
-
+.large {height: 300vh;}
 .page {
   min-height: 100vh;
   position:relative;
 }
+
+#large {height: 300vh;
+	position: relative;}
+
 
 /*------------------------------font styles---------------------------*/
 body { font-family: Raleway; font-size:20px; color:white; font-weight:300;}
@@ -293,7 +297,7 @@ h2 {font-family: Raleway;
 } 
 
 
-/*---------------page ten (wateringcan, green)--------------------*/
+/*---------------page ten (factory, blue)--------------------*/
 .so-when {
 	  position:relative;
 	  width:30%;
@@ -307,36 +311,14 @@ h2 {font-family: Raleway;
 	transform: translate(0,0);
 }  
 
-.factory {
-  transform: translate(-100vw, 0);
-  transition: transform 1s ease-out;}
-
-.factory-arriving{
-    transform: translate(0, 0);
-    position:absolute;
-	width:550px;
-	height:550px;
-	left:10%;
-    bottom:-30px;
-	z-index:1;
-}
-	
-.shirt {
-  transform: translate(-50vw, 0);
-  opacity:0;
-  transition: transform 1s ease-out, opacity 2s ease-out;
-  transition-delay:2s;}
-
-.shirt-arrived{
-    transform: translate(0, 0);
-    position:absolute;
-    opacity:1;
+.shirt{
 	width:150px;
 	height:150px;
 	left:10%;
 	margin-left: 600px;
-	z-index:0;
-    bottom:60px;}
+    top:60px;}
+
+
 	
 /*---------------page twelve (everyday green)--------------------*/
 

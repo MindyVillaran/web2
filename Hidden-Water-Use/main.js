@@ -100,17 +100,20 @@ $(".so-when").on("arrived",function() {
   $(this).addClass("so-when-arrived");
 }); 
 
-$(".factory").on("arriving",function() {
-  $(this).addClass("factory-arriving");
-}); 
-
-$(".water-drop").on("arrived",function() {
-  $(this).addClass("water-drop-arrived");
-}); 
+//$(".factory").on("arrivied",function() {
+  //$(".factory").affix();	
+  //$(".factory").addClass("factory-arriving");
+  //}); 
 
 $(".shirt").on("arrived",function() {
-  $(this).addClass("shirt-arrived");
+    $(this).affix();	
 }); 
+
+$("#white-page").on("arriving",function() {
+  $(".shirt").unaffix();
+}); 
+
+
 
 //---------------page eleven----------------
 
