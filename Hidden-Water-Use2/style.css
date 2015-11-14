@@ -11,14 +11,20 @@
 .dk-blue {background-color: #3f90a5;}
 
 .large {height: 300vh;}
+
+.container {min-width: 700px;
+	max-width:900px;
+	position:relative;
+	margin: 0 auto;}
+
 .page {
   min-height: 100vh;
-  position:relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 #large {height: 300vh;
 	position: relative;}
-
 
 /*------------------------------font styles---------------------------*/
 body { font-family: Raleway; font-size:20px; color:white; font-weight:300;}
@@ -34,40 +40,54 @@ h2 {font-family: Raleway;
 	text-align: center;}
 	
 
+/*----------------styles and arrivals-----------------*/
 
-/*---------------title--------------------*/
 .title {
 	  position:absolute;
-      left:50%;
-      top:50%;
-	  transform: translate(-50%, -50%);
+	  left: 300px;
+	  top: 300px;
+	  margin: 0 auto;
       opacity:0;}
 	  	  
 .title-arrived {
 	opacity:1;
- 	transition: opacity 3s ease-in-out;}
-
-
+ 	transition: opacity 3s ease-in-out;} 
 	
-/*---------------page one (into, white)--------------------*/
-.by-now {
+		
+.pull-quote1 {
   	  position:absolute;
-        left:50%;
-		color: #3f90a5;
-        top:50%;
-  	  transform: translate(-50%, -50%);
-        opacity:0;}
-	  	  
-.by-now-arrived {
+	  left: 160px;
+	  right: 160px;
+	  top: 300px;
+	  opacity:0;
+}	
+
+.pull-quote1-arrived {
   	opacity:1;
    	transition: opacity 2s ease-in-out;}
 	
+.blue-text {color: #3f90a5;}
+.white-text {color: white;}		
 
+.pull-quote2 {
+  	  position:absolute;
+	  left: 80px;
+	  right: 80px;
+	  top: 220px;
+	  opacity:0;}	
+	  
+.pull-quote2-arrived {
+    	opacity:1;
+     	transition: opacity 2s ease-in-out;}	
+	
+
+	
 /*---------------page two (shower, blue)--------------------*/
 .dont-leave {
-	  position:relative;
-	  width:30%;
-	  padding:50vh 0 0 10vw;
+	  position:absolute;
+	  width:40%;
+	  left: 50px;
+	  top: 350px;
 	  line-height:1.5em;
 	  transform: translate(-200vw, 0);
 	  transition: transform 2s ease-out;  }	
@@ -85,15 +105,14 @@ h2 {font-family: Raleway;
 .img1-arriving{
     transform: translate(0, 0);
     position:absolute;
-	right:-5%;
+	right: -20px;
     top:5px;}
 
 .showerWater{
 	transform: translate(100vw, 0);
     position:absolute;
 	width:175px;
- 	right:-5%;
-	right:180px;
+ 	right:220px;
     top:345px;
 	opacity:0;
 	transition: opacity 2s ease-out;
@@ -112,19 +131,6 @@ h2 {font-family: Raleway;
        100% {transform: translate(0, 0);}
  } 
 		
- /*---------------page three (text, dk.blue)--------------------*/
-
- .but-what {
-   	  position:absolute;
-         left:50%;
- 		color: white;
-         top:50%;
-   	  transform: translate(-50%, -50%);
-         opacity:0;}
-	  	  
- .but-what-arrived {
-   	opacity:1;
-    	transition: opacity 2s ease-in-out;}
 		
 
 /*---------------page four (wateringcan, green)--------------------*/
@@ -165,18 +171,6 @@ h2 {font-family: Raleway;
 	left:7%;
     top:300px;}	
 
-/*---------------page five (by being...blue)--------------------*/
-.by-being {
-  	  position:absolute;
-        left:50%;
-		color: white;
-        top:50%;
-  	  transform: translate(-50%, -50%);
-        opacity:0;}
-	  	  
-.by-being-arrived {
-  	opacity:1;
-   	transition: opacity 2s ease-in-out;} 
 	
 
 /*---------------page six (footprints, white)--------------------*/
@@ -264,18 +258,6 @@ h2 {font-family: Raleway;
 	margin-right: 30px;
     top:330px;}
 	
-/*---------------page eight (but theres...blue)--------------------*/
-.but-theres {
-  	  position:absolute;
-        left:50%;
-		color: white;
-        top:50%;
-  	  transform: translate(-50%, -50%);
-        opacity:0;}
-	  	  
-.but-theres-arrived {
-  	opacity:1;
-   	transition: opacity 2s ease-in-out;} 
 
 /*---------------page nine (everyday green)--------------------*/
 
@@ -402,13 +384,25 @@ transition-delay:1s;}
 }	
 	
 .coffee-graph1-arrived{
-		opacity:1;}
+		opacity:1;} 
+
+.the-incredible {
+ 	  position:absolute;
+	  left: 160px;
+	  right: 160px;
+	  top: 300px;
+	  color: white;
+	  opacity:0;}
+	  
+.the-incredible-arrived {
+    opacity:1;
+	transition: opacity 2s ease-in-out;} 		
 		
 /*---------------page fifteen (coffee, green)--------------------*/
 .depending-on {
 	  position:relative;
 	  width:30%;
-    color: #3f90a5;
+   	  color: #3f90a5;
 	  padding:50vh 0 0 10vw;
 	  line-height:1.5em;
 	  opacity:0;
@@ -474,6 +468,8 @@ opacity:1;}
 	margin-left: 15px;
 	z-index:0;
     bottom:230px;}
+
+
 
 
 		

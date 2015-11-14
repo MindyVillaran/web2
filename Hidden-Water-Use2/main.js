@@ -1,16 +1,21 @@
 $(".scroller").scrollFlight();
 
-//---------------title--------------------
+//----------------type-styles--------------------
 
 $(".title").on("arrived",function() {
   $(".title").addClass("title-arrived");
 });
 
-//---------------page one----------------
-
-$(".by-now").on("arrived",function() {
-  $(this).addClass("by-now-arrived");
+$(".pull-quote1").on("arrived",function() {
+  $(this).addClass("pull-quote1-arrived");
 }); 
+
+$(".pull-quote2").on("arrived",function() {
+  $(this).addClass("pull-quote2-arrived");
+}); 
+
+
+
 
 //---------------page two----------------
 
