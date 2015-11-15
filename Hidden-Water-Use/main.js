@@ -51,63 +51,87 @@ $("#page1").on("rearriving",function(e) {
 	$(".steam").unaffix();
 });
 
-$("#page2b").on("departing",function(e) {
+$("#page3").on("arriving",function(e) {
     $(".img1").release();
 	$(".showerWater").release();
 	$(".steam").release();
 });
+
+$("#page2b").on("departed",function(e) {
+    $(".img1").unaffix();
+	$(".showerWater").unaffix();
+	$(".steam").unaffix();
+});
+
 //---------------page four-----------------
 
-$(".watering-can").on("arriving",function() {
+$(".watering-can").on("arrived",function() {
   $(this).addClass("watering-can-arriving");
+  $(".water-drop1").addClass("water-drop1-arrived");
 }); 
 
-$(".water-drop").on("arrived",function() {
-  $(this).addClass("water-drop-arrived");
+//---------------page nine-----------------
+
+$(".droplets").on("arrived",function() {
+  $(this).addClass("droplets-arrived");
 }); 
-
-
-//---------------page six----------------
-
-$(".footleft").on("arriving",function() {
-  $(this).addClass("footleft-arriving");
-}); 
-
-$(".footright").on("arrived",function() {
-  $(this).addClass("footright-arrived");
-}); 
-
-//---------------page seven----------------
-
-$(".footleft-US").on("arriving",function() {
-  $(this).addClass("footleft-US-arriving");
-}); 
-
-$(".footright-UK").on("arrived",function() {
-  $(this).addClass("footright-UK-arrived");
-}); 
-
 
 //---------------page ten-----------------
 
 
+$("#page5").on("departed",function(e) {
+    $(".water-drop2").affix();
+});
+
+$("#page5").on("rearriving",function(e) {
+    $(".water-drop2").unaffix();
+});
+
 $("#page9").on("departed",function(e) {
-    $(".shirt").affix();
+    $(".factory").affix();
+	$(".smoke").affix().addClass(".smoke-arrived");
 });
 
 $("#page9").on("rearriving",function(e) {
-    $(".shirt").unaffix();
+    $(".factory").unaffix();
+	$(".smoke").unaffix();
 });
 
-$("#page11").on("arrived",function(e) {
-    $(".shirt").release();
+$("#page10").on("departing",function(e) {
+    $(".shirt").addClass("shirt-arriving");
+	$(".shirt").affix();
 });
 
+$("#page10").on("rearriving",function(e) {
+	$(".shirt").unaffix();
+    $(".shirt").removeClass("shirt-arriving");
+});
 
-//$("#page10c").on("departed",function(e) {
-  //  $(".shirt").unaffix();
-  //});
+$("#page11").on("arriving",function(e) {
+    $(".factory").release();
+	$(".smoke").release();
+	$(".water-drop2").release();
+	$(".shirt").release();
+});
 
+$("#page10c").on("departed",function(e) {
+    $(".factory").unaffix();
+	$(".smoke").unaffix();
+	$(".water-drop2").unaffix();
+	$(".shirt").unaffix();
+});
+
+$("#page3").on("arriving",function(e) {
+    $(".img1").release();
+	$(".showerWater").release();
+	$(".steam").release();
+});
+
+$("#page2b").on("departed",function(e) {
+    $(".img1").unaffix();
+	$(".showerWater").unaffix();
+	$(".steam").unaffix();
+});
 
 //---------------page eleven----------------
 

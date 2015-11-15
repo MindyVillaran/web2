@@ -6,7 +6,7 @@
 
 /*------------------------------dividers/sections---------------------------*/
 .blue {background-color:  #53c7d3;}
-.white {background-color:  white;}
+.white {background-color:  #ccffff;}
 .green {background-color: #95e597;}
 .dk-blue {background-color: #3f90a5;}
 
@@ -27,6 +27,8 @@
 	position: relative;} 
 
 #page2b	{height: 110vh;}
+
+#page10c {height: 110vh;}
 
 /*------------------------------font styles---------------------------*/
 body { font-family: Raleway; 
@@ -93,10 +95,8 @@ h2 {font-family: Raleway;
 	  transition: transform 2s ease-out;  }	
 	
 .left-arrived {
-	transform: translate(0,0);
-}
+	transform: translate(0,0);}
 	
-		
 .right {
 	  position:absolute;
 	  width:40%;
@@ -113,7 +113,7 @@ h2 {font-family: Raleway;
 .staticRight {	  
 	position:absolute;
 	  width:40%;
-	  top: 350px;
+	  top: 200px;
 	  right: 0px;
 	  line-height:1.5em;}
 	  
@@ -205,35 +205,35 @@ h2 {font-family: Raleway;
     position:absolute;
 	width:350px;
 	height:350px;
-	left:10%;
-    top:40px;}  
- /*	
-.water-drop {
-  transform: translate(-100vw, 0);
-  transition: transform 1s ease-out;}
-
-.water-drop-arrived{
-    transform: translate(0, 0);
-    position:absolute;
-	width:120px;
-	height:120px;
-	left:7%;
-    top:300px;}	
-*/
-
- .water-drop {
+	left:35px;
+    top:60px;
+	-webkit-animation: tip 2s ease infinite;
+	animation-delay: 2s;}  
+	
+@-webkit-keyframes tip {
+       50% {transform: rotate(-40deg)};
+       100% {transform: rotate(0deg)}
+   } 
+	
+	
+.water-drop1 {
    position:absolute;
    width:60px;
-   height:50px;
-   top:100px;
-   left:0px;
- }
-
- .transition-water-drop {
-   transition:transform 1s ease 0s;
+   top:330px;
+   left:40px;
+   opacity: 0;
+   transition: opacity 1s ease-out;
+   transition-delay: 4s;}	
    
- }	
 
+.water-drop1-arrived{
+	opacity: 1;
+	-webkit-animation: drop 2s ease infinite;
+	animation-delay: 2.5s;}	
+
+@-webkit-keyframes drop {
+       0% {transform: translate(0, 0vh);}
+       100% {transform: translate(0, 20vh); opacity:0;}} 
 
 
 /*---------------page nine (everyday green)--------------------*/
@@ -241,24 +241,60 @@ h2 {font-family: Raleway;
 .droplets {
 	width: 100%;
 	position:absolute ;
-} 
-
+	transform: translate(0, -30vh);
+	transition: transform 1s ease-out;  }	
+	
+.droplets-arrived {
+	top:70px;
+	transform: translate(0,0);	}
+	
+	 
 
 /*---------------page ten (factory, blue)--------------------*/
 
-#white-page {position: relative;}
-
-#green-page {position: relative;}
-
-#large {position: relative;}
-
 .shirt{
 	position: absolute;
-	width:150px;
-	height:150px;
-	left:200px;
-    top:60px;
+	width:100px;
+	left:60px;
+    top:550px;
+	transform: translate(0, -50px);
+	transition: transform 1s ease;
+	opacity: 0;
 }
+
+.shirt-arriving {opacity: 1;
+	transform: translate(0,0);
+}
+
+.water-drop2 {	
+	position: absolute;
+	width:60px;
+	left:60px;
+    top:260px;}
+
+.factory {	
+	position: absolute;
+	width:400px;
+	left:0px;
+    top:200px;
+	z-index: 10;} 
+	
+.smoke {	
+	position: absolute;
+	width:300px;
+	left:220px;
+    top:80px;
+	z-index: 10;}
+
+.smoke {	
+	-webkit-animation: smokemove .7s ease infinite;
+	animation-delay: 1s;}	
+
+@-webkit-keyframes smokemove {
+       0% {transform: translate(0, 0);}
+       50% {transform: translate(.3vw, -.1vh) scale(1.01);}
+       100% {transform: translate(0, 0);}
+   } 
 
 
 	
@@ -310,18 +346,7 @@ transition-delay:1s;}
 	
 .coffee-graph1-arrived{
 		opacity:1;} 
-
-.the-incredible {
- 	  position:absolute;
-	  left: 160px;
-	  right: 160px;
-	  top: 300px;
-	  color: white;
-	  opacity:0;}
-	  
-.the-incredible-arrived {
-    opacity:1;
-	transition: opacity 2s ease-in-out;} 		
+	
 		
 /*---------------page fifteen (coffee, green)--------------------*/
 
