@@ -2,14 +2,13 @@
 <!-- Generator: Adobe Illustrator 16.0.4, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="486px" height="311px" viewBox="-70.406 162.938 486 311" enable-background="new -70.406 162.938 486 311"
-	 xml:space="preserve">
+	 width="486px" height="311px" viewBox="0 0 486 311" enable-background="new 0 0 486 311" xml:space="preserve">
 <g>
-	<path fill="#3F90A5" d="M-56.99,266.616c0,0,62.491-20.565,126.141-22.831c63.65-2.265,101.422,6.957,101.422,6.957l-14.022,52.479
-		c0,0-44.496-29.521-78.701-31.177c-34.207-1.657-129.312,16.856-129.312,16.856L-56.99,266.616z"/>
-	
-		<rect x="153.314" y="197.691" transform="matrix(0.9706 -0.2407 0.2407 0.9706 -69.5601 68.581)" fill="#3F90A5" width="185.332" height="242.735"/>
-	
-		<ellipse transform="matrix(0.9706 -0.2407 0.2407 0.9706 -59.0705 91.6077)" fill="none" stroke="#3F90A5" stroke-width="17.2211" stroke-miterlimit="10" cx="345.486" cy="287.625" rx="52.483" ry="78.725"/>
+	<polygon fill="#3F90A5" points="186.167,54.667 336.167,16.667 418.167,246.667 226.167,294 	"/>
+	<path fill="none" stroke="#3F90A5" stroke-width="22.5519" stroke-miterlimit="10" d="M416.803,52.321
+		c65.093,31.265,5.775,149.174-23.064,156.325s-51.874-35.415-62.602-78.675C320.408,86.714,365.036,26.182,416.803,52.321z"/>
 </g>
+<rect x="54.524" y="180.453" transform="matrix(0.8827 0.4699 -0.4699 0.8827 111.3306 -52.4104)" fill="#3F90A5" width="212.278" height="32.756"/>
+<rect x="111.779" y="146.922" transform="matrix(0.9713 -0.2379 0.2379 0.9713 -30.9146 45.112)" fill="#3F90A5" width="119.364" height="7.452"/>
+<polygon fill="#3F90A5" points="19.508,171.027 62.521,94.858 77.167,135 61.167,162 "/>
 </svg>
