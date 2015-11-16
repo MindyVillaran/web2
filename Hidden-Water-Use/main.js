@@ -173,7 +173,7 @@ $("#paper-bubble").hover(function(e){
 
 //---------------page fourteen----------------
 
-$(".coffee").on("arriving",function() {
+$(".coffee").on("arrived",function() {
   $(this).addClass("coffee-arrived");
 }); 
 
