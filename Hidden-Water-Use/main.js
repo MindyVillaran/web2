@@ -135,9 +135,41 @@ $("#page2b").on("departed",function(e) {
 
 //---------------page eleven----------------
 
-$(".bubbles").on("arrived",function() {
-  $(this).addClass("bubbles-arrived");
+$(".bubbles-container").on("arriving",function() {
+  $(this).addClass("bubbles-container-arrived");
 }); 
+
+$(".bubblePage").on("arrived",function() {
+  $(this).addClass("bubblePage-arrived");
+}); 
+
+$("#shirt-bubble").hover(function(e){ 
+	console.log("hover")
+  $("#shirtCircleText").text("400 gallons of water to grow the cotton needed for one shirt");
+},function(e){ 
+  $("#shirtCircleText").empty();
+})
+
+$("#tire-bubble").hover(function(e){ 
+	console.log("hover")
+  $("#tireCircleText").text("2000+ gallons of water for 1 tire");
+},function(e){ 
+  $("#tireCircleText").empty();
+})
+
+$("#paint-bubble").hover(function(e){ 
+	console.log("hover")
+  $("#paintCircleText").text("13 gallons of water for 1 gallon of paint");
+},function(e){ 
+  $("#paintCircleText").empty();
+})
+
+$("#paper-bubble").hover(function(e){ 
+	console.log("hover")
+  $("#paperCircleText").text("1,321 gallons for 500 sheets of paper");
+},function(e){ 
+  $("#paperCircleText").empty();
+})
 
 //---------------page fourteen----------------
 

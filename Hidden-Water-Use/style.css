@@ -132,11 +132,11 @@ h2 {font-family: Raleway;
 	  line-height:1.5em;
 	  transform: translate(200vw, 0);
 	  transition: transform 2s ease-out;  }	
-	
-.center-arrived {
-	transform: translate(0,0);
-}  
-	
+
+	  .center-arrived {
+	  	transform: translate(0,0);
+	  }  
+	  
 
 	
 /*----------------------------------------page two (shower, blue)---------------------------------*/
@@ -242,11 +242,11 @@ h2 {font-family: Raleway;
 	width: 100%;
 	position:absolute ;
 	transform: translate(0, -30vh);
-	transition: transform 1s ease-out;  }	
+	transition: transform 1s ease-out; }	
 	
 .droplets-arrived {
 	top:70px;
-	transform: translate(0,0);	}
+	transform: translate(0,0);}
 	
 	 
 
@@ -300,26 +300,60 @@ h2 {font-family: Raleway;
 	
 /*---------------page twelve (everyday green)--------------------*/
 
-.bubbles {
-	width:65%;
+
+/*---text for that page----*/
+.bubblePage {
+   	  position:absolute;
+   	  width:600px;
+   	  top: 150px;
+   	  right: 150px;
+   	  left: 150px;
+   	  text-align:center;
+   	  line-height:1.5em;
+   	  transform: translate(200vw, 0);
+   	  transition: transform 2s ease-out;  }
+	
+.bubblePage-arrived {
+   	transform: translate(0,0);
+   }  
+   
+.bubbles-container {
+	width:800px;
+    left:50px;
+	right:50px;
+    top:300px;
+    position:absolute;
 	opacity: 0;
-	transition: opacity 3s ease;
-    transition-delay: 2s;
+	transition: opacity 1s ease;
 }
 
-.bubbles-arrived{
-	opacity: 1;
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform: translate(-50%, -50%);}
+.bubbles-container-arrived{
+	opacity: 1;}
+
+
 	
-.circle {
+.bubble-holder {
+	position: relative;
 	width: 21%;
-	padding:8px ;}
-		
+	padding:13px ;
+	float: left;}
+
+.circle {
+	width: 95%}
+	
 .circle:hover {
-		transform: scale(1.2);}
+	transform: scale(1.2);}
+	
+.caption {
+	position:absolute; 
+	top:200px;
+	left:35px;
+	width: 120px;
+	text-align: center;
+	font-size: 15px;
+	line-height:1em;}
+	
+	
 		
 /*---------------page fourteen (coffee, green)--------------------*/
 .coffee {
