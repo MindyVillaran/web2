@@ -27,7 +27,7 @@ $(".center").on("arrived",function() {
 }); 
 //---------------page two----------------
 
-$(".img1").on("arrived",function() {
+$(".img1").on("arriving",function() {
   $(this).addClass("img1-arrived");
 }); 
 
