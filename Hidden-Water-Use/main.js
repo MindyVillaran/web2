@@ -27,8 +27,8 @@ $(".center").on("arrived",function() {
 }); 
 //---------------page two----------------
 
-$(".img1").on("arriving",function() {
-  $(this).addClass("img1-arriving");
+$(".img1").on("arrived",function() {
+  $(this).addClass("img1-arrived");
 }); 
 
 $(".showerWater").on("arrived",function() {
@@ -135,7 +135,7 @@ $("#page2b").on("departed",function(e) {
 
 //---------------page eleven----------------
 
-$(".bubbles-container").on("arriving",function() {
+$(".bubbles-container").on("arrived",function() {
   $(this).addClass("bubbles-container-arrived");
 }); 
 
@@ -191,8 +191,8 @@ $(".coffee-graph2").on("arrived",function() {
 //---------------page sixteen-----------------
 
 
-$(".pot").on("arriving",function() {
-  $(this).addClass("pot-arriving");
+$(".pot").on("arrived",function() {
+  $(this).addClass("pot-arrived");
 }); 
 
 

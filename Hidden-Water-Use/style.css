@@ -12,9 +12,6 @@
 
 #title {background-image: url("images/sea1-01.svg");}
 
-
-
-
 .parallax-image {	
   background-size:cover;
   background-position:50% 50%;
@@ -22,7 +19,6 @@
   background-attachment:fixed;
   width:100%;
   height:100vh;}
-
 
 .large {height: 300vh;}
 
@@ -57,10 +53,9 @@ h1 {font-family: Raleway;
 h2 {font-family: Raleway; 
 	font-size:35px; 
 	font-weight:300;
-	text-align: center;}
-	
+	text-align: center;}	
 
-/*-----------styles and arrivals-------------*/
+/*------styles and arrivals------*/
 
 .title {
 	  position:absolute;
@@ -73,7 +68,6 @@ h2 {font-family: Raleway;
 .title-arrived {
 	opacity:1;
  	transition: opacity 3s ease-in-out;} 
-	
 		
 .pull-quote1 {
   	  position:absolute;
@@ -161,7 +155,7 @@ h2 {font-family: Raleway;
   transform: translate(100vw, 0);
   transition: transform 1s ease-out;}
 
-.img1-arriving{
+.img1-arrived{
     transform: translate(0, 0);
     position:absolute;
 	right: -20px;
@@ -338,14 +332,12 @@ h2 {font-family: Raleway;
     top:300px;
     position:absolute;
 	opacity: 0;
-	transition: opacity 1s ease;
+	transition: opacity 3s ease;
 }
 
 .bubbles-container-arrived{
 	opacity: 1;}
 
-
-	
 .bubble-holder {
 	position: relative;
 	width: 21%;
@@ -366,8 +358,6 @@ h2 {font-family: Raleway;
 	text-align: center;
 	font-size: 15px;
 	line-height:1em;}
-	
-	
 		
 /*---------------page fourteen (coffee, green)--------------------*/
 .coffee {
@@ -396,7 +386,7 @@ h2 {font-family: Raleway;
  	right:20%;
     top:345px;
 	opacity:0;
-	transition: opacity 2s ease-out;	
+	transition: opacity 1s ease-out;	
 	transition-delay: 1s;
 }	
 	
@@ -413,8 +403,7 @@ h2 {font-family: Raleway;
  	right:20%;
     top:145px;
 	opacity:0;
-	transition: opacity 2s ease-out;	
-	transition-delay: .5s;
+	transition: opacity 1s ease-out;	
 }	
 	
 .coffee-graph2-arrived{
@@ -424,34 +413,35 @@ h2 {font-family: Raleway;
 /*---------------page sixteen (leaves, blue)--------------------*/
  
 
-.pot {
-  transform: translate(-100vw, 0);
-  transition: transform 1s ease-out;}
-
-.pot-arriving{
-    transform: translate(0, 0);
-    position:absolute;
+.pot {position:absolute;
 	width:350px;
-	left:10%;
-	margin-left:15px;
-    bottom:40px;
+	left:20px;
+    top:260px;
 	z-index:1;
+	transform: translate(-100vw, 0);
+	transition: transform 1s ease-out;}
+
+.pot-arrived {
+    transform: translate(0, 0);
 }
 	
 .leaves {
-  transform: translate(7vw, 0);
   position:absolute;
   opacity:0;
+  width:250px;
+  left:80px;
+  z-index:0;
+  top:150px;
+  
+  transform: translate(0, 10vh);
   transition: transform 1s ease-out, opacity .5s ease-out;
   transition-delay:1.5s;}
 
 .leaves-arrived{
-    transform: translate(7vw, -10vh);
+    transform: translate(0, 0);
     opacity:1;
-	width:250px;
-	left:10%;
-	z-index:0;
-    bottom:230px;}
+	
+}
 
 
 
