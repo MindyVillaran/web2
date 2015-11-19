@@ -120,18 +120,7 @@ $("#page10c").on("departed",function(e) {
 	$(".water-drop2").unaffix();
 	$(".shirt").unaffix();
 });
-
-$("#page3").on("arriving",function(e) {
-    $(".img1").release();
-	$(".showerWater").release();
-	$(".steam").release();
-});
-
-$("#page2b").on("departed",function(e) {
-    $(".img1").unaffix();
-	$(".showerWater").unaffix();
-	$(".steam").unaffix();
-});
+ 
 
 //---------------page eleven----------------
 

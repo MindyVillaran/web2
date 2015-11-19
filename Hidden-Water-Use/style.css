@@ -10,6 +10,7 @@
 .green {background-color: #95e597;}
 .dk-blue {background-color: #3f90a5;}
 
+
 #title {background-image: url("images/sea1-01.svg");}
 
 .parallax-image {	
@@ -60,7 +61,7 @@ h2 {font-family: Raleway;
 	  position:absolute;
 	  text-align: center;
 	  left: 300px;
-	  top: 300px;
+	  top: 40vh;
 	  margin: 0 auto;
       opacity:0;}
 	  	  
@@ -72,7 +73,7 @@ h2 {font-family: Raleway;
   	  position:absolute;
 	  left: 160px;
 	  right: 160px;
-	  top: 300px;
+	  top: 40vh;
 	  opacity:0;
 }	
 
@@ -87,7 +88,7 @@ h2 {font-family: Raleway;
   	  position:absolute;
 	  left: 80px;
 	  right: 80px;
-	  top: 220px;
+	  top: 35vh;
 	  opacity:0;}	
 	  
 .pull-quote2-arrived {
@@ -248,11 +249,13 @@ h2 {font-family: Raleway;
 .droplets {
 	width: 100%;
 	position:absolute ;
+	opacity: 0;
 	transform: translate(0, -30vh);
-	transition: transform 1s ease-out; }	
+	transition: transform 2s ease-out, opacity 1s ease-out}	
 	
 .droplets-arrived {
 	top:70px;
+	opacity: 1;
 	transform: translate(0,0);}
 	
 	 
