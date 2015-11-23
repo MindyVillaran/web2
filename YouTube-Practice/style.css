@@ -1,5 +1,5 @@
 h2 { font-family: Montserrat; 
-	font-size:20px; 
+	font-size:15px; 
 	color:black
 ; 
 	text-align:center;}
@@ -14,7 +14,7 @@ img {width: 100%;
 
 .container {float:left;
 	width: 25%;
-margin: 20px 8px 0px 8px}
+margin: 30px}
 
 .overlay {background-color: black;
 	position:fixed;
