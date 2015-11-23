@@ -185,7 +185,7 @@ h2 {font-family: Raleway;
     position:absolute;
 	width:300px;
  	right:200px;
-    top:500px;
+    top:470px;
 	opacity:0;
 	transition: opacity 2s ease-out;
 	transition-delay: 1s;}	

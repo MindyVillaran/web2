@@ -95,6 +95,8 @@ $("#page9").on("departed",function(e) {
 $("#page9").on("rearriving",function(e) {
     $(".factory").unaffix();
 	$(".smoke").unaffix();
+	$(".shirt").unaffix();
+    $(".shirt").removeClass("shirt-arriving");
 });
 
 $("#page10").on("departing",function(e) {
