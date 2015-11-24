@@ -118,12 +118,12 @@ a{text-decoration:none;}
 	overflow:hidden;	
 }
 
-.image {	
+img {	
 	position:absolute;
 	overflow:hidden;
     height:110%;
 }
-.color-box {
+.imgOvelay {
 	position:absolute;
 	background-color:white;
 	opacity:0;
@@ -141,7 +141,7 @@ a{text-decoration:none;}
 	text-align:center;
 }
 
-.box:hover .color-box {
+.box:hover .imgOvelay {
 	margin-bottom:0;
 	opacity:.8;}
 

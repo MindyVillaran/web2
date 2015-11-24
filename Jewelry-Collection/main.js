@@ -1,10 +1,11 @@
-var $container = $(".container");
+var $container = $("#grid-container");  
 
-var $box = $("<div class='box'>");
+var $box = $("<div class='box'>"); 
 
-var $heading = $("<h2>").text(Big Fancy Title);
-var $img = $("<img>").attr("src","images/img1.png");
+var $title = $("<h2>").text("Big Fancy Title");  //create new variables 
+var $img = $("<img>").attr("src","images/img13.png");  //and add in static values
 
-$box.append($heading).append($img).append($caption);
 
-$container.append($box);
+$box.append($img).append($title);  //append box itself w new variables
+
+$container.append($box); 
