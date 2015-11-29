@@ -51,12 +51,18 @@ table {
 
 @font-face {
     font-family: Ostrich;
-    src: url(ostrich-sans/ostrich-regular.ttf);}
+    src: url(ostrich-sans/ostrich-regular.ttf);} 
 
-h1 {font: 28px Ostrich;
+@font-face {
+    font-family: Ostrich-Medium;
+    src: url(ostrich-sans/ostrich-rounded.ttf);}
+
+
+h1 {font: 32px Ostrich-Medium;
+	color: #00bfa7;
     letter-spacing: 1px;
 	position: absolute;
-	left: 50px;
+	left: 40px;
 	text-align:center;
 	top: 40px;}
 
@@ -66,7 +72,8 @@ h1 {font: 28px Ostrich;
 
 h2 {font: 23px Ostrich;
     letter-spacing: 1px;
-	margin-bottom: 3px;}
+	margin-bottom: 2px;
+	color:#00bfa7;}
 
 body{
 	margin-left:auto;
@@ -75,7 +82,6 @@ body{
 	line-height:1.5;}
 
 #all-filters { padding: 30px 0px 0px 0px;
-	border-top: 1px solid gray;
 	width: 80%;
 	margin: 90px 0px 0px 40px;}
 
@@ -94,7 +100,7 @@ a{text-decoration:none;}
 	
 #search-bar{
 	background-color: white;
-	border: 1px solid gray;
+	border: 1px solid #a6a6a6;
 	width: 76%;
 	padding: 6px 0px 6px 10px;
 	border-radius: 6px;
@@ -102,9 +108,16 @@ a{text-decoration:none;}
 
 #search {font-size:12px;}
 
-#Sort-By {border-bottom: 1px solid gray;
+#Sort-By {border-bottom: 1px solid #cccccc;
 	padding-bottom: 20px;
 	margin-bottom: 20px;}	
+	
+.logo {width: 170px;
+	height: 98px;
+	left:30px;
+	top:10px;
+	position: absolute;}
+		
 
 
 /*--------------- image thumbnails-------------*/
@@ -158,12 +171,12 @@ img {
 	}
 	
 	#sidebar {
-		width:30%;}
+		width:27%;}
 		
 		#title{
 			font-size:1.6em;}
 		
-		#image-section {width: 70%;
+		#image-section {width: 73%;
 			float:right;}		}
 
 
@@ -178,16 +191,13 @@ img {
 		overflow:hidden;}
 		
 		#sidebar {
-			width:40%;}
-		
-		h1{
-			font-size:1.4em;}	
+			width:37%;}
 		
 		.title h2{
 		font-size:1em;
 		}
 		
-		#image-section {width: 60%;
+		#image-section {width: 63%;
 			float:right;}	} 
 			
 @media screen and (max-width:550px) { 
@@ -202,8 +212,6 @@ img {
 		#sidebar {
 			width:45%;}
 		
-		h1{
-			font-size:1.4em;}	
 		
 		.title h2{
 		font-size:1em;
