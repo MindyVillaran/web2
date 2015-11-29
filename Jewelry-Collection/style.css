@@ -147,8 +147,7 @@ img {
 
 
 
-/*---------------------- media queries --------------------*/
-
+/*---------------------- media queries  --------------------*/
 @media screen and (max-width:1050px) { 
 	.box {
 		width:33%;
@@ -212,6 +211,7 @@ img {
 		
 		#image-section {width: 55%;
 			float:right;}	}
+
 
 
 
