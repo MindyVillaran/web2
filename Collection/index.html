@@ -113,11 +113,13 @@ function callback(data) {
     show: function($elem) { $elem.fadeIn(500); }, */
   });
 
+
   $(".category").on("click",function(e) {   //click handler for any button w class of category
       var category = $(this).data("category");  //retrieving category from filter button
       myCollection.filtered("category",category);  //filtering the items in myCollection that have that same category
-	  $("#filter-bar button.category").removeClass("selected");   //highlighting button
-   	 $(this).addClass("selected"); //highlighting button by adding class of selected
+	  
+	 $("#filter-bar button.category").removeClass("selected");   //highlighting button
+   	$(this).addClass("selected"); //highlighting button by adding class of selected
   });
 
 
@@ -140,7 +142,7 @@ function callback(data) {
 
 }
 
-  Tabletop.init( { key: "https://docs.google.com/spreadsheets/d/1uve3-Viu9SlwqwBR3__BGc6b18uNmNEW1RppZVq0FWs/pubhtml?gid=0&single=true",
+  Tabletop.init( { key: "https://docs.google.com/spreadsheets/d/1KkaBhRnMNtlLtNJ2xKtC07192AAv0XOa-RFoFxxhhAs/edit#gid=0",
                    callback: callback,
                    simpleSheet: true } )
 
