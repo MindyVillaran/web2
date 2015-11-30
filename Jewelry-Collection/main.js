@@ -1,11 +1,29 @@
 var $container = $("#grid-container");  
 
 var $box = $("<div class='box'>"); 
+var $img = $("<img class='image'>").attr("src","images/img15.JPG");  //and add in static values
+var $overlay = $("<div class='imgOvelay'>")
+var $h2 = $("<h2>");  //create new variables 
+var $title = $("<span class='title'>").text("Fancy Title");  //create new variables 
 
-var $title = $("<h2>").text("Big Fancy Title");  //create new variables 
-var $img = $("<img>").attr("src","images/img13.png");  //and add in static values
+
+$h2.append($title)
+$overlay.append($h2)
+$box.append($img, $overlay)
+$container.append($box)
 
 
-$box.append($img).append($title);  //append box itself w new variables
 
-$container.append($box); 
+var $container = $("#grid-container");  
+
+var $box = $("<div class='box'>"); 
+var $img = $("<img class='image'>").attr("src","images/img16.JPG");  //and add in static values
+var $overlay = $("<div class='imgOvelay'>")
+var $h2 = $("<h2>");  //create new variables 
+var $title = $("<span class='title'>").text("Fancy Title");  //create new variables 
+
+
+$h2.append($title)
+$overlay.append($h2)
+$box.append($img, $overlay)
+$container.append($box)

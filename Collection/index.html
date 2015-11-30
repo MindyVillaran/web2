@@ -1,0 +1,151 @@
+
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Collection Example</title>
+  <script src='https://code.jquery.com/jquery-2.1.3.min.js'></script>
+  <script src='http://cykod.github.io/Collection.js/packery.pkgd.min.js'></script>
+  <script src='http://cykod.github.io/Collection.js/tabletop.js'></script>
+  <script src='http://cykod.github.io/Collection.js/collection.js'></script>
+  <link type='text/css' rel='stylesheet' href='style.css' />
+</head>
+<body>
+
+<div id='filter-bar-wrapper'>
+  <div id='filter-bar'>
+    <input type='text' id='search' placeholder='search'/>
+    <button data-category=""      class='category selected' id="all-button">All</button>
+    <button data-category="BLUE"  class='category'>Blue</button>
+    <button data-category="red"   class='category'>Red</button>
+    <button data-category="purple"   class='category'>Purple</button>
+    <button data-order="category"    class="order">Order by Color</button>
+    <button data-order="title"    class="order">Order by Title</button>
+  </div>
+</div>
+
+<ul class='collection'>
+ 
+
+
+</ul>
+
+
+<div class='overlay'></div> 
+<div class='modal'></div>
+
+
+<script>
+
+function showModal(item) {   //creating a function to show the modal
+	$(".modal").empty();  //emptying the modal before each use
+   
+   var $h1 = $("<h1>").text(item.Name);  //defining what the modal will contain
+   var $img = $("<img>").attr("src",item.Image);
+   var $p = $("<p>").text(item.Description);
+
+   $(".modal").append($h1,$img,$p);  //appending the modal
+   
+   $(".overlay").show(); //showing the modal and overlay
+   $(".modal").show();
+
+}
+
+function hideModal() { //hide the modal and overlay
+  $(".overlay").hide();
+  $(".modal").hide();
+}
+
+
+
+
+function addItem(item) {  //creating a function to add items
+	var $li = $("<li>").addClass("item").addClass(item.Color.toLowerCase());  //create li and add class "item." Also adding a class of the item's color
+
+	$li.attr("data-category",item.Color);  // Adding/Setting the attribute of data category to the item's color
+
+  var $h2 = $("<h2 class='name'>").text(item.Name); 
+  var $p = $("<p class='description'>").text(item.Description);
+
+  $li.append($h2,$p);  //adding items to the $li variable
+
+  $li.on("click",function(e) {
+      showModal(item);
+  });
+
+  $(".collection").append($li);   //adding the $li to the .collection list
+};
+
+function addItems(data) {
+  for(var i=0;i<data.length;i++) {
+    addItem(data[i]);
+  }
+}
+
+
+function callback(data) { 
+
+  addItems(data);
+
+ /*var $container = $('.collection');
+  $container.packery({
+    itemSelector: '.item',
+    gutter: 10,
+  });
+ */
+
+  var myCollection = $(".item").collection({
+    filters: { 
+      "title": "h2",
+      "category": "[data-category]"
+    },
+
+/*
+    update: function() {              //packery
+      $container.packery(); 
+      setTimeout(function() { $container.packery()},600);
+    },
+    ordered: function() {
+      $container.packery('reloadItems');
+      console.log("Whoa");
+    },
+    hide: function($elem) { $elem.hide(); },
+    show: function($elem) { $elem.fadeIn(500); }, */
+  });
+
+  $(".category").on("click",function(e) {   //click handler for any button w class of category
+      var category = $(this).data("category");  //retrieving category from filter button
+      myCollection.filtered("category",category);  //filtering the items in myCollection that have that same category
+	  $("#filter-bar button.category").removeClass("selected");   //highlighting button
+   	 $(this).addClass("selected"); //highlighting button by adding class of selected
+  });
+
+
+  $(".order").on("click",function(e) {
+      var order = $(this).data("order");
+      $("#filter-bar button.category").removeClass("selected");
+      $(this).addClass("selected");
+      myCollection.ordered(order);
+  });
+
+
+
+  $("#search").on("change keyup",function(e) {
+      myCollection.filtered("title", $(this).val());
+  });
+
+  $(".overlay").on("click",function(e) {
+      hideModal();
+  });
+
+}
+
+  Tabletop.init( { key: "https://docs.google.com/spreadsheets/d/1uve3-Viu9SlwqwBR3__BGc6b18uNmNEW1RppZVq0FWs/pubhtml?gid=0&single=true",
+                   callback: callback,
+                   simpleSheet: true } )
+
+
+</script>
+	
+</body>
+</html>
