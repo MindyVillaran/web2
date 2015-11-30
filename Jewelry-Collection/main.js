@@ -4,10 +4,10 @@ var title = item.Name;  //creating variables with "item.Name", etc.
 var	image = item.Image
 
 var $container = $("#grid-container");  // create new variables to include and later append to the box
-var $box = $("<div class='box'>"); 
+var $box = $("<div class='box'>");  //create other elements that aren't unique to item
 var $img = $("<img class='image'>").attr("src",image); //pass in the variables for "item.Name"   
-var $overlay = $("<div class='imgOvelay'>")
-var $h2 = $("<h2>");  
+var $overlay = $("<div class='imgOvelay'>") //create other elements that aren't unique to item
+var $h2 = $("<h2>");  //create other elements that aren't unique to item
 var $title = $("<span class='title'>").text(title);  //pass in the variables for "item.Title"  
 
 $h2.append($title)
@@ -24,7 +24,8 @@ function callback(data) {
 	addItem(data[1]);	
 	addItem(data[3]);
 	addItem(data[4]);
-		addItem(data[8]);
+		addItem(data[19])
+	addItem(data[29]);
 }
 
 
