@@ -79,8 +79,23 @@ h3 {font: 33px Ostrich;
     letter-spacing: 1px;
 	margin-bottom: 4px;
 	margin-top: 8px;
-	color:#00bfa7;}
+	color:#00bfa7;
+	display: block;
+	text-align: center;} 
+	
+h4 {font: 14px Open Sans; 
+	font-weight:600;
+	display: block;
+	text-align: center;}
 
+	
+
+.modal p { display: block;
+		font-family: Open Sans;
+		font-weight: 300;
+		font-style: italic;
+		text-align: center;}
+		
 body{
 	margin-left:auto;
 	margin-right:auto;
@@ -190,11 +205,12 @@ img {
 
 .modal-image {position:relative;
 	height: 60vh;
-	margin-bottom: 8px;}
+	padding-bottom: 20px;
+    display: block;
+   	margin: 0 auto;}
 
-
-
-
+.container { display: block;
+		margin: 0 auto;}
 
 /*---------------------- media queries  --------------------*/
 @media screen and (max-width:1050px) { 

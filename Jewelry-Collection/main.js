@@ -8,11 +8,12 @@ function displayModal(item) {
    
   var $h3 = $("<h3>").text(title);
   var $image = $("<img class='modal-image'>").attr("src",image);
-  var $year = $("<p>").text(year);
+  var $year = $("<h4>").text(year);
   var $p = $("<p>").text(caption);
+  var $container = $("<div class='container'>"); 
 
-   $(".modal").append($h3,$image,$year,$p);
-   
+   $container.append($h3,$image,$year,$p);
+   $(".modal").append($container);
    
    $(".overlay").show();
    $(".overlay").on("click",function(e) {
