@@ -79,13 +79,37 @@ function callback(data) {
 
   addItems(data);
 
+//---packery----
+  var $container = $('.gridContainer');
+  $container.packery({
+    itemSelector: '.item',
+  });
+//---packery----
+  
+  
   var myCollection = $(".item").collection({ 
     filters: { 
       "color": "[data-color]",
 	  "type": "[data-type]",
 	  "acquisition": "[data-acquisition]"
     },
+
+//---packery----
+update: function() { 
+  $container.packery(); 
+  setTimeout(function() { $container.packery()},600);
+},
+ordered: function() {
+  $container.packery('reloadItems');
+  console.log("Whoa");
+},
+hide: function($elem) { $elem.hide(); },
+show: function($elem) { $elem.fadeIn(500); },
+//---packery----
+
 });
+
+
 
   $(".color").on("click",function(e) {   //click handler for any button w class of color
       var color = $(this).data("color");  //retrieving color from filter button
