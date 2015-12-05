@@ -39,7 +39,7 @@ var title = item.Name;
 var	image = item.Image
 
 var $container = $(".gridContainer"); 
-var $box = $("<div class='box'>").addClass("item").addClass(item.Color.toLowerCase());  
+var $box = $("<div class='box'>").addClass("item").addClass(item.Color.toLowerCase()).addClass(item.Type.toLowerCase()).addClass(item.Acquisition.toLowerCase());   
 var $img = $("<img>").attr("src",image); 
 var $overlay = $("<div class='imgOvelay'>") 
 var $h2 = $("<h2>");
@@ -48,7 +48,7 @@ var $title = $("<span class='title'>").text(title);
 
 $box.attr("data-color",item.Color);
 $box.attr("data-type",item.Type);	
-$box.attr("data-acqusition",item.Acquisition);	
+$box.attr("data-acquisition",item.Acquisition);	
 
 $h2.append($title)
 $overlay.append($h2)
@@ -90,7 +90,16 @@ function callback(data) {
   $(".color").on("click",function(e) {   //click handler for any button w class of color
       var color = $(this).data("color");  //retrieving color from filter button
       myCollection.filtered("color",color);  //filtering the items in myCollection that have that same category
-	  
+  });
+  
+  $(".type").on("click",function(e) {   //click handler for any button w class of color
+      var type = $(this).data("type");  //retrieving color from filter button
+      myCollection.filtered("type",type);  //filtering the items in myCollection that have that same category
+  });
+  
+  $(".acquisition").on("click",function(e) {   //click handler for any button w class of color
+      var acquisition = $(this).data("acquisition");  //retrieving color from filter button
+      myCollection.filtered("acquisition",acquisition);  //filtering the items in myCollection that have that same category
   });
 
   $("#search").on("change keyup",function(e) {
