@@ -84,7 +84,7 @@ h3 {font: 33px Ostrich;
 	text-align: center;} 
 	
 h4 {font: 14px Open Sans; 
-	font-weight:600;
+	font-weight:700;
 	display: block;
 	text-align: center;}
 
@@ -190,9 +190,11 @@ button{
 	text-align: left;
 	background-color: transparent;
 	border: none;
-	height: 18px}
+	height: 18px} 
 	
-	
+.selected {font-family: 'Open Sans';	
+	font-weight: 700;
+	font-size: 14px ;	}
 
 /*---------------------- modal  --------------------*/
 .overlay {background-color: black;

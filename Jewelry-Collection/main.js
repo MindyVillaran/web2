@@ -114,16 +114,22 @@ show: function($elem) { $elem.fadeIn(500); },
   $(".color").on("click",function(e) {   //click handler for any button w class of color
       var color = $(this).data("color");  //retrieving color from filter button
       myCollection.filtered("color",color);  //filtering the items in myCollection that have that same category
+      $("button.color").removeClass("selected");
+      $(this).addClass("selected");
   });
   
-  $(".type").on("click",function(e) {   //click handler for any button w class of color
-      var type = $(this).data("type");  //retrieving color from filter button
-      myCollection.filtered("type",type);  //filtering the items in myCollection that have that same category
+  $(".type").on("click",function(e) { 
+      var type = $(this).data("type"); 
+      myCollection.filtered("type",type); 
+      $("button.type").removeClass("selected");
+      $(this).addClass("selected");
   });
   
-  $(".acquisition").on("click",function(e) {   //click handler for any button w class of color
-      var acquisition = $(this).data("acquisition");  //retrieving color from filter button
-      myCollection.filtered("acquisition",acquisition);  //filtering the items in myCollection that have that same category
+  $(".acquisition").on("click",function(e) {
+      var acquisition = $(this).data("acquisition");  
+      myCollection.filtered("acquisition",acquisition); 
+      $("button.acquisition").removeClass("selected");
+      $(this).addClass("selected");
   });
 
   $("#search").on("change keyup",function(e) {
