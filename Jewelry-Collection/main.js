@@ -1,12 +1,18 @@
  //---------------------creating and programming the modal-------------
 
-function displayModal(item) {
+	
+
+var currentModal = null;
+
+function displayModal(item, index) {
 	var title = item.Name;  //creating variables with "item.Name", etc. 
 	var	image = item.Image
     var year = item.Year;
 	var caption = item.Description;
   
   $(".modal").empty();
+  
+  currentModal = index;
    
   var $h3 = $("<h3>").text(title);
   var $image = $("<img class='modal-image'>").attr("src",image);
@@ -32,8 +38,7 @@ function hideModal() {
  //---------------------adding content with function and loop-------------
 
 
-
-function addItem(item){    //create a function to access the data. "item" accesses the data sheet
+function addItem(item, index){    //create a function to access the data. "item" accesses the data sheet
 
 var title = item.Name;  
 var	image = item.Image
@@ -58,7 +63,7 @@ $container.append($box)
 
 $box.on("click",function(e) { 
 	$(".overlay").show();
-	displayModal(item);
+	displayModal(item,index);
 	});	
 
 $(".overlay").on("click",function(e) { 
@@ -67,11 +72,15 @@ $(".overlay").on("click",function(e) {
 }
 
 
+var dataItems;
 
-function addItems(data) {   
+function addItems(data) { 
+  		dataItems = data;
 		for(var i = 0; i < data.length; i++) {	
-		addItem(data[i]); 	
-	}}
+		addItem(data[i],i); 	
+	}} 
+
+	
 
  //---------------------callback that allows filtering-------------
 
@@ -156,6 +165,27 @@ show: function($elem) { $elem.fadeIn(500); },
   });
 
 }
+
+ //---------------------make things with key commands-------------
+
+
+key('right', function(){
+  if(currentModal === null) return;
+  var nextModal = currentModal + 1;
+  
+  if(nextModal >= dataItems.length) return;
+  
+  displayModal(dataItems[nextModal], nextModal);
+});
+
+key('left', function(){
+  if(currentModal === null) return;
+  var prevModal = currentModal - 1;
+  
+  if(prevModal < 0) return;
+  
+  displayModal(dataItems[prevModal], prevModal);
+});
 
 
 
