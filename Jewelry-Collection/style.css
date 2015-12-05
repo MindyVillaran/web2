@@ -199,10 +199,13 @@ button{
 #all-button{
 		text-align: center;
 		background-color: #99fff2;
-		border: 1px solid #a6a6a6;
+		border: 1px solid  #009986;
 		border-radius: 6px;
-		height: 18px} 
-	
+		height: 28px}  
+		
+#all-button:hover{
+		background-color: #00b39c;} 
+		
 #all-button.selected{
 	font-weight: 300;} 
 
