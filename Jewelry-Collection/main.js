@@ -33,7 +33,7 @@ function hideModal() {
 
 
 
-function addItem(item){    //need to create a function to access the data. "item" accesses the data sheet
+function addItem(item){    //create a function to access the data. "item" accesses the data sheet
 
 var title = item.Name;  
 var	image = item.Image
@@ -73,7 +73,7 @@ function addItems(data) {
 		addItem(data[i]); 	
 	}}
 
- //---------------------callback thing that should someday allow me to filter-------------
+ //---------------------callback that allows filtering-------------
 
 
 function callback(data) { 
