@@ -47,6 +47,7 @@ var $title = $("<span class='title'>").text(title);
 
 
 $box.attr("data-color",item.Color);
+$box.attr("data-year",item.Year);
 $box.attr("data-type",item.Type);	
 $box.attr("data-acquisition",item.Acquisition);	
 
@@ -89,6 +90,8 @@ function callback(data) {
   
   var myCollection = $(".item").collection({ 
     filters: { 
+     "name": "h2",
+      "year": "[data-year]",
       "color": "[data-color]",
 	  "type": "[data-type]",
 	  "acquisition": "[data-acquisition]"
@@ -125,7 +128,6 @@ show: function($elem) { $elem.fadeIn(500); },
       $(this).addClass("selected");
   });
   
-
   
   $(".acquisition").on("click",function(e) {
       var acquisition = $(this).data("acquisition");  
@@ -133,6 +135,17 @@ show: function($elem) { $elem.fadeIn(500); },
       $("button.acquisition").removeClass("selected");
       $(this).addClass("selected");
   });
+  
+  
+  
+  $(".order").on("click",function(e) {
+      var order = $(this).data("order");
+      myCollection.ordered(order);
+      $("button.order").removeClass("selected");
+      $(this).addClass("selected");
+  });
+
+
 
   $("#search").on("change keyup",function(e) {
       myCollection.filtered("title", $(this).val());
