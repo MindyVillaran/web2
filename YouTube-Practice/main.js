@@ -22,7 +22,7 @@ function displayModal(items) {
 function hideModal() {
   $(".overlay").hide();
   $(".modal").hide();
-}
+}  //creating and programming the modal 
 
 
 function addAll(data) { 
