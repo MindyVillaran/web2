@@ -35,12 +35,11 @@ function hideModal() {
 
 function addItem(item){    //need to create a function to access the data. "item" accesses the data sheet
 
-
 var title = item.Name;  
 var	image = item.Image
 
 var $container = $(".gridContainer"); 
-var $box = $("<div class='box'>");  
+var $box = $("<div class='box'>").addClass("item").addClass(item.Color.toLowerCase());  
 var $img = $("<img>").attr("src",image); 
 var $overlay = $("<div class='imgOvelay'>") 
 var $h2 = $("<h2>");
@@ -49,7 +48,7 @@ var $title = $("<span class='title'>").text(title);
 
 $box.attr("data-color",item.Color);
 $box.attr("data-type",item.Type);	
-$box.attr("data-acqusition",item.Acquisition);	// Adding/Setting the attribute of data category to the item's color, etc.
+$box.attr("data-acqusition",item.Acquisition);	
 
 $h2.append($title)
 $overlay.append($h2)
@@ -75,31 +74,24 @@ function addItems(data) {
 
  //---------------------callback thing that should someday allow me to filter-------------
 
+
 function callback(data) { 
 
   addItems(data);
 
   var myCollection = $(".item").collection({ 
     filters: { 
-      "title": "h2",
       "color": "[data-color]",
 	  "type": "[data-type]",
 	  "acquisition": "[data-acquisition]"
     },
+});
 
-  });
-
-
-  $(".color").on("click",function(e) {   //click handler for any button w class of category
-      var color = $(this).data("color");  //retrieving category from filter button
+  $(".color").on("click",function(e) {   //click handler for any button w class of color
+      var color = $(this).data("color");  //retrieving color from filter button
       myCollection.filtered("color",color);  //filtering the items in myCollection that have that same category
 	  
-	 $("#filter-bar button.color").removeClass("selected");   //highlighting button
-   	$(this).addClass("selected"); //highlighting button by adding class of selected
   });
-
-
-
 
   $("#search").on("change keyup",function(e) {
       myCollection.filtered("title", $(this).val());
@@ -110,7 +102,6 @@ function callback(data) {
   });
 
 }
-
 
 
 
