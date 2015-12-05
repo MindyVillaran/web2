@@ -116,7 +116,7 @@ show: function($elem) { $elem.fadeIn(500); },
       myCollection.filtered("color",color);  //filtering the items in myCollection that have that same category
       $("button.color").removeClass("selected");
       $(this).addClass("selected");
-  });
+  });  
   
   $(".type").on("click",function(e) { 
       var type = $(this).data("type"); 
@@ -124,6 +124,8 @@ show: function($elem) { $elem.fadeIn(500); },
       $("button.type").removeClass("selected");
       $(this).addClass("selected");
   });
+  
+
   
   $(".acquisition").on("click",function(e) {
       var acquisition = $(this).data("acquisition");  

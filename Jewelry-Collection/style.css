@@ -130,7 +130,7 @@ a{text-decoration:none;}
 #search {font-size:12px;}
 
 #Sort-By {border-bottom: 1px solid #cccccc;
-	padding-bottom: 20px;
+	padding-bottom: 15px;
 	margin-bottom: 20px;}	
 	
 .logo {width: 170px;
@@ -195,6 +195,16 @@ button{
 .selected {font-family: 'Open Sans';	
 	font-weight: 700;
 	font-size: 14px ;	}
+	
+#all-button{
+		text-align: center;
+		background-color: #99fff2;
+		border: 1px solid #a6a6a6;
+		border-radius: 6px;
+		height: 18px} 
+	
+#all-button.selected{
+	font-weight: 300;} 
 
 /*---------------------- modal  --------------------*/
 .overlay {background-color: black;
