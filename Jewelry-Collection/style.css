@@ -123,7 +123,7 @@ a{text-decoration:none;}
 	background-color: white;
 	border: 1px solid #a6a6a6;
 	width: 76%;
-	padding: 6px 0px 6px 10px;
+	padding: 4px 0px 4px 10px;
 	border-radius: 6px;
 }	
 
@@ -181,7 +181,18 @@ img {
 .box:hover .imgOvelay {
 	margin-bottom:0;
 	opacity:.85;
-	}  
+	} 
+
+button{
+	cursor:pointer;
+	font-family: 'Open Sans';	
+	font-size: 14px ;	
+	text-align: left;
+	background-color: transparent;
+	border: none;
+	height: 18px}
+	
+	
 
 /*---------------------- modal  --------------------*/
 .overlay {background-color: black;
