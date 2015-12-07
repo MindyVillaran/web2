@@ -157,7 +157,7 @@ show: function($elem) { $elem.fadeIn(500); },
 
 
   $("#search").on("change keyup",function(e) {
-      myCollection.filtered("title", $(this).val());
+      myCollection.filtered("name", $(this).val());
   });
 
   $(".overlay").on("click",function(e) {
