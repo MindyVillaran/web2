@@ -56,6 +56,8 @@ $box.attr("data-year",item.Year);
 $box.attr("data-type",item.Type);	
 $box.attr("data-acquisition",item.Acquisition);	
 
+
+
 $h2.append($title)
 $overlay.append($h2)
 $box.append($img, $overlay)
@@ -103,8 +105,7 @@ function callback(data) {
       "year": "[data-year]",
       "color": "[data-color]",
 	  "type": "[data-type]",
-	  "acquisition": "[data-acquisition]"
-    },
+	  "acquisition": "[data-acquisition]"    },
 
 //---packery----
 update: function() { 
@@ -157,7 +158,7 @@ show: function($elem) { $elem.fadeIn(500); },
 
 
   $("#search").on("change keyup",function(e) {
-      myCollection.filtered("name", $(this).val());
+      myCollection.filtered("name", $(this).val());	  
   });
 
   $(".overlay").on("click",function(e) {
