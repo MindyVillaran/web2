@@ -59,7 +59,7 @@ table {
 
 
 h1 {font: 32px Ostrich-Medium;
-	color: #00bfa7;
+	color:   #00b8e6;
     letter-spacing: 1px;
 	position: absolute;
 	left: 40px;
@@ -73,13 +73,13 @@ h1 {font: 32px Ostrich-Medium;
 h2 {font: 23px Ostrich;
     letter-spacing: 1px;
 	margin-bottom: 2px;
-	color:#00bfa7;} 
+	color: #00b8e6;} 
 	
 h3 {font: 33px Ostrich;
     letter-spacing: 1px;
 	margin-bottom: 4px;
 	margin-top: 8px;
-	color:#00bfa7;
+	color: #00b8e6;
 	display: block;
 	text-align: center;} 
 	
@@ -204,13 +204,13 @@ button{
 	
 #all-button{
 		text-align: center;
-		background-color: #99fff2;
-		border: 1px solid  #009986;
+		background-color:  #b3e6ff;
+		border: 1px solid  #4dc4ff;
 		border-radius: 6px;
 		height: 28px}  
 		
 #all-button:hover{
-		background-color: #00b39c;} 
+		background-color:  #4dc4ff;} 
 		
 #all-button.selected{
 	font-weight: 300;} 
@@ -219,8 +219,7 @@ button{
 	
 
 #image-section	{
-	height:120%;
-	height: 120vh;
+	min-height: 120vh;
     background-image:url("images/tex2-01.png");}
 
 /*---------------------- modal  --------------------*/

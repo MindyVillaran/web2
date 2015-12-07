@@ -13,6 +13,9 @@ function displayModal(item, index) {
   $(".modal").empty();
   
   currentModal = index;
+  
+  
+  
    
   var $h3 = $("<h3>").text(title);
   var $image = $("<img class='modal-image'>").attr("src",image);
@@ -23,17 +26,19 @@ function displayModal(item, index) {
    $container.append($h3,$image,$year,$p);
    $(".modal").append($container);
    
+   
+   
+   
    $(".overlay").show();
+   
    $(".overlay").on("click",function(e) {
-     hideModal();
+	   $(".overlay").hide();
+	   $(".modal").hide();
+
    });
    $(".modal").show();
 }
 
-function hideModal() {
-  $(".overlay").hide();
-  $(".modal").hide();
-} 
 
  //---------------------adding content with function and loop-------------
 
@@ -45,6 +50,7 @@ var	image = item.Image
 
 var $container = $(".gridContainer"); 
 var $box = $("<div class='box'>").addClass("item").addClass(item.Color.toLowerCase()).addClass(item.Type.toLowerCase()).addClass(item.Acquisition.toLowerCase());   
+$box.attr("data-index",index);
 var $img = $("<img>").attr("src",image); 
 var $overlay = $("<div class='imgOvelay'>") 
 var $h2 = $("<h2>");
@@ -172,7 +178,9 @@ show: function($elem) { $elem.fadeIn(500); },
 
 key('right', function(){
   if(currentModal === null) return;
-  var nextModal = currentModal + 1;
+  var $current = $("[data-index=" + currentModal + "]")  
+  var $next = $current.nextAll().filter(":visible")   //having it call siblings following the current modal, minus invisible
+  var nextModal = $next.data("index");  //go to the next
   
   if(nextModal >= dataItems.length) return;
   
@@ -181,7 +189,9 @@ key('right', function(){
 
 key('left', function(){
   if(currentModal === null) return;
-  var prevModal = currentModal - 1;
+  var $current = $("[data-index=" + currentModal + "]")  
+  var $prev = $current.prevAll().filter(":visible")   //having it call siblings following the current modal, minus invisible
+  var prevModal = $prev.data("index");  //go to the next
   
   if(prevModal < 0) return;
   
