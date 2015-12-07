@@ -32,12 +32,16 @@ function displayModal(item, index) {
    $(".overlay").show();
    
    $(".overlay").on("click",function(e) {
-	   $(".overlay").hide();
-	   $(".modal").hide();
-
+       hideModal();
    });
+   
    $(".modal").show();
 }
+
+function hideModal() {
+  $(".overlay").hide();
+  $(".modal").hide();
+} 
 
 
  //---------------------adding content with function and loop-------------
