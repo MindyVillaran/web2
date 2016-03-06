@@ -24,7 +24,10 @@ a:visited {color: gray;}
 	font-size: 20px;
 	display: block;
 	text-align: center;
-}	
+	padding: 10px;}	
+	
+
+.selected-menu {color: green;}	
 	
 
 .site-container {
@@ -263,13 +266,11 @@ header{
 	  transition: transform 2s ease-out;  }	
 
 	  .center-arrived {
-	  	transform: translate(0,0);
-	  }  
-	  
-	
+	  	transform: translate(0,0);}  
 	
 
 /*---------------------------------------------------dividers/sections----------------------------------------*/
+  
   
 .blue {background-color:  #7cc0b9;}
 .white {background-color:  #ffffff;}
@@ -595,15 +596,24 @@ header{
 /*--------------------------------------------------------MEDIA-QUERIES--------------------------------------------------------------*/
 		
 
-@media (max-width: 900px) { 
-	header {display: block !important; position: fixed;  z-index:10000000000000;}
+@media only screen and (max-width: 900px)  { 
+	header {display: block; position: fixed;  z-index:10000000000000;}
 	.bar {position: relative;}
 	.menu {position: absolute; top:50px}
 		
-	#sidebar {display: none !important; }
+	#sidebar {display: none; }
 	.site-container {width:100%;} }
 	
-@media (max-width: 400px) { 
+
+@media only screen and (max-device-width: 900px)  { 
+	header {display: block; position: fixed;  z-index:10000000000000;}
+	.bar {position: relative;}
+	.menu {position: absolute; top:50px}
+		
+	#sidebar {display: none; }
+	.site-container {width:100%;} }	
+	
+@media only screen and (max-device-width: 400px) { 
     #title {background: url(assets/bg-image.jpg) #000 no-repeat center center fixed;}
       #coinvid {display: none;}
   }
