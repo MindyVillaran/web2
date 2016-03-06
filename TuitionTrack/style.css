@@ -598,12 +598,12 @@ header{
 @media (max-width: 900px) { 
 	header {display: block !important; position: fixed;  z-index:10000000000000;}
 	.bar {position: relative;}
-	.menu {position: absolute; top:50px;}
+	.menu {position: absolute; top:50px}
 		
-	#sidebar {display: none;}
+	#sidebar {display: none !important; }
 	.site-container {width:100%;} }
 	
-@media (max-width: 600px) { 
+@media (max-width: 400px) { 
     #title {background: url(assets/bg-image.jpg) #000 no-repeat center center fixed;}
       #coinvid {display: none;}
   }
