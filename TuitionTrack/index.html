@@ -18,15 +18,13 @@
 	
 <div id="sidebar">
  <span class="logo-sidebar"> tuition track </span>
-    <a href="#"><li>introduction</li></a>
-    <a href="#page2"><li>the logo</li></a>
-    <a href="#"><li>the system</li></a>
-    <a href="#"><li>in action</li></a>
+  <ul>
+    <li><a href="#">introduction</a></li>
+    <li><a href="#page2">the logo</a></li>
+    <li><a href="#">the system</a></li>
+    <li><a href="#">in action</a></li>
+  </ul>
 </div>
-
-
-</div>  <!--all-filters-->
-</div>	<!--sidebar-->
 
 
 <!--hamburger menu-->
@@ -40,10 +38,10 @@
 
 <div class="menu">
   <ul>
-    <a href="#"><li>introduction</li></a>
-    <a href="#page2"><li>the logo</li></a>
-    <a href="#"><li>the system</li></a>
-    <a href="#"><li>in action</li></a>
+    <li><a href="#">introduction</a></li>
+    <li><a href="#page2">the logo</a></li>
+    <li><a href="#">the system</a></li>
+    <li><a href="#">in action</a></li>
   </ul>
 </div> 
 </header>
@@ -51,12 +49,22 @@
 
 	
 <div class= "site-container">   <!--main-section-->
-	
-<div class="page blue parallax-image" id="title"> <!---page-title-->
+
+		
+<div class="page parallax-image" id="title"> <!---page-title-->
+	<div class="firstpage"></div>
 	<div class= "container">
-		<div class="scroller title"><h1>Our Hidden</h1><h1>Water Use</h1></div>
+		<div class="scroller title"><h1>Video Page</h1></div>
 	</div>
+	
+	<video autoplay loop poster="assets/bg-image.jpg" id="coinvid">
+  	  <source src="assets/coin-video.webm" type="video/webm">
+  	  <source src="assets/coin-video.mp4" type="video/mp4">
+	</video>
 </div>
+
+
+
 
 <div class="scroller page white" id="page1">  <!---page-one-->
 	<div class= "container">
@@ -181,10 +189,10 @@
 </div>
 
 
-<button id="back-to-top">
-	<a href="#title"> Back to Top </a>
-</button>	
 
+<a href="#title">
+	<button id="back-to-top">Back to Top</button>	
+</a>
 
 
 </div> <!--main-section-->

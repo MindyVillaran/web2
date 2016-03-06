@@ -3,19 +3,25 @@
   padding: 0;
 }
 
+a {text-decoration: none;}
+a:visited {color: gray;}
+
+/*---------------------------------------MENU/STRUCTURE-------------------------------------------------*/
+
+
 #sidebar {background-color:white;
 	position: fixed;
 	width:20%;
 	height: 100%;
-  min-width: 200px;
-  display: block;
-}
+	min-width: 200px;
+	display: block;
+	list-style-type: none; 
+	list-style-image: none;}
 
 .site-container {
 	width:80%;
 	float: right;
-	overflow: hidden;
-}
+	overflow: hidden;}
 
 .logo {position: absolute;
 	left: 20px;
@@ -24,24 +30,29 @@
 .logo-sidebar {width:50%;
 	margin: 0 auto;}
 
-
 @media (max-width: 900px) { 
 	header {display: block !important; position: fixed;  z-index:10000000000000;}
 	.bar {position: relative;}
 	.menu {position: absolute; top:50px;}
 		
 	#sidebar {display: none;}
-	.site-container {
-			width:100%;
-			clear: right;
-	}}
+	.site-container {width:100%;} }
 	
-
+@media (max-width: 600px) { 
+    #title {background: url(assets/bg-image.jpg) #000 no-repeat center center fixed;}
+      #coinvid {display: none;}
+  }
+	
+	
+	
 #back-to-top {
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
-}
+	bottom: 10px;
+	right: 10px;
+	border: none;
+	padding: 10px;
+	background-color: black;
+	color: white;}
 
 
 
@@ -118,7 +129,8 @@ header{
 .dk-blue {background-color: #1f3668;}
 
 
-#title {background-image: url("images/sea1-01.svg");}
+#title {position: relative;
+	overflow: hidden;}
 
 .parallax-image {	
   background-size:cover;
@@ -128,12 +140,50 @@ header{
   width:100%;
   height:100vh;}
 
+/*----------------------------------------page one
+		
+	  video#bgvid { 
+	      position: fixed;
+	      top: 50%;
+	      left: 50%;
+	      min-width: 100%;
+	      min-height: 100%;
+	      width: auto;
+	      height: auto;
+	      z-index: -100;
+	      -ms-transform: translateX(-50%) translateY(-50%);
+	      -moz-transform: translateX(-50%) translateY(-50%);
+	      -webkit-transform: translateX(-50%) translateY(-50%);
+	      transform: translateX(-50%) translateY(-50%);
+	      background: url(images/bg-image.jpg) no-repeat;
+	      background-size: cover; 
+	  }
+	  
+
+	  } ---------------------------------*/
+
+#coinvid {
+	height: 150%;
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: -100;
+    background-size: cover; 
+}
+	
+
 .large {height: 300vh;}
 
-.container {min-width: 700px;
+.container {
 	max-width:900px;
 	position:relative;
 	margin: 0 auto;}
+	
+.firstpage {background-color: #7cc0b9;
+	position:absolute;
+	width: 100%;
+	min-height: 100vh;
+	opacity: .5;}	
 
 .page {
   min-height: 100vh;
@@ -165,7 +215,7 @@ h2 {font-family: Raleway;
 /*------styles and arrivals------*/
 
 .title {
-	  position:absolute;
+	  position:relative;
 	  text-align: center;
 	  left: 300px;
 	  top: 40vh;
@@ -212,7 +262,6 @@ h2 {font-family: Raleway;
 .left-arrived {
 	transform: translate(0,0);
     transition: transform 2s ease-out; 
-    transition: opacity 4s ease-out; 
       opacity:1;}
 	
 .right {
@@ -227,8 +276,7 @@ h2 {font-family: Raleway;
 .right-arrived {
 	transform: translate(0,0);
     transition: transform 2s ease-out; 
-    transition: opacity 4s ease-out; 
-	      opacity:1;
+	opacity:1;
 }  		
 
 .staticRight {	  
@@ -260,9 +308,11 @@ h2 {font-family: Raleway;
 	  
 
 	
-/*----------------------------------------page two (shower, blue)---------------------------------*/
-		
 
+
+/*----------------------------------------page two (shower, blue)---------------------------------*/
+	  
+	   
 .img1 {
 	width: 400px;
   transform: translate(100vw, 0);
@@ -509,54 +559,6 @@ h2 {font-family: Raleway;
 		opacity:1;} 
 	
 		
-/*---------------page fifteen (coffee, green)--------------------*/
-
-
-.coffee-graph2{
-    position:absolute;
-	width:250px;
- 	right:20%;
-    top:145px;
-	opacity:0;
-	transition: opacity 1s ease-out;	
-}	
-	
-.coffee-graph2-arrived{
-		opacity:1;}
-		
-		
-/*---------------page sixteen (leaves, blue)--------------------*/
- 
-
-.pot {position:absolute;
-	width:350px;
-	left:20px;
-    top:260px;
-	z-index:1;
-	transform: translate(-100vw, 0);
-	transition: transform 1s ease-out;}
-
-.pot-arrived {
-    transform: translate(0, 0);
-}
-	
-.leaves {
-  position:absolute;
-  opacity:0;
-  width:250px;
-  left:80px;
-  z-index:0;
-  top:150px;
-  
-  transform: translate(0, 10vh);
-  transition: transform 1s ease-out, opacity .5s ease-out;
-  transition-delay:1.5s;}
-
-.leaves-arrived{
-    transform: translate(0, 0);
-    opacity:1;
-	
-}
 
 
 
