@@ -3,8 +3,8 @@
   padding: 0;
 }
 
-a {text-decoration: none;}
-a:visited {color: gray;}
+a {text-decoration: none;
+	color: gray;}
 
 /*---------------------------------------MENU/STRUCTURE-------------------------------------------------*/
 
@@ -15,20 +15,7 @@ a:visited {color: gray;}
 	height: 100%;
 	min-width: 200px;
 	display: block;
-	list-style-type: none; 
-	list-style-image: none;
 	z-index: 300000000000;} 
-
-#sidebar h1 {color: gray;
-	font-family: gotham-light;
-	font-size: 20px;
-	display: block;
-	text-align: center;
-	padding: 10px;}	
-	
-
-.selected-menu {color: green;}	
-	
 
 .site-container {
 	width:80%;
@@ -45,11 +32,22 @@ a:visited {color: gray;}
 	display: block;
 	text-align: center;
 	font: 20px gotham-light;
-	color: gray;
 	padding: 140px 0px 50px 0px;
-	margin: 0 auto;}
+	margin: 0 auto;} 
+	
+.reg {
+	font-family: gotham-light;
+	font-size: 20px;
+	display: block;
+	text-align: center;
+	padding: 10px;}	
+	
+.current {color: green;
+	font-family: gotham-book;}
 
-
+.reg:hover {color:blue;
+	font-family: gotham-book;}
+	
 #back-to-top {
 	position: fixed;
 	bottom: 10px;
@@ -163,19 +161,20 @@ header{
   	font-size:20px; }
 
   h1 {font-family: Gotham-Book; 
-  	font-size:55px; 
-  	color:white; }
-	
+  	font-size:55px; }	
 
 	
   h2 {font-family: Gotham-Light; 
   	font-size:35px; 
-  	text-align: center;}	
+  	text-align: center;}
+
 
 
 
 
 /*--------------------------------------------------------styles and arrivals------------------------------------------*/
+
+
 
 .title {
 	  position:relative;
@@ -618,6 +617,7 @@ header{
       #coinvid {display: none;}
   }
 	
-		
+	
+.gray {color: gray !important;}		
 
 		

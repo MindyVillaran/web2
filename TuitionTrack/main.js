@@ -19,6 +19,63 @@ $( ".hamburger" ).show();
 });
 });
 
+//----------------sidebar menu--------------------
+
+$("#page1").on("arriving",function() {
+  $(".intro").addClass("current");  
+});
+
+
+$("#page1").on("rearriving",function() {
+  $(".thelogo").removeClass("current");
+  $(".intro").addClass("current");
+});
+
+$("#title").on("rearriving",function() {
+  $(".intro").removeClass("current");
+  
+});
+
+$("#title").on("arriving",function() {
+    $(".intro").removeClass("current");
+});
+
+
+$("#page3").on("arriving",function() {
+  $(".intro").removeClass("current");
+  $(".thelogo").addClass("current");
+});
+
+
+$("#page3").on("rearriving",function() {
+  $(".system").removeClass("current");
+  $(".thelogo").addClass("current");
+});
+
+$("#page5").on("arriving",function() {
+  $(".thelogo").removeClass("current");
+  $(".system").addClass("current");
+});
+
+
+$("#page5").on("rearriving",function() {
+  $(".action").removeClass("current");
+  $(".system").addClass("current");
+});
+
+$("#page9").on("arriving",function() {
+  $(".system").removeClass("current");
+  $(".action").addClass("current");
+});
+
+
+$("#page9").on("rearriving",function() {
+  $(".action").addClass("current");
+});
+
+
+
+
 //----------------type-styles--------------------
 
 $(".title").on("arrived",function() {
