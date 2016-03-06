@@ -16,7 +16,16 @@ a:visited {color: gray;}
 	min-width: 200px;
 	display: block;
 	list-style-type: none; 
-	list-style-image: none;}
+	list-style-image: none;
+	z-index: 300000000000;} 
+
+#sidebar h1 {color: gray;
+	font-family: gotham-light;
+	font-size: 20px;
+	display: block;
+	text-align: center;
+}	
+	
 
 .site-container {
 	width:80%;
@@ -25,26 +34,19 @@ a:visited {color: gray;}
 
 .logo {position: absolute;
 	left: 20px;
-	top: 5px;}
+	top: 18px;
+	font: 20px gotham-light;
+	color: gray;}
 	
-.logo-sidebar {width:50%;
+.logo-sidebar {width:60%;
+	display: block;
+	text-align: center;
+	font: 20px gotham-light;
+	color: gray;
+	padding: 140px 0px 50px 0px;
 	margin: 0 auto;}
 
-@media (max-width: 900px) { 
-	header {display: block !important; position: fixed;  z-index:10000000000000;}
-	.bar {position: relative;}
-	.menu {position: absolute; top:50px;}
-		
-	#sidebar {display: none;}
-	.site-container {width:100%;} }
-	
-@media (max-width: 600px) { 
-    #title {background: url(assets/bg-image.jpg) #000 no-repeat center center fixed;}
-      #coinvid {display: none;}
-  }
-	
-	
-	
+
 #back-to-top {
 	position: fixed;
 	bottom: 10px;
@@ -55,10 +57,7 @@ a:visited {color: gray;}
 	color: white;}
 
 
-
-
-
-/*----------------------------------------------------------------hamburger------------------------------------------------*/
+/*--------------------------------------- hamburger ----------------------------------------*/
 
 
 
@@ -120,99 +119,60 @@ header{
   margin:0 auto;}
 
 
+  /*------------------------------font styles---------------------------*/
+
+  @font-face {
+      font-family: Klinic-Light;
+      src: url(Klinic-Slab/KlinicSlabLight.otf);} 
+
+  @font-face {
+      font-family: Klinic-Light-It;
+      src: url(Klinic-Slab/KlinicSlabLightIt.otf);} 
+
+  @font-face {
+      font-family: Klinic-Med;
+      src: url(Klinic-Slab/KlinicSlabMedium.otf);} 
+
+  @font-face {
+      font-family: Klinic-Med-It;
+      src: url(Klinic-Slab/KlinicSlabMediumIt.otf);} 
+
+  /*-----------------gotham---------------*/
+
+  @font-face {
+      font-family: Gotham-Light;
+      src: url(Gotham/GothamHTF-Light.ttf);} 
+	
+  @font-face {
+      font-family: Gotham-Book;
+      src: url(Gotham/GothamHTF-Book.ttf);} 
+
+  @font-face {
+      font-family: Gotham-Med;
+      src: url(Gotham/GothamHTF-Medium.ttf);} 
+
+  @font-face {
+      font-family: Gotham-Bold;
+      src: url(Gotham/GothamHTF-Bold.ttf);} 
 
 
-/*------------------------------dividers/sections---------------------------*/
-.blue {background-color:  #7cc0b9;}
-.white {background-color:  #ffffff;}
-.green {background-color: #8bc53f;}
-.dk-blue {background-color: #1f3668;}
+  body { font-family: Klinic-Light; 
+  	font-size:20px; }
 
-
-#title {position: relative;
-	overflow: hidden;}
-
-.parallax-image {	
-  background-size:cover;
-  background-position:50% 50%;
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  width:100%;
-  height:100vh;}
-
-/*----------------------------------------page one
-		
-	  video#bgvid { 
-	      position: fixed;
-	      top: 50%;
-	      left: 50%;
-	      min-width: 100%;
-	      min-height: 100%;
-	      width: auto;
-	      height: auto;
-	      z-index: -100;
-	      -ms-transform: translateX(-50%) translateY(-50%);
-	      -moz-transform: translateX(-50%) translateY(-50%);
-	      -webkit-transform: translateX(-50%) translateY(-50%);
-	      transform: translateX(-50%) translateY(-50%);
-	      background: url(images/bg-image.jpg) no-repeat;
-	      background-size: cover; 
-	  }
-	  
-
-	  } ---------------------------------*/
-
-#coinvid {
-	height: 150%;
-	position: absolute;
-	top:0;
-	left:0;
-	z-index: -100;
-    background-size: cover; 
-}
+  h1 {font-family: Gotham-Book; 
+  	font-size:55px; 
+  	color:white; }
 	
 
-.large {height: 300vh;}
-
-.container {
-	max-width:900px;
-	position:relative;
-	margin: 0 auto;}
 	
-.firstpage {background-color: #7cc0b9;
-	position:absolute;
-	width: 100%;
-	min-height: 100vh;
-	opacity: .5;}	
+  h2 {font-family: Gotham-Light; 
+  	font-size:35px; 
+  	text-align: center;}	
 
-.page {
-  min-height: 100vh;
-  width: 100%;
-}
 
-#large {height: 300vh;
-	position: relative;} 
 
-#page2b	{height: 110vh;}
 
-#page10c {height: 110vh;}
-
-/*------------------------------font styles---------------------------*/
-body { font-family: Raleway; 
-	font-size:20px; 
-	font-weight:300;}
-
-h1 {font-family: Raleway; 
-	font-size:55px; 
-	color:white; 
-	font-weight:800;}
-	
-h2 {font-family: Raleway; 
-	font-size:35px; 
-	font-weight:300;
-	text-align: center;}	
-
-/*------styles and arrivals------*/
+/*--------------------------------------------------------styles and arrivals------------------------------------------*/
 
 .title {
 	  position:relative;
@@ -306,11 +266,83 @@ h2 {font-family: Raleway;
 	  	transform: translate(0,0);
 	  }  
 	  
-
+	
 	
 
+/*---------------------------------------------------dividers/sections----------------------------------------*/
+  
+.blue {background-color:  #7cc0b9;}
+.white {background-color:  #ffffff;}
+.green {background-color: #8bc53f;}
+.dk-blue {background-color: #1f3668;}
 
-/*----------------------------------------page two (shower, blue)---------------------------------*/
+
+#title {position: relative;
+	overflow: hidden;}
+
+.parallax-image {	
+  background-size:cover;
+  background-position:50% 50%;
+  background-repeat: no-repeat;
+  background-attachment:fixed;
+  width:100%;
+  height:100vh;}
+
+/*---- ATTEMPT AT BG VIDEO
+	  video#bgvid { 
+	      position: fixed;
+	      top: 50%;
+	      left: 50%;
+	      min-width: 100%;
+	      min-height: 100%;
+	      width: auto;
+	      height: auto;
+	      z-index: -100;
+	      -ms-transform: translateX(-50%) translateY(-50%);
+	      -moz-transform: translateX(-50%) translateY(-50%);
+	      -webkit-transform: translateX(-50%) translateY(-50%);
+	      transform: translateX(-50%) translateY(-50%);
+	      background: url(images/bg-image.jpg) no-repeat;
+	      background-size: cover; 
+	  }
+---------*/
+
+#coinvid {
+	height: 150%;
+	position: absolute;
+	top:0; left:0;
+	z-index: -100;
+    background-size: cover; 
+}
+	
+
+.large {height: 300vh;}
+
+.container {
+	max-width:900px;
+	position:relative;
+	margin: 0 auto;}
+	
+.firstpage {background-color: #51c0b5;
+	position:absolute;
+	width: 100%;
+	min-height: 100vh;
+	opacity: .5;}	
+
+.page {
+  min-height: 100vh;
+  width: 100%;
+}
+
+#large {height: 300vh;
+	position: relative;} 
+
+#page2b	{height: 110vh;}
+
+#page10c {height: 110vh;}
+
+
+/*----------------------------page two (shower, blue)---------------------------------*/
 	  
 	   
 .img1 {
@@ -557,10 +589,25 @@ h2 {font-family: Raleway;
 	
 .coffee-graph1-arrived{
 		opacity:1;} 
-	
 		
 
 
+/*--------------------------------------------------------MEDIA-QUERIES--------------------------------------------------------------*/
+		
 
+@media (max-width: 900px) { 
+	header {display: block !important; position: fixed;  z-index:10000000000000;}
+	.bar {position: relative;}
+	.menu {position: absolute; top:50px;}
+		
+	#sidebar {display: none;}
+	.site-container {width:100%;} }
+	
+@media (max-width: 600px) { 
+    #title {background: url(assets/bg-image.jpg) #000 no-repeat center center fixed;}
+      #coinvid {display: none;}
+  }
+	
+		
 
 		
