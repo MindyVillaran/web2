@@ -107,68 +107,26 @@ $(".pull-quote2").on("arrived",function() {
   $(this).addClass("pull-quote2-arrived");
 }); 
 
-$(".left").on("arrived",function() {
-  $(this).addClass("left-arrived");
+$(".left-text").on("arrived",function() {
+  $(this).addClass("left-text-arrived");
 }); 
 
-$(".right").on("arrived",function() {
-  $(this).addClass("right-arrived");
+$(".left-image").on("arrived",function() {
+  $(this).addClass("left-image-arrived");
+}); 
+
+$(".right-text").on("arrived",function() {
+  $(this).addClass("right-text-arrived");
+}); 
+
+$(".right-image").on("arrived",function() {
+  $(this).addClass("right-image-arrived");
 }); 
 
 $(".center").on("arrived",function() {
   $(this).addClass("center-arrived");
 }); 
-//---------------page two----------------
 
-$(".img1").on("arriving",function() {
-  $(this).addClass("img1-arrived");
-}); 
-
-$(".showerWater").on("arrived",function() {
-  $(this).addClass("showerWater-arrived");
-}); 
-
-$(".steam").on("arrived",function() {
-  $(this).addClass("steam-arrived");
-}); 
-
-$("#page1").on("departed",function(e) {
-    $(".img1").affix();
-	$(".showerWater").affix();
-	$(".steam").affix();	
-});
-
-$("#page1").on("rearriving",function(e) {
-    $(".img1").unaffix();
-	$(".showerWater").unaffix();
-	$(".steam").unaffix();
-});
-
-$("#page3").on("arriving",function(e) {
-    $(".img1").release();
-	$(".showerWater").release();
-	$(".steam").release();
-});
-
-$("#page2b").on("departed",function(e) {
-    $(".img1").unaffix();
-	$(".showerWater").unaffix();
-	$(".steam").unaffix();
-});
-
-//---------------page four-----------------
-
-$(".watering-can").on("arrived",function() {
-  $(this).addClass("watering-can-arriving");
-  $(".water-drop1").addClass("water-drop1-arrived");
-}); 
-
-//---------------page nine-----------------
-
-$(".droplets").on("arrived",function() {
-  $(this).addClass("droplets-arrived");
-}); 
- 
 //---------------page eleven----------------
 
 $(".bubbles-container").on("arrived",function() {
