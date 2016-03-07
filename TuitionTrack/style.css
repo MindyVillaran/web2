@@ -160,13 +160,13 @@ header{
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;}
 
-  h1 {font-family: Gotham-Light; 
+h1 {font-family: Gotham-Light; 
 	  color:white;
       letter-spacing: 1.5px;
   	font-size:55px; 	
 }
 
-  h4 {font-family: Gotham-XLight; 
+h4 {font-family: Gotham-XLight; 
 	  color:white;
       letter-spacing: 1.5px;
   	font-size:20px;
@@ -175,7 +175,8 @@ header{
 
 	
   h2 {font-family: Gotham-Light; 
-  	font-size:35px; }
+  	font-size:45px;
+	 line-height: 1.2em;}
 	
 h6 {font-family: klinic-med-it;
 	font-size: 1.5em;
@@ -194,6 +195,7 @@ h6 {font-family: klinic-med-it;
 .container {
 	max-width:900px;
 	position:relative;
+	padding-bottom: 400px;
 	margin: 0 auto;} 
 
 .pagefull {
@@ -204,7 +206,9 @@ h6 {font-family: klinic-med-it;
   min-height: 100vh;
   width: 100%;}
 
-#page1 {position: relative;}
+#page1 {position: relative; min-height: 600px;
+}
+#pageVid {min-height: 20vh;}
 
 #page10c {height: 110vh;} 
 
@@ -214,8 +218,6 @@ h6 {font-family: klinic-med-it;
 	
 .blue-text {color: #3f90a5;}
 .white-text {color: white;}	
-
-
 
 .title {
 	  position:relative;
@@ -238,37 +240,6 @@ h6 {font-family: klinic-med-it;
 .title-arrived {
 	opacity:1;
  	-webkit-transition: opacity 2s ease-in-out;} 
-		
-	
-		
-		/*
-.left {position:absolute;
-	  width:40%;
-	  top: 350px;
-	  line-height:1.5em;
-	  -webkit-transform: translate(-200vw, 0);
-        opacity:0; }	
-	
-.left-arrived {
-	-webkit-transform: translate(0,0);
-    -webkit-transition: transform 2s ease-out; 
-      opacity:1;}
-	
-.right {
-	  position:absolute;
-	  width:40%;
-	  top: 350px;
-	  right: 0px;
-	  line-height:1.5em;
-	  -webkit-transform: translate(200vw, 0);
-      opacity:0; }	
-	
-.right-arrived {
-	-webkit-transform: translate(0,0);
-    -webkit-transition: transform 2s ease-out; 
-	opacity:1;
-}  	
-		*/		
 
 .left-image {position:absolute;
 	  width:80%;
@@ -279,7 +250,7 @@ h6 {font-family: klinic-med-it;
         opacity:0; }	
 			
 .left-text {float:left;
-	  width:30%;
+	  width:45%;
 	  margin-top: 150px;
 	  line-height:1.5em;
 	  position:relative;
@@ -293,16 +264,16 @@ h6 {font-family: klinic-med-it;
 	
 .right-text {
 	  float:left;
-	  width:40%;
+	  width:60%;
 	  margin-top: 150px;
 	  line-height:1.5em;
 	  -webkit-transform: translate(200vw, 0);
       opacity:0; }	
 	  
 .right-image {position:absolute;
-	  width:70%;
-	  top: 150px;
-	  right: -50px;
+	  width:60%;
+	  top: 100px;
+	  right: -5%;
 	  
 	  line-height:1.5em;
 	  -webkit-transform: translate(200vw, 0);
@@ -386,30 +357,32 @@ h6 {font-family: klinic-med-it;
 	    background-repeat: no-repeat;
 	    background-size: cover;
 		position: relative;}
-		
-	.accent-left {position: absolute;
-		left: -5px;
-		bottom: 40px;
-		width:60px;} 	
+	
 
 .accent-left {position: absolute;
 		left: -10px;
 		bottom: 40px;
-		width:90px;}
+		width: 10%;
+		min-width:50px;
+		max-width:65px;
+	}
 		
-	.accent-right {position: absolute;
+.accent-right {position: absolute;
 		right: -5px;
 		top: 20px;
 		width: 50px;}	
 
 /*---------------page 4 (helping-students)--------------------*/		
 
-#page4 {min-height: 70vh;}
+#page4 {min-height: 550px;
+	position: relative;
+	overflow: hidden;}
    
 .bubbles-container {
-	width:100%;
+	width:80%;
 	display: block;
 	text-align: center;
+	margin: 0 auto;
 	padding-top: 20vh;
     position:relative;
 	opacity: 0;
@@ -448,14 +421,32 @@ h6 {font-family: klinic-med-it;
 	text-align: center;
 	font-size: 15px;
 	line-height:1.2em;
-	font-family: gotham-book;}		
+	font-family: gotham-book;} 
+
+.accent-tLeft {position: absolute;
+		left: -10px;
+		top: 40px;
+		width:60px;}
+		
+.accent-bRight {position: absolute;
+		right: 15px;
+		bottom: -30px;
+		width: 170px;}
+			
 
 /*---------------------------------------------------------MEDIA-QUERIES--------------------------------------------------------------*/
 	
 	 	 
 @media only screen and (max-width: 1200px)  { 
 	#sidebar {width:23%;} 
-	.site-container {width:77%;}}
+	.site-container {width:77%;}
+	
+	.left-text {width:40%;}	
+	  
+	.right-image {width:70%;}
+
+
+}
 		
 @media only screen and (max-width: 1300px)  { 
 	.container {width:90%;}	}
@@ -469,18 +460,20 @@ h6 {font-family: klinic-med-it;
 	.container {width:87%; position: relative;} 
 	.page-long {padding-bottom: 100px;}
 	
+@media only screen and (max-width: 800px), (max-device-width: 800px)  { 
 	.right-image {clear:both;
 		width:100%;
+		margin-right: -10px;
+		margin-top: -80px;
 	  	position: relative;
-		margin: -40px -200px 10px 0px;}
+		}
 						  
 	.left-text {clear:both;
-	 	 width:40%;
-	  	 line-height:1.5em;
+	 	 width:80%;
 	 	 position:relative;
-	 	 margin-right: 10%;
+	 	 margin-left: 20%;
 		 -webkit-transform: translate(-200vw, 0);
-    	  opacity:0; }	
+    	 opacity:0; }	
 
 	.left-text-arrived, .left-image-arrived {
 		-webkit-transform: translate(0,0);
@@ -491,6 +484,13 @@ h6 {font-family: klinic-med-it;
 		-webkit-transform: translate(0,0);
 	    -webkit-transition: transform 2s ease-out; 
 		opacity:1;} 
+		
+	.container {min-height: 400px}
+	
+	h2 { font-size: 35px;}
+ 
+		
+	}
 
 @media only screen and (max-width: 700px), (max-device-width: 700px)  { 
 .caption {display: none;}
@@ -515,10 +515,12 @@ h6 {font-family: klinic-med-it;
 	opacity: 1;
 	-webkit-transition: opacity 3s ease;} 
 
-#page4 {min-height: 100vh;
-padding-bottom:230px;}
+#page4 {min-height: 100vh;}
+
 
 }
+
+.container {padding-bottom: 30px;} 
 	
  
 
