@@ -208,6 +208,8 @@ h6 {font-family: klinic-med-it;
 
 #page1 {position: relative; min-height: 600px;
 }
+
+#page2 {position: relative;}
 #pageVid {min-height: 20vh;}
 
 #page10c {height: 110vh;} 
