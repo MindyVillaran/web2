@@ -152,7 +152,9 @@ header{
 
 
   body { font-family: Klinic-Light; 
-  	font-size:20px; }
+  	font-size:20px; 
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;}
 
   h1 {font-family: Gotham-Light; 
 	  color:white;
@@ -170,6 +172,11 @@ header{
 	
   h2 {font-family: Gotham-Light; 
   	font-size:35px; }
+	
+h6 {font-family: klinic-med-it;
+	font-size: 1.5em;
+    letter-spacing: .5px;
+	text-align: center;}	
 
 
 /*-------------------------------------------------------dividers/sections---------------------------------------------------------------*/
@@ -195,6 +202,11 @@ header{
 
 
 /*--------------------------------------------------------styles and arrivals------------------------------------------------------------*/
+	
+	
+.blue-text {color: #3f90a5;}
+.white-text {color: white;}	
+
 
 
 .title {
@@ -205,36 +217,21 @@ header{
 	  top: 40vh;
 	  margin: 0 auto;
       opacity:0;}
+
+.title-top {
+	  position:relative;
+	  text-align: center;
+	  display:block;
+	  width: 90%;
+	  top: 10vh;
+	  margin: 0 auto;
+      opacity:0;}
 	  	  
 .title-arrived {
 	opacity:1;
- 	-webkit-transition: opacity 3s ease-in-out;} 
+ 	-webkit-transition: opacity 2s ease-in-out;} 
 		
-.pull-quote1 {
-  	  position:absolute;
-	  left: 15%;
-	  right: 15%;
-	  top: 40vh;
-	  opacity:0;
-}	
-
-.pull-quote1-arrived {
-  	opacity:1;
-   	-webkit-transition: opacity 2s ease-in-out;}
 	
-.blue-text {color: #3f90a5;}
-.white-text {color: white;}		
-
-.pull-quote2 {
-  	  position:absolute;
-	  left: 80px;
-	  right: 80px;
-	  top: 35vh;
-	  opacity:0;}	
-	  
-.pull-quote2-arrived {
-    	opacity:1;
-     	-webkit-transition: opacity 2s ease-in-out;}		
 		
 		/*
 .left {position:absolute;
@@ -313,21 +310,6 @@ header{
 	-webkit-transform: translate(10vh,0);
 } 	
 		
-		
-		
-
-.staticRight {	  
-	position:absolute;
-	  width:40%;
-	  top: 200px;
-	  right: 0px;
-	  line-height:1.5em;}
-	  
-.staticLeft {position:absolute;
-	  width:40%;
-	  top: 200px;
-	  line-height:1.5em;}	
-
 .center {
 	  position:absolute;
 	  width:40%;
@@ -405,61 +387,91 @@ header{
 	   	height: 100%;
 	   } */		
 
-	
-/*---------------bubble page--------------------*/
 
-.bubblePage {
-   	  width:90%;
-   	  top: 20vh;
-	  margin:0 auto;
-	  display:block;
-   	  text-align:center;
-   	  line-height:1.5em;
-   	  -webkit-transform: translate(400vw, 0);}
-	  	
-.bubblePage-arrived {
-   	-webkit-transform: translate(0,0);
-  	-webkit-transition: opacity 2s ease-in-out;}
-	
-   }  
+/*---------------page 3 (quote)--------------------*/
+
+	#page3 {background-image: url("assets/quote-page/bg.png");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+		position: relative;}
+		
+	.accent-left {position: absolute;
+		left: -5px;
+		bottom:  40px;
+		width:60px;}
+		
+	.accent-right {position: absolute;
+		right: -5px;
+		top: 20px;
+		width: 50px;}	
+
+/*---------------page 4 (helping-students)--------------------*/		
+
    
 .bubbles-container {
-	width:90%;
-    left:50px;
-	right:50px;
-    top:300px;
-    position:absolute;
+	width:100%;
+	display: block;
+	text-align: center;
+	padding-top: 20vh;
+    position:relative;
 	opacity: 0;
-	transition: opacity 3s ease;
 }
 
 .bubbles-container-arrived{
-	opacity: 1;}
+	opacity: 1;
+	-webkit-transition: opacity 3s ease;
+}
 
 .bubble-holder {
 	position: relative;
-	width: 21%;
-	padding:13px ;
-	float: left;}
+	width: 33%;
+	float: left;
+	padding-bottom: 50px;}
 
-.circle {
-	width: 95%}
+.icon {height:100px}
 	
-.circle:hover {
+.icon:hover {
 	-webkit-transform: scale(1.2);}
 	
 .caption {
-	position:absolute; 
-	top:200px;
-	left:35px;
+	display: block;
+	margin-top: 30px;
 	width: 120px;
 	text-align: center;
 	font-size: 15px;
-	line-height:1em;}
-		
+	line-height:1.2em;
+	font-family: gotham-book;}
+	
+.hovertext {display: none;
+	margin-top: 30px;
+	color: white;
+	width: 120px;
+	text-align: center;
+	font-size: 15px;
+	line-height:1.2em;
+	font-family: gotham-book;}		
 
 /*---------------------------------------------------------MEDIA-QUERIES--------------------------------------------------------------*/
+	
+/*----------------tablet-----------*/
 
+@media only screen and (max-device-width: 900px) { 
+   	header {display: block; position: fixed;  z-index:10000000000000;}
+   	.bar {position: relative;}
+   	.menu {position: absolute; top:50px}	
+   	#sidebar {display: none; }
+   	.site-container {width:100% !important;} }	
+		 
+@media only screen and (max-device-width: 768px)  { 
+.caption {display: none;}
+.hovertext {display: block;}
+.bubble-holder {
+clear: left;}		}
+	 
+	 
+/*----------------desktop-----------*/
+	 
+	 
 @media only screen and (max-width: 1200px)  { 
 	#sidebar {width:23%;} 
 	.site-container {width:77%;}}
@@ -489,8 +501,6 @@ header{
 		  -webkit-transform: translate(-200vw, 0);
     		opacity:0; }	
 
-
-	
 		.left-text-arrived, .left-image-arrived {
 			-webkit-transform: translate(0,0);
 		    -webkit-transition: transform 2s ease-out; 
@@ -499,22 +509,14 @@ header{
 		.right-text-arrived, .right-image-arrived {
 			-webkit-transform: translate(0,0);
 		    -webkit-transition: transform 2s ease-out; 
-			opacity:1;}
+			opacity:1;} 
 
-	  	
- }
+@media only screen and (max-width: 768px)  { 
+.caption {display: none;}
+.hovertext {display: block;}	
+.bubble-holder {
+clear: left;}		}
+	
  
-	
- /*---tablet/phone---*/
-@media only screen and (max-device-width: 900px) { 
-	header {display: block; position: fixed;  z-index:10000000000000;}
-	.bar {position: relative;}
-	.menu {position: absolute; top:50px}	
-	#sidebar {display: none; }
-	.site-container {width:100%;} }	
-	
-@media only screen and (max-device-width: 400px) { 
-    #title {background: url(assets/bg-image.jpg) #000 no-repeat center center fixed;}
-      #coinvid {display: none;}
-  }
+
 		

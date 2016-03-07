@@ -19,7 +19,7 @@ $( ".hamburger" ).show();
 });
 });
 
-//----------------sidebar menu--------------------
+//----------------sidebar menu---NEEDS REFIXING AT END!!!!!!!!!!!!!!!!!!!!!!--------------------
 
 $("#page1").on("arriving",function() {
   $(".intro").addClass("current"); 
@@ -99,12 +99,12 @@ $(".title").on("arrived",function() {
   $(".title").addClass("title-arrived");
 });
 
-$(".pull-quote1").on("arrived",function() {
-  $(this).addClass("pull-quote1-arrived");
-}); 
+$(".title").on("arrived",function() {
+  $(".title-top").addClass("title-arrived");
+});
 
-$(".pull-quote2").on("arrived",function() {
-  $(this).addClass("pull-quote2-arrived");
+$(".center-title").on("arrived",function() {
+  $(this).addClass("pull-quote1-arrived");
 }); 
 
 $(".left-text").on("arrived",function() {
@@ -133,34 +133,23 @@ $(".bubbles-container").on("arrived",function() {
   $(this).addClass("bubbles-container-arrived");
 }); 
 
-$(".bubblePage").on("arrived",function() {
-  $(this).addClass("bubblePage-arrived");
-}); 
-
-$("#shirt-bubble").hover(function(e){ 
+$("#calendar").hover(function(e){ 
 	console.log("hover")
-  $("#shirtCircleText").text("400 gallons of water to grow the cotton needed for one shirt");
+  $("#shirtCircleText").text("Staying current on payments is cruicial to avoid deliquency and default");
 },function(e){ 
   $("#shirtCircleText").empty();
 })
 
-$("#tire-bubble").hover(function(e){ 
+$("#coins").hover(function(e){ 
 	console.log("hover")
-  $("#tireCircleText").text("2000+ gallons of water for 1 tire");
-},function(e){ 
-  $("#tireCircleText").empty();
-})
-
-$("#paint-bubble").hover(function(e){ 
-	console.log("hover")
-  $("#paintCircleText").text("13 gallons of water for 1 gallon of paint");
+  $("#paintCircleText").text("Student debt is a constantly growing issue with increasing severity");
 },function(e){ 
   $("#paintCircleText").empty();
 })
 
-$("#paper-bubble").hover(function(e){ 
+$("#bank").hover(function(e){ 
 	console.log("hover")
-  $("#paperCircleText").text("1,321 gallons for 500 sheets of paper");
+  $("#paperCircleText").text("Financial problems often occur because of poor loan choices");
 },function(e){ 
   $("#paperCircleText").empty();
 })
