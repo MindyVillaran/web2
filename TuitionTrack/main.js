@@ -22,7 +22,15 @@ $( ".hamburger" ).show();
 //----------------sidebar menu--------------------
 
 $("#page1").on("arriving",function() {
-  $(".intro").addClass("current");  
+  $(".intro").addClass("current"); 
+});
+
+$("#title").on("departed",function() {
+	$("#back-to-top").fadeIn("slow");
+});
+
+$("#title").on("redeparted",function() {
+	$("#back-to-top").fadeIn("slow");
 });
 
 
@@ -33,7 +41,16 @@ $("#page1").on("rearriving",function() {
 
 $("#title").on("rearriving",function() {
   $(".intro").removeClass("current");
+  $("#back-to-top").fadeOut("slow");
   
+});
+
+$("#title").on("rearrived",function() {
+  $(".intro").removeClass("current");
+});
+
+$("#title").on("arrived",function() {
+  $(".intro").removeClass("current");
 });
 
 $("#title").on("arriving",function() {
@@ -118,7 +135,7 @@ $(".steam").on("arrived",function() {
 $("#page1").on("departed",function(e) {
     $(".img1").affix();
 	$(".showerWater").affix();
-	$(".steam").affix();
+	$(".steam").affix();	
 });
 
 $("#page1").on("rearriving",function(e) {
@@ -151,55 +168,7 @@ $(".watering-can").on("arrived",function() {
 $(".droplets").on("arrived",function() {
   $(this).addClass("droplets-arrived");
 }); 
-
-//---------------page ten-----------------
-
-
-$("#page5").on("departed",function(e) {
-    $(".water-drop2").affix();
-});
-
-$("#page5").on("rearriving",function(e) {
-    $(".water-drop2").unaffix();
-});
-
-$("#page9").on("departed",function(e) {
-    $(".factory").affix();
-	$(".smoke").affix().addClass(".smoke-arrived");
-});
-
-$("#page9").on("rearriving",function(e) {
-    $(".factory").unaffix();
-	$(".smoke").unaffix();
-	$(".shirt").unaffix();
-    $(".shirt").removeClass("shirt-arriving");
-});
-
-$("#page10").on("departing",function(e) {
-    $(".shirt").addClass("shirt-arriving");
-	$(".shirt").affix();
-});
-
-$("#page10").on("rearriving",function(e) {
-	$(".shirt").unaffix();
-    $(".shirt").removeClass("shirt-arriving");
-});
-
-$("#page11").on("arriving",function(e) {
-    $(".factory").release();
-	$(".smoke").release();
-	$(".water-drop2").release();
-	$(".shirt").release();
-});
-
-$("#page10c").on("departed",function(e) {
-    $(".factory").unaffix();
-	$(".smoke").unaffix();
-	$(".water-drop2").unaffix();
-	$(".shirt").unaffix();
-});
  
-
 //---------------page eleven----------------
 
 $(".bubbles-container").on("arrived",function() {
@@ -237,36 +206,6 @@ $("#paper-bubble").hover(function(e){
 },function(e){ 
   $("#paperCircleText").empty();
 })
-
-//---------------page fourteen----------------
-
-$(".coffee").on("arrived",function() {
-  $(this).addClass("coffee-arrived");
-}); 
-
-
-$(".coffee-graph1").on("arrived",function() {
-  $(this).addClass("coffee-graph1-arrived");
-}); 
-
-//---------------page fifteen----------------
-
-$(".coffee-graph2").on("arrived",function() {
-  $(this).addClass("coffee-graph2-arrived");
-}); 
-
-//---------------page sixteen-----------------
-
-
-$(".pot").on("arrived",function() {
-  $(this).addClass("pot-arrived");
-}); 
-
-
-$(".leaves").on("arrived",function() {
-  $(this).addClass("leaves-arrived");
-}); 
-
 
 
 //---------------smooth scroll-----------------

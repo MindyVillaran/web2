@@ -15,8 +15,8 @@
 <body>
 	
 <div id="sidebar">
- <a href="#title"><span class="logo-sidebar"> tuition track </span></a>
-   <a href="#page1" class="intro reg"><h3>introduction</h3></a>
+ <a href="#title"><img class="logo-sidebar" src="assets/logo-lockup.png"></a>
+   <a href="#page1" class="intro reg" id="introtag"><h3>introduction</h3></a>
    <a href="#page3" class="thelogo reg"><h3>the logo</h3></a>
    <a href="#page5" class="system reg"><h3>the system</h3></a>
    <a href="#page9" class="action reg"><h3>in action</h3></a>
@@ -34,10 +34,10 @@
 
 <div class="menu">
   <ul>
-    <li><a href="#page1"><h1>introduction</h1></a></li>
-    <li><a href="#page3"><h1>the logo</h1></a></li>
-    <li><a href="#page5"><h1>the system</h1></a></li>
-    <li><a href="#page9"><h1>in action</h1></a></li>
+    <li><a href="#page1"><h3>introduction</h3></a></li>
+    <li><a href="#page3"><h3>the logo</h3></a></li>
+    <li><a href="#page5"><h3>the system</h3></a></li>
+    <li><a href="#page9"><h3>in action</h3></a></li>
   </ul>
 </div> 
 </header>
@@ -47,41 +47,55 @@
 <div class= "site-container">   <!---main-section-->
 
 		
-<div class="page parallax-image scroller" id="title"> <!---page-title-->
+<div class="page scroller" id="title"> <!---page-title-->
 	<div class="firstpage"></div>
 	<div class= "container">
-		<div class="scroller title"><h1>Video Page</h1></div>
+		<div class="scroller title"><h1>tuition track</h1>
+			<h4>brand identity and style</h4></div>
 	</div>
 	
 	<video autoplay loop poster="assets/bg-image.jpg" id="coinvid">
   	  <source src="assets/coin-video.webm" type="video/webm">
   	  <source src="assets/coin-video.mp4" type="video/mp4">
 	</video>
+	
+    <a href="#page1"><img class="arrow" src="assets/arrow.png"></a>
 </div>
 
 
 
 
-<div class="scroller page white" id="page1">  <!---page-one-->
+<div class="scroller page blue" id="page1">  <!---page-one-->
 	<div class= "container">
-		<div class="scroller pull-quote1 blue-text"><h2>By now, most of us are familiar with the usual water-saving tips</h2></div>
+		<div class="scroller left white-text"><h2>Who We Are</h2><p>TuitionTrack is a full-service resource that strives to educate, assist, and empower students and families dealing with student loans.</p> </div>
+		<img class="scroller img1 right" src="assets/page1/image-1.png" alt="school">
+		
 	</div>
 </div>
 
 <div class="scroller page blue" id="page2"> <!---page-two-->
 	<div class= "container">
 		<div class="scroller left white-text">...don't leave water running unnecessarily, time your showers, install low-flow shower heads and resist the urge to unnecessarily water the lawn or wash the car.</div>
-		<img class="scroller img1" src="images/shower.svg" alt="shower">
 		<img class="scroller steam" src="images/steam.svg" alt="steam">
 		<img class="scroller showerWater" src="images/showerWater.svg" alt="showerWater">
 	</div>	
 </div>
 
-<div class="scroller page blue" id="page2b"> <!---page-twoB-->
-	<div class= "container">
-		<div class="scroller staticLeft white-text">You can also reuse greywater when appropriate, (water from rinsing veggies can be used to water plants, for example), and only run the dishwasher with a full load.</div>
-	</div>	
-</div>
+
+<div class="scroller page white" id="page2"> <!---page-2.5-->
+<!--
+<div class="videoWrapper">
+<iframe src="https://player.vimeo.com/video/157500079" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+</div> -->
+
+<video controls id="vid">
+  <source src="assets/TuitionTrack.mp4" type="video/mp4">
+  <source src="assets/TuitionTrack.webm" type="video/webm">
+</video>
+		
+</div>	<!---page-2.5-->
+
+
 
 <div class="scroller page dk-blue" id="page3"> <!---page-three-->
 	<div class= "container">
@@ -113,30 +127,6 @@
 	</div>	
 </div>
 
-<div class="scroller page blue" id="page10"> <!---page-ten-->
-	<div class= "container">
-		<div class="scroller right white-text">So when shopping, try to buy products only when necessary and look for those that have gone through the least processing in order to create the finished product.</div>
-		<img class="scroller factory" src="images/factory.svg" alt="factory">
-		<img class="scroller smoke" src="images/smoke.svg" alt="smoke">
-		<img class="scroller shirt" src="images/shirt.svg" alt="shirt">
-		
-	</div>	
-</div>
-
-
-<div class="scroller page blue" id="page10b"> <!---page-tenB-->
-	<div class= "container">
-		<div class="scroller staticRight white-text">For necessities like clothing, start your search at clothing swaps and secondhand stores. Not only will you save water, you will probably save a significant amount of money too!</div>
-	</div>	
-</div>
-
-
-<div class="scroller page blue" id="page10c"> <!---page-tenC-->
-	<div class= "container">
-		<div class="scroller staticRight white-text">Recycling is one way to save water, because the extraction and manufacturing of virgin raw materials into single-use packaging uses quite a bit of water. 
-</div>
-	</div>	
-</div>
 
 
 <div class="scroller page white" id="page11">  <!---page-eleven-->
@@ -154,11 +144,9 @@
 			 src="images/paint-bubble.svg" alt="paint"><span class="caption blue-text" id="paintCircleText"></span>
 	 		</div>
 			 
-			
 			<div class="bubble-holder" id="paper-bubble">
 			<img class="scroller circle paper-bubble" src="images/paper-bubble.svg" alt="paper"><span class="caption blue-text" id="paperCircleText"></span>
 			</div>
-			
 			
 			<div class="bubble-holder" id="tire-bubble">
 			<img class="scroller circle tire-bubble" src="images/tire-bubble.svg"  alt="tire"> 	<span class="caption blue-text" id="tireCircleText"></span>
@@ -167,21 +155,6 @@
 			
 		</div>	<!---bubbles-container-->
 	</div> <!---container-->
-</div>
-
-
-<div class="page dk-blue"> <!---page-thirteen-->
-	<div class= "container">
-		<div class="scroller pull-quote2 white-text"><h2>Food growth and production consumes a lot of water. And besides the fact that wasting food uses your money, it also a huge waste of water.</h2></div>
-	</div>	
-</div>
-
-<div class="page green"> <!---page-fourteen-->
-	<div class= "container">
-		<div class="scroller left blue-text">One cup of coffee has a water footprint of approximately 37 gallons, and coffee accounts for about 2 percent of the total water used in crop production.</div>
-		<img class="scroller coffee" src="images/coffee.svg" alt="coffee">
-		<img class="scroller coffee-graph1" src="images/coffee-graph1.svg" alt="coffee">
-	</div>	
 </div>
 
 
