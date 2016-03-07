@@ -118,7 +118,11 @@ header{
 
   @font-face {
       font-family: Klinic-Light-It;
-      src: url(Klinic-Slab/KlinicSlabLightIt.otf);} 
+      src: url(Klinic-Slab/KlinicSlabLightIt.otf);}  
+
+@font-face {
+      font-family: Klinic-Book;
+      src: url(Klinic-Slab/KlinicSlabBook.otf);} 
 
   @font-face {
       font-family: Klinic-Med;
@@ -151,7 +155,7 @@ header{
       src: url(Gotham/GothamHTF-Bold.ttf);} 
 
 
-  body { font-family: Klinic-Light; 
+  body { font-family: Klinic-Book; 
   	font-size:20px; 
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;}
@@ -191,12 +195,16 @@ h6 {font-family: klinic-med-it;
 	max-width:900px;
 	position:relative;
 	margin: 0 auto;} 
+
+.pagefull {
+  min-height: 100vh;
+  width: 100%;}
 	
 .page {
   min-height: 100vh;
   width: 100%;}
 
-#page2b	{height: 110vh;}
+#page1 {position: relative;}
 
 #page10c {height: 110vh;} 
 
@@ -371,34 +379,23 @@ h6 {font-family: klinic-med-it;
 #vid {width: 92%; 
 	position: relative;
 	margin: 4% 4% 4% 4%;}
-	
-	
-/*	   .videoWrapper {
-	   	position: relative;
-	   	padding-bottom: 56.25%;
-	   	padding-top: 25px;
-	   	height: 0;
-	   }
-	   .videoWrapper iframe {
-	   	position: absolute;
-	   	top: 0;
-	   	left: 0;
-	   	width: 100%;
-	   	height: 100%;
-	   } */		
-
 
 /*---------------page 3 (quote)--------------------*/
 
-	#page3 {background-image: url("assets/quote-page/bg.png");
+#page3 {background-image: url("assets/quote-page/bg.png");
 	    background-repeat: no-repeat;
 	    background-size: cover;
 		position: relative;}
 		
 	.accent-left {position: absolute;
 		left: -5px;
-		bottom:  40px;
-		width:60px;}
+		bottom: 40px;
+		width:60px;} 	
+
+.accent-left {position: absolute;
+		left: -10px;
+		bottom: 40px;
+		width:90px;}
 		
 	.accent-right {position: absolute;
 		right: -5px;
@@ -407,6 +404,7 @@ h6 {font-family: klinic-med-it;
 
 /*---------------page 4 (helping-students)--------------------*/		
 
+#page4 {min-height: 70vh;}
    
 .bubbles-container {
 	width:100%;
@@ -428,7 +426,7 @@ h6 {font-family: klinic-med-it;
 	float: left;
 	padding-bottom: 50px;}
 
-.icon {height:100px}
+.icon {height:100px;}
 	
 .icon:hover {
 	-webkit-transform: scale(1.2);}
@@ -436,6 +434,7 @@ h6 {font-family: klinic-med-it;
 .caption {
 	display: block;
 	margin-top: 30px;
+	padding: 0 25% 0 25%;
 	width: 120px;
 	text-align: center;
 	font-size: 15px;
@@ -443,9 +442,9 @@ h6 {font-family: klinic-med-it;
 	font-family: gotham-book;}
 	
 .hovertext {display: none;
-	margin-top: 30px;
+	margin-top: 20px;
 	color: white;
-	width: 120px;
+	width: 190px;
 	text-align: center;
 	font-size: 15px;
 	line-height:1.2em;
@@ -453,25 +452,7 @@ h6 {font-family: klinic-med-it;
 
 /*---------------------------------------------------------MEDIA-QUERIES--------------------------------------------------------------*/
 	
-/*----------------tablet-----------*/
-
-@media only screen and (max-device-width: 900px) { 
-   	header {display: block; position: fixed;  z-index:10000000000000;}
-   	.bar {position: relative;}
-   	.menu {position: absolute; top:50px}	
-   	#sidebar {display: none; }
-   	.site-container {width:100% !important;} }	
-		 
-@media only screen and (max-device-width: 768px)  { 
-.caption {display: none;}
-.hovertext {display: block;}
-.bubble-holder {
-clear: left;}		}
-	 
-	 
-/*----------------desktop-----------*/
-	 
-	 
+	 	 
 @media only screen and (max-width: 1200px)  { 
 	#sidebar {width:23%;} 
 	.site-container {width:77%;}}
@@ -479,43 +460,65 @@ clear: left;}		}
 @media only screen and (max-width: 1300px)  { 
 	.container {width:90%;}	}
 
-@media only screen and (max-width: 900px)  { 
+@media only screen and (max-width: 900px), (max-device-width: 900px)  { 
 	header {display: block; position: fixed;  z-index:10000000000000;}
 	.bar {position: relative;}
 	.menu {position: absolute; top:50px}
 	#sidebar {display: none; }
 	.site-container {width:100%;}
 	.container {width:87%; position: relative;} 
-	.page { min-height: 100vh; width: 100%;}
+	.page-long {padding-bottom: 100px;}
 	
-		.right-image {clear:both;
-			width:100%;
-	  		position: relative;
-			margin: -40px -200px 10px 0px;}
+	.right-image {clear:both;
+		width:100%;
+	  	position: relative;
+		margin: -40px -200px 10px 0px;}
 						  
-		.left-text {float: right;
-	 	   width:40%;
+	.left-text {clear:both;
+	 	 width:40%;
 	  	 line-height:1.5em;
 	 	 position:relative;
 	 	 margin-right: 10%;
-		  -webkit-transform: translate(-200vw, 0);
-    		opacity:0; }	
+		 -webkit-transform: translate(-200vw, 0);
+    	  opacity:0; }	
 
-		.left-text-arrived, .left-image-arrived {
-			-webkit-transform: translate(0,0);
-		    -webkit-transition: transform 2s ease-out; 
-		      opacity:1;}
+	.left-text-arrived, .left-image-arrived {
+		-webkit-transform: translate(0,0);
+	    -webkit-transition: transform 2s ease-out; 
+	    opacity:1;}
 
-		.right-text-arrived, .right-image-arrived {
-			-webkit-transform: translate(0,0);
-		    -webkit-transition: transform 2s ease-out; 
-			opacity:1;} 
+	.right-text-arrived, .right-image-arrived {
+		-webkit-transform: translate(0,0);
+	    -webkit-transition: transform 2s ease-out; 
+		opacity:1;} 
 
-@media only screen and (max-width: 768px)  { 
+@media only screen and (max-width: 700px), (max-device-width: 700px)  { 
 .caption {display: none;}
 .hovertext {display: block;}	
-.bubble-holder {
-clear: left;}		}
+.bubble-holder {clear: left;}
+
+
+.bubbles-container {
+	width:100px;
+	margin-left: 27%;
+	margin-right: 27%;
+	display: block;
+	text-align: center;
+	padding-top: 18vh;
+	opacity: 0;}
+
+.icon {padding-left:38px;
+	padding-top:10px;}
+
+
+.bubbles-container-arrived{
+	opacity: 1;
+	-webkit-transition: opacity 3s ease;} 
+
+#page4 {min-height: 100vh;
+padding-bottom:230px;}
+
+}
 	
  
 
