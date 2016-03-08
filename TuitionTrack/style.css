@@ -182,6 +182,12 @@ h6 {font-family: klinic-med-it;
 	font-size: 1.5em;
     letter-spacing: .5px;
 	text-align: center;}
+	
+
+h5 {font-family: gotham-light;
+font-size:20px;
+color: gray}
+
 /*-------------------------------------------------------dividers/sections---------------------------------------------------------------*/
   
   
@@ -467,6 +473,8 @@ h6 {font-family: klinic-med-it;
 
 #pageLogo, #pageRespLogo {min-height: 600px;}
 
+#logo-box {margin-top: 30px;}
+
 .smallLeftImage {float: left;
 	width: 30%;
   	margin-top: 80px;
@@ -495,15 +503,28 @@ h6 {font-family: klinic-med-it;
 	margin-left: auto;
 	margin-right:auto;
 	overflow:hidden;} 
+	
+.captionRespLogo {text-align: center;}
 
+.full-image	{width:90%;
+	display:block;
+	margin: 0 auto;	
+	padding:60px 0px 60px 0;}
+	
+.columnpic {height:100px;
+	display:block;
+	margin: 0 auto;}
+	
+#alternateVersions1 {border-bottom: 1px solid gray;}		
+	
 /*---------------SYSTEM--------------------*/
 
-.columns3, .columns4, .columns5, .columns2 {
+.columns3, .columns4, .columns5, .columns2,  .columns7 {
 	margin-top: 50px; float: left; 
 	padding-left: 3%;
 	width: 26%}	
 	
-.columns2 {margin-bottom:120px; width: 30%}
+.columns2, .columns7 {margin-bottom:120px; width: 30%}
 	
 .columns4, .columns5{ padding-left: 6%;
 }
@@ -512,11 +533,14 @@ h6 {font-family: klinic-med-it;
 	padding: 20px;
 	max-height: 150px;}	
 
-.textcapt {font-family: gotham-book;
+.textcapt, .textcapt3 {font-family: gotham-book;
 	font-size: .8em;
 	line-height: 1.2em;
 	padding-top: 10px;
-	border-top: 1px solid white;} 
+	border-top: 1px solid white;}  
+
+.textcapt3 {text-align: center;}
+	
 
 .textcapt2 {font-family: gotham-book;
 	font-size: .65em;
@@ -607,14 +631,18 @@ h6 {font-family: klinic-med-it;
 	 
 	.columns3 {	width: 40%; }
 	
-	.columns2 {width: 40%; padding-left:10%;}
+	.columns2 {width: 40%; padding-left:10%; }
 
 	.columns4 { width: 40%; padding-left:10%; }
 
-	.columns5 {clear: both; 
+
+	.columns5, .columns7 {clear: both; 
 		padding-left: 0%;
 		width: 80%;
 	 	margin: 50px 10% 0 5%;}	
+			
+	.full-image	{width:100%;}
+		
 }
 
 
@@ -675,6 +703,9 @@ h6 {font-family: klinic-med-it;
  	opacity:1;}
 
 #pageRespLogo {min-height: 120vh;} 
+
+
+.full-image	{padding:35px 0px 35px 0;}	
 
 }
 
