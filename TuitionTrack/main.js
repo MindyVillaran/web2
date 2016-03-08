@@ -135,7 +135,7 @@ $(".bubbles-container").on("arrived",function() {
 
 $("#calendar").hover(function(e){ 
 	console.log("hover")
-  $("#shirtCircleText").text("Staying current on payments is cruicial to avoid deliquency and default");
+  $("#shirtCircleText").text("Staying current on payments is crucial to avoid deliquency and default");
 },function(e){ 
   $("#shirtCircleText").empty();
 })
