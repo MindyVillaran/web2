@@ -189,6 +189,7 @@ h6 {font-family: klinic-med-it;
 .white {background-color:  #ffffff;}
 .green {background-color: #8bc53f;}
 .dk-blue {background-color: #1f3668;}
+.teal {background-color: #3f90a5;} 
 
 .container {
 	max-width:900px;
@@ -509,7 +510,21 @@ h6 {font-family: klinic-med-it;
 	font-size: .8em;
 	line-height: 1.2em;
 	padding-top: 10px;
-	border-top: 1px solid white;}
+	border-top: 1px solid white;} 
+
+.textcapt2 {font-family: gotham-book;
+	font-size: .7em;
+	line-height: 1.5em;
+	padding-top: 10px;
+	border-top: 1px solid gray;
+	margin-top: 140px;}
+	
+	
+.color-swatch {width:120px;
+	height:120px;
+	border-radius: 60px;
+	display: block;
+}	
 
 /*---------------------------------------------------------MEDIA-QUERIES--------------------------------------------------------------*/
 	
