@@ -271,7 +271,7 @@ h6 {font-family: klinic-med-it;
 	  
 .FLOATright-text {float:left;
 	  width:38%;
-	  margin-top: 20vh;
+	  margin-top: 80px;
 	  margin-right: -13px;
 	  line-height:1.5em;
 	  position:relative;
@@ -460,17 +460,27 @@ h6 {font-family: klinic-med-it;
 
 /*---------------pageLogo--------------------*/
 
+#pageLogo, #pageRespLogo {min-height: 600px;}
+
 .smallLeftImage {float: left;
 	width: 30%;
-  	margin-top: 20vh;
-	padding: 0px 10% 0 7% }	
+  	margin-top: 80px;
+	padding: 0px 10% 0 7% }	 
 
+.columns{float: left; 
+	padding-left: 8%;
+	width: 40%}	 
+	
+.labellogo	{font-family:klinic-med-it;
+	color: gray;
+	margin-top: 5px;
+	width: 100%;
+	display: block;
+	text-align: center;}
 
-/*---------------pageIcons--------------------*/
-
-.icongrid {float: left; 
-	padding: 20px;
-	max-height: 150px;}	
+.lillogo {width: 100%;
+	display: block;
+	margin: 0 auto;}
 
 #pageIcons {position:relative;
 	z-index:1;
@@ -478,7 +488,15 @@ h6 {font-family: klinic-med-it;
 	height:100%;
 	margin-left: auto;
 	margin-right:auto;
-	overflow:hidden;}	
+	overflow:hidden;} 
+
+/*---------------pageIcons--------------------*/
+
+.icongrid {float: left; 
+	padding: 20px;
+	max-height: 150px;}	
+
+	
 
 /*---------------------------------------------------------MEDIA-QUERIES--------------------------------------------------------------*/
 	
@@ -601,12 +619,19 @@ h6 {font-family: klinic-med-it;
  	 position:relative;
 	 padding-left: 0%;
  	 margin: 70px 25% 0 25%;} 	
-
+	 
+.columns{clear: both; 
+ 	padding-left: 0%;
+ 	width: 80%;
+	 margin: 50px 10% 0 10%;
+}	
+		
 .right-text-arrived {
  	-webkit-transform: translate(0,0);
      -webkit-transition: transform 2s ease-out; 
  	opacity:1;}
 
+#pageRespLogo {min-height: 120vh;} 
 
 }
 

@@ -103,33 +103,33 @@ $(".title").on("arrived",function() {
   $(".title-top").addClass("title-arrived");
 });
 
-$(".center-title").on("arrived",function() {
+$(".center-title").on("arriving",function() {
   $(this).addClass("pull-quote1-arrived");
 }); 
 
-$(".left-text").on("arrived",function() {
+$(".left-text").on("arriving",function() {
   $(this).addClass("left-text-arrived");
 }); 
 
-$(".Left-title-text").on("arrived",function() {
+$(".Left-title-text").on("arriving",function() {
   $(this).addClass("left-text-arrived");
 }); 
 
 
-$(".left-image").on("arrived",function() {
+$(".left-image").on("arriving",function() {
   $(this).addClass("left-image-arrived");
 }); 
 
 	 
-$(".right-text").on("arrived",function() {
+$(".right-text").on("arriving",function() {
   $(this).addClass("right-text-arrived");
 }); 
 
-$(".FLOATright-text").on("arrived",function() {
+$(".FLOATright-text").on("arriving",function() {
   $(this).addClass("right-text-arrived");
 }); 
 
-$(".right-image").on("arrived",function() {
+$(".right-image").on("arriving",function() {
   $(this).addClass("right-image-arrived");
 }); 
 
