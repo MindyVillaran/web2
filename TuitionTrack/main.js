@@ -120,7 +120,12 @@ $(".left-image").on("arrived",function() {
   $(this).addClass("left-image-arrived");
 }); 
 
+	 
 $(".right-text").on("arrived",function() {
+  $(this).addClass("right-text-arrived");
+}); 
+
+$(".FLOATright-text").on("arrived",function() {
   $(this).addClass("right-text-arrived");
 }); 
 

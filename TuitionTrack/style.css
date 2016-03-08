@@ -210,6 +210,7 @@ h6 {font-family: klinic-med-it;
 	
 .blue-text {color: #3f90a5;}
 .white-text {color: white;}	
+.gray-text {color: #58595b;}
 
 .title {
 	  position:relative;
@@ -262,6 +263,15 @@ h6 {font-family: klinic-med-it;
 .right-text {float:right;
 	  width:38%;
 	  margin-top: 30vh;
+	  margin-right: -13px;
+	  line-height:1.5em;
+	  position:relative;
+	  -webkit-transform: translate(200vw, 0);
+      opacity:0;}  
+	  
+.FLOATright-text {float:left;
+	  width:38%;
+	  margin-top: 20vh;
 	  margin-right: -13px;
 	  line-height:1.5em;
 	  position:relative;
@@ -445,6 +455,15 @@ h6 {font-family: klinic-med-it;
 #vid {width: 92%; 
 	position: relative;
 	margin: 4% 4% 4% 4%;} 
+	
+
+
+/*---------------pageLogo--------------------*/
+
+.smallLeftImage {float: left;
+	width: 30%;
+  	margin-top: 20vh;
+	padding: 0px 10% 0 7% }	
 
 
 /*---------------pageIcons--------------------*/
@@ -500,9 +519,7 @@ h6 {font-family: klinic-med-it;
 	.left-text {clear:both;
 	 	 width:80%;
 	 	 position:relative;
-	 	 margin-left: 20%;
-		 -webkit-transform: translate(-200vw, 0);
-    	 opacity:0; }		
+	 	 margin-left: 20%;}		
 	
 	.left-image {clear:both;
 		width:90%;
@@ -517,10 +534,9 @@ h6 {font-family: klinic-med-it;
  	 	 margin-top: 120px;
 	 	 margin-left: 20%;
 	 	 margin-right: 5%;
-		 -webkit-transform: translate(-200vw, 0);
     	 opacity:0; }	
 		 
-
+		 
 	.left-text-arrived, .left-image-arrived {
 		-webkit-transform: translate(0,0);
 	    -webkit-transition: transform 2s ease-out; 
@@ -529,7 +545,7 @@ h6 {font-family: klinic-med-it;
 	.right-text-arrived, .right-image-arrived {
 		-webkit-transform: translate(0,0);
 	    -webkit-transition: transform 2s ease-out; 
-		opacity:1;}  
+		opacity:1;}
  
 		
 	.container {min-height: 400px}
@@ -574,8 +590,29 @@ h6 {font-family: klinic-med-it;
 
 #page4 {min-height: 100vh;}
 
+.FLOATright-text {clear:both;
+ 	 width:80%;
+ 	 position:relative;
+ 	 margin: 50px 10% 0 10%;
+	 opacity:0; }
+	 
+.smallLeftImage	{clear:both;
+ 	 width:50%;
+ 	 position:relative;
+	 padding-left: 0%;
+ 	 margin: 70px 25% 0 25%;} 	
+
+.right-text-arrived {
+ 	-webkit-transform: translate(0,0);
+     -webkit-transition: transform 2s ease-out; 
+ 	opacity:1;}
+
 
 }
+
+
+
+
 
 .container {padding-bottom: 30px;}
 	
