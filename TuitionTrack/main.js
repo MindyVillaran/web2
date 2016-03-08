@@ -111,6 +111,11 @@ $(".left-text").on("arrived",function() {
   $(this).addClass("left-text-arrived");
 }); 
 
+$(".Left-title-text").on("arrived",function() {
+  $(this).addClass("left-text-arrived");
+}); 
+
+
 $(".left-image").on("arrived",function() {
   $(this).addClass("left-image-arrived");
 }); 
