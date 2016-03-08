@@ -190,6 +190,9 @@ h6 {font-family: klinic-med-it;
 .green {background-color: #8bc53f;}
 .dk-blue {background-color: #1f3668;}
 .teal {background-color: #3f90a5;} 
+.lt-green {background-color: #dfedcc;}
+.gray {background-color:#6d6e70;}
+
 
 .container {
 	max-width:900px;
@@ -494,11 +497,13 @@ h6 {font-family: klinic-med-it;
 
 /*---------------SYSTEM--------------------*/
 
-.columns3, .columns4, .columns5 {
+.columns3, .columns4, .columns5, .columns2 {
 	margin-top: 50px; float: left; 
 	padding-left: 3%;
 	width: 26%}	
-
+	
+.columns2 {margin-bottom:120px; width: 30%}
+	
 .columns4, .columns5{ padding-left: 6%;
 }
 
@@ -513,12 +518,11 @@ h6 {font-family: klinic-med-it;
 	border-top: 1px solid white;} 
 
 .textcapt2 {font-family: gotham-book;
-	font-size: .7em;
+	font-size: .65em;
 	line-height: 1.5em;
 	padding-top: 10px;
 	border-top: 1px solid gray;
-	margin-top: 140px;}
-	
+	margin-top: 120px;}
 	
 .color-swatch {width:120px;
 	height:120px;
@@ -601,6 +605,8 @@ h6 {font-family: klinic-med-it;
 	.icongrid { padding: 10px;}
 	 
 	.columns3 {	width: 40%; }
+	
+	.columns2 {width: 40%; padding-left:10%;}
 
 	.columns4 { width: 40%; padding-left:10%; }
 
@@ -660,6 +666,7 @@ h6 {font-family: klinic-med-it;
  	width: 80%;
 	 margin: 50px 10% 0 10%;}	
 
+
 		
 .right-text-arrived {
  	-webkit-transform: translate(0,0);
@@ -669,6 +676,12 @@ h6 {font-family: klinic-med-it;
 #pageRespLogo {min-height: 120vh;} 
 
 }
+
+
+@media only screen and (max-width: 600px), (max-device-width: 600px)  { 
+.columns3, .columns4 {width: 60%; padding-left:5%;}
+#pageType {padding-bottom: 50px;}
+
 
 
 
