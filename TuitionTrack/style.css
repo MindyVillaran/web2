@@ -506,16 +506,20 @@ color: gray}
 	
 .captionRespLogo {text-align: center;}
 
+
 .full-image	{width:90%;
 	display:block;
 	margin: 0 auto;	
 	padding:60px 0px 60px 0;}
-	
+		
 .columnpic {height:100px;
 	display:block;
 	margin: 0 auto;}
 	
-#alternateVersions1 {border-bottom: 1px solid gray;}		
+#spaceabove {margin-top: 60px;
+	padding-top: 50px;
+	border-top: 1px solid gray;}	
+		
 	
 /*---------------SYSTEM--------------------*/
 
