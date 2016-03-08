@@ -194,11 +194,12 @@ h6 {font-family: klinic-med-it;
 .gray {background-color:#6d6e70;}
 
 
-.container {
+.container, .container2 {
 	max-width:900px;
 	position:relative;
-	padding-bottom: 400px;
 	margin: 0 auto;} 
+
+#why{padding-bottom: 400px;}
 
 .pagefull {
   min-height: 100vh;
@@ -456,9 +457,9 @@ h6 {font-family: klinic-med-it;
 
 #pageVid {min-height: 20vh;}
 
-#vid {width: 92%; 
+#vid {width: 100%; 
 	position: relative;
-	margin: 4% 4% 4% 4%;} 
+	margin: 4% 0%} 
 	
 
 
@@ -553,7 +554,7 @@ h6 {font-family: klinic-med-it;
 	.menu {position: absolute; top:50px}
 	#sidebar {display: none; }
 	.site-container {width:100%;}
-	.container {width:87%; position: relative;} 
+	.container, .container2 {width:87%; position: relative;} 
 	.page-long {padding-bottom: 100px;}
 	
 @media only screen and (max-width: 800px), (max-device-width: 800px)  { 
@@ -689,6 +690,6 @@ h6 {font-family: klinic-med-it;
 
 .container {padding-bottom: 30px;}
 	
- 
+}
 
 		
