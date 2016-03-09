@@ -367,7 +367,7 @@ color: gray}
 
 /*---------------page 2(OurGoals)--------------------*/
 
-#page2, #pageBrand {position: relative;}
+#page2, #pageBrand, #colorPage {position: relative;}
 
 /*---------------page 3 (quote)--------------------*/
 
@@ -506,7 +506,6 @@ color: gray}
 	
 
 #pageIcons, #pageType {position:relative;
-	z-index:1;
 	width:100%;
 	min-height: 700px;
 	height:100%;
