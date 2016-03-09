@@ -34,7 +34,7 @@ a {text-decoration: none;
 	text-align: center;
 	padding: 20px;}	
 	
-.current {color: #7cc0b9;
+.current {color: #3f90a5;
 	font-family: gotham-book;}
 
 .reg:hover {color:#7cc0b9;
@@ -369,7 +369,7 @@ color: gray}
 
 /*---------------page 2(OurGoals)--------------------*/
 
-#page2, #pageBrand, #colorPage {position: relative;}
+#page2, #pageBrand, #colorPage, #credit {position: relative;}
 
 /*---------------page 3 (quote)--------------------*/
 
@@ -619,7 +619,8 @@ color: gray}
 	
 .fullapp {clear:both;
 	width: 96%;}	
-	
+
+	#credit h4 {line-height:1.5em;}
 
 
 /*---------------------------------------------------------MEDIA-QUERIES--------------------------------------------------------------*/

@@ -116,6 +116,12 @@ $("#applications").on("arriving",function() {
 
 $("#applications").on("rearriving",function() {
   $(".action").addClass("current");
+  $(".system").removeClass("current");
+});
+
+$("#applications").on("rearrived",function() {
+  $(".action").addClass("current");
+  $(".system").removeClass("current");
 });
 
 
