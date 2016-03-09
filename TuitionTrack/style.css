@@ -371,13 +371,12 @@ color: gray}
 
 /*---------------page 3 (quote)--------------------*/
 
-#page3 {background-image: url("assets/quote-page/bg.png");
+#page3, #quote2 {background-image: url("assets/quote-page/bg.png");
 	    background-repeat: no-repeat;
 	    background-size: cover;
 		position: relative;
-	    background-attachment:fixed;
-	}
-	
+	    background-attachment:fixed;}
+
 
 .accent-left {position: absolute;
 		left: -10px;
@@ -465,7 +464,8 @@ color: gray}
 
 #vid {width: 100%; 
 	position: relative;
-	margin: 4% 0%} 
+	margin: 4% 0%;
+	border:1px solid  #e6e6e6 ;} 
 	
 
 
@@ -570,8 +570,15 @@ color: gray}
 .color-swatch {width:120px;
 	height:120px;
 	border-radius: 60px;
-	display: block;
-}	
+	display: block;}
+	
+
+
+/*---------------APPLICATIONS--------------------*/
+
+#applications { position: relative;}	
+	
+		
 
 /*---------------------------------------------------------MEDIA-QUERIES--------------------------------------------------------------*/
 

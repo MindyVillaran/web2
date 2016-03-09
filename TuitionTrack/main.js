@@ -19,11 +19,9 @@ $( ".hamburger" ).show();
 });
 });
 
-//----------------sidebar menu---NEEDS REFIXING AT END!!!!!!!!!!!!!!!!!!!!!!--------------------
+//----------------sidebar menu-----------------------
 
-$("#page1").on("arriving",function() {
-  $(".intro").addClass("current"); 
-});
+
 
 $("#title").on("departed",function() {
 	$("#back-to-top").fadeIn("slow");
@@ -33,16 +31,9 @@ $("#title").on("redeparted",function() {
 	$("#back-to-top").fadeIn("slow");
 });
 
-
-$("#page1").on("rearriving",function() {
-  $(".thelogo").removeClass("current");
-  $(".intro").addClass("current");
-});
-
 $("#title").on("rearriving",function() {
   $(".intro").removeClass("current");
   $("#back-to-top").fadeOut("slow");
-  
 });
 
 $("#title").on("rearrived",function() {
@@ -58,39 +49,74 @@ $("#title").on("arriving",function() {
 });
 
 
-$("#page3").on("arriving",function() {
+
+
+
+$("#page1").on("arriving",function() {
+  $(".intro").addClass("current"); 
+});
+
+$("#page1").on("rearriving",function() {
+  $(".thelogo").removeClass("current");
+  $(".intro").addClass("current");
+});
+
+
+$("#pageBrand").on("rearrived",function() {
+  $(".thelogo").removeClass("current");
+  $(".intro").addClass("current");
+});
+
+
+
+
+
+
+$("#pageLogo").on("arriving",function() {
   $(".intro").removeClass("current");
   $(".thelogo").addClass("current");
 });
 
 
-$("#page3").on("rearriving",function() {
+$("#spaceabove").on("rearrived",function() {
   $(".system").removeClass("current");
   $(".thelogo").addClass("current");
 });
 
-$("#page5").on("arriving",function() {
+$("#spaceabove").on("rearriving",function() {
+  $(".system").removeClass("current");
+  $(".thelogo").addClass("current");
+});
+
+
+
+
+
+$("#pageType").on("arriving",function() {
   $(".thelogo").removeClass("current");
   $(".system").addClass("current");
 });
 
 
-$("#page5").on("rearriving",function() {
+$("#quote2").on("rearriving",function() {
   $(".action").removeClass("current");
   $(".system").addClass("current");
 });
 
-$("#page9").on("arriving",function() {
+$("#quote2").on("rearrived",function() {
+  $(".action").removeClass("current");
+  $(".system").addClass("current");
+});
+
+$("#applications").on("arriving",function() {
   $(".system").removeClass("current");
   $(".action").addClass("current");
 });
 
 
-$("#page9").on("rearriving",function() {
+$("#applications").on("rearriving",function() {
   $(".action").addClass("current");
 });
-
-
 
 
 //----------------type-styles--------------------
