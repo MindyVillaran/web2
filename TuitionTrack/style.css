@@ -484,16 +484,26 @@ color: gray}
 	padding-left: 8%;
 	width: 40%}	 
 	
-.labellogo	{font-family:klinic-med-it;
+.labellogo, .labellogo2	{font-family:klinic-med-it;
 	color: gray;
 	margin-top: 5px;
 	width: 100%;
 	display: block;
 	text-align: center;}
+	
+.labellogo2	{text-align: left;}	
 
 .lillogo {width: 100%;
 	display: block;
 	margin: 0 auto;}
+	
+.lillogo2 {
+	width: 100%;
+	padding: 85px 0 0 0 ;
+	display: block;
+	margin: 0 auto;
+	text-align: center;}
+	
 
 #pageIcons, #pageType {position:relative;
 	z-index:1;
@@ -516,9 +526,13 @@ color: gray}
 	display:block;
 	margin: 0 auto;}
 	
-#spaceabove {margin-top: 60px;
-	padding-top: 50px;
+#spaceabove {margin-top: 70px;
+	padding-top: 30px;
 	border-top: 1px solid gray;}	
+
+#restofLogo	{min-height: 210vh;}
+	
+	
 		
 	
 /*---------------SYSTEM--------------------*/
@@ -560,7 +574,10 @@ color: gray}
 }	
 
 /*---------------------------------------------------------MEDIA-QUERIES--------------------------------------------------------------*/
-	
+
+@media only screen and (min-width: 1600px)  { 
+	#restofLogo	{min-height: 160vh;}
+}
 	 	 
 @media only screen and (max-width: 1200px)  { 
 	#sidebar {width:23%;} 
@@ -699,7 +716,7 @@ color: gray}
  	width: 80%;
 	 margin: 50px 10% 0 10%;}	
 
-
+.lillogo2 { padding: 45px 0 0 0 ;}
 		
 .right-text-arrived {
  	-webkit-transform: translate(0,0);
@@ -711,6 +728,9 @@ color: gray}
 
 .full-image	{padding:35px 0px 35px 0;}	
 
+#restofLogo	{min-height: 3200px}
+
+
 }
 
 
@@ -718,6 +738,7 @@ color: gray}
 .columns3, .columns4 {width: 60%; padding-left:5%;}
 #pageType {padding-bottom: 50px;}
 
+#restofLogo	{min-height: 2500px}
 
 
 
