@@ -202,8 +202,10 @@ color: gray}
 
 .container, .container2 {
 	max-width:900px;
+	width:80%; 
 	position:relative;
-	margin: 0 auto;} 
+	margin: 0 auto;
+	padding: 20px;} 
 
 #why{padding-bottom: 400px;}
 
@@ -529,7 +531,7 @@ color: gray}
 	padding-top: 30px;
 	border-top: 1px solid gray;}	
 
-#restofLogo	{min-height: 210vh;}
+#restofLogo	{min-height: 230vh;}
 	
 	
 		
@@ -576,13 +578,54 @@ color: gray}
 /*---------------APPLICATIONS--------------------*/
 
 #applications { position: relative;}	
-	
+
+.application {max-height:90vh;
+	width: auto;
+    -webkit-transform: translate(200vw, 0);
+    margin-top: 40px;
+    opacity:0;}	
+
+.applicationL {max-height:90vh;
+		width: auto;
+	    margin-top: 40px;
+   	    -webkit-transform: translate(-200vw, 0);
+	    opacity:0;}		
+
+.right-image-arrived {
+		-webkit-transform: translate(0,0);
+	    -webkit-transition: transform 2s ease-out; 
+		opacity:1;}
 		
+.left-image-arrived {
+		-webkit-transform: translate(0,0);
+	    -webkit-transition: transform 2s ease-out; 
+	    opacity:1;}	
+			
+	
+#stackL { float:left; width:46%;
+	padding-right: 40px;
+	padding-bottom: 60px;}
+
+#stackR { float:left; width:46%;
+	padding-bottom: 60px;}
+	
+#stackL2 { float:left; width:33%;
+	padding-right: 38px;
+	padding-bottom: 60px;}
+
+#stackR2 { float:left; width:60%;
+	padding-bottom: 60px;}
+		
+	
+.fullapp {clear:both;
+	width: 96%;}	
+	
+
 
 /*---------------------------------------------------------MEDIA-QUERIES--------------------------------------------------------------*/
 
 @media only screen and (min-width: 1600px)  { 
-	#restofLogo	{min-height: 160vh;}
+	#restofLogo	{min-height: 180vh;}
 }
 	 	 
 @media only screen and (max-width: 1200px)  { 
@@ -605,7 +648,7 @@ color: gray}
 	.menu {position: absolute; top:50px}
 	#sidebar {display: none; }
 	.site-container {width:100%;}
-	.container, .container2 {width:87%; position: relative;} 
+	.container, .container2 {width:80%; position: relative;} 
 	.page-long {padding-bottom: 100px;}
 	
 @media only screen and (max-width: 800px), (max-device-width: 800px)  { 
@@ -737,6 +780,21 @@ color: gray}
 #restofLogo	{min-height: 3200px}
 
 
+
+
+#stackL, #stackL2, #stackR, #stackR2 {clear:both;
+	width: 96%; }
+
+#stackL { padding-right: 0px;
+	padding-bottom: 0px;}
+	
+#stackL2 {
+	padding-right: 0px;
+	padding-bottom: 0px;}
+
+#stackR2 {
+	padding-bottom: 60px;}
+
 }
 
 
@@ -744,10 +802,7 @@ color: gray}
 .columns3, .columns4 {width: 60%; padding-left:5%;}
 #pageType {padding-bottom: 50px;}
 
-#restofLogo	{min-height: 2500px}
-
-
-
+#restofLogo	{min-height: 2700px}
 
 
 .container {padding-bottom: 30px;}

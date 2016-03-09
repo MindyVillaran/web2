@@ -159,6 +159,14 @@ $(".right-image").on("arriving",function() {
   $(this).addClass("right-image-arrived");
 }); 
 
+$(".application").on("arriving",function() {
+  $(this).addClass("right-image-arrived");
+}); 
+
+$(".applicationL").on("arriving",function() {
+  $(this).addClass("left-image-arrived");
+}); 
+
 $(".center").on("arrived",function() {
   $(this).addClass("center-arrived");
 }); 
