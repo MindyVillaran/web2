@@ -399,11 +399,20 @@ color: gray}
 
 /*---------------page 3 (quote)--------------------*/
 
-#page3, #quote2 {background-image: url("assets/quote-page/bg.png");
+#page3 {background-image: url("assets/quote-page/bg.png");
+	    background-repeat: no-repeat;
+	    background-size: cover;
+		position: relative;
+	    background-attachment:fixed;} 
+	
+
+#quote2 {background-image: url("assets/quote-page/bg2.png");
 	    background-repeat: no-repeat;
 	    background-size: cover;
 		position: relative;
 	    background-attachment:fixed;}
+
+
 
 
 .accent-left {position: absolute;
@@ -632,6 +641,8 @@ padding-bottom: 20px;}
 #bottomcolor {margin-bottom: 70px;}
 
 /*---------------APPLICATIONS--------------------*/
+
+#brand-action {margin-top: 65px;}
 
 #applications { position: relative;}	
 
