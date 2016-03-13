@@ -1,5 +1,6 @@
 $(".scroller").scrollFlight();
 
+
 //----------------dropdown menu--------------------
 
 
@@ -38,6 +39,9 @@ $("#title").on("rearriving",function() {
 
 $("#title").on("rearrived",function() {
   $(".intro").removeClass("current");
+  $(".thelogo").removeClass("current");
+  $(".system").removeClass("current");
+  $(".action").removeClass("current");
 });
 
 $("#title").on("arrived",function() {
@@ -152,6 +156,11 @@ $(".left-image").on("arriving",function() {
   $(this).addClass("left-image-arrived");
 }); 
 
+
+$(".left-transition").on("arriving",function() {
+  $(this).addClass("left-image-arrived");
+}); 
+
 	 
 $(".right-text").on("arriving",function() {
   $(this).addClass("right-text-arrived");
@@ -161,6 +170,12 @@ $(".FLOATright-text").on("arriving",function() {
   $(this).addClass("right-text-arrived");
 }); 
 
+
+$(".right-transition").on("arriving",function() {
+  $(this).addClass("right-image-arrived");
+}); 
+   
+   
 $(".right-image").on("arriving",function() {
   $(this).addClass("right-image-arrived");
 }); 

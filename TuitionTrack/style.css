@@ -53,9 +53,13 @@ a {text-decoration: none;
 	padding: 10px;
 	background-color: black;
 	color: white;
-	border-radius: 5px;
-	display:none;}
+	border-radius: 25px;
+	display:none;
+	opacity: .6;}
 
+
+.arrow2 {height: 22px;
+		padding: 3px 10px 3px 10px;}
 
 /*--------------------------------------- top-nav ----------------------------------------*/
 
@@ -299,9 +303,23 @@ color: gray}
 	  -webkit-transform: translate(-200vw, 0);
       opacity:0;}	
 
+
+   
+
 /*--------------------images/text arrivals-------------------*/
+
+.left-transition {
+   	  -webkit-transform: translate(-200vw, 0);
+	   opacity:0;
+   }
+
+   .right-transition {
+      	  -webkit-transform: translate(200vw, 0);
+   	   opacity:0;
+      }
+
 	
-.left-text-arrived, .left-image-arrived {
+.left-text-arrived, .left-image-arrived, .left-transition-arrived {
 	-webkit-transform: translate(0,0);
     -webkit-transition: transform 2s ease-out; 
       opacity:1;}
@@ -314,6 +332,7 @@ color: gray}
 
 .right-image-arrived {
 	-webkit-transform: translate(10vh,0);
+	
 } 	
 		
 
@@ -366,7 +385,13 @@ color: gray}
 #page1 {position: relative; 
 	min-height: 600px;
 	padding-bottom:6vh;
-}		
+}
+
+#hanging-icon	{width: 80px;
+	bottom: -30px;
+	right: 60px;
+	position: absolute;
+	z-index: 100;}	
 
 /*---------------page 2(OurGoals)--------------------*/
 
@@ -392,13 +417,30 @@ color: gray}
 .accent-right {position: absolute;
 		right: -5px;
 		top: 20px;
-		width: 50px;}	
+		width: 50px;}	 
+
+#accent-right {position: absolute;
+		right: -3px;
+		top: 25px;
+		width: 170px;}	  
+		
+
+#hanging-icon2	{width: 200px;
+	bottom: -60px;
+	right: 60px;
+	position: absolute;
+	z-index: 100000;}	
+		
+		
+		
+		
+		
 
 /*---------------page 4 (helping-students)--------------------*/		
 
 #page4 {min-height: 550px;
 	position: relative;
-	overflow: hidden;}
+	/*overflow: hidden;*/}
    
 .bubbles-container {
 	width:80%;
@@ -487,7 +529,7 @@ color: gray}
 	padding-left: 8%;
 	width: 40%}	 
 	
-.labellogo, .labellogo2, .labellogo3 {font-family:gotham-book;
+.labellogo, .labellogo2, .labellogo3 {font-family:gotham-med;
 	color: gray;
 	margin-bottom: 10px;
 	width: 100%;
@@ -522,7 +564,14 @@ padding-bottom: 20px;}
 	margin-right:auto;
 	overflow:hidden;} 
 	
-.captionRespLogo {text-align: center;}
+.captionRespLogo {text-align: center; 
+	font: .9em klinic-book;
+	line-height: 1.2em;}
+	
+.captionRespLogo2 {
+	font: .9em klinic-book;
+	line-height: 1.2em;
+	text-align: left;}	
 
 
 .full-image	{width:90%;
@@ -640,9 +689,9 @@ padding-bottom: 20px;}
 	#sidebar {width:23%;} 
 	.site-container {width:77%;}
 	
-	.left-text {width:40%;}	
+	.left-text {width:35%;}	
 	  
-	.right-image {width:70%;}
+	.right-image {width:60%;}
 
 
 }
@@ -659,9 +708,18 @@ padding-bottom: 20px;}
 	.container, .container2 {width:80%; position: relative;} 
 	.page-long {padding-bottom: 100px;}
 	
+	.arrow2 {height: 16px;
+			padding: 1px 6px 1px 6px;}}
+	
 @media only screen and (max-width: 800px), (max-device-width: 800px)  { 
 	#page1 {padding-bottom:0vh;
 	}
+	
+	#accent-right {position: absolute;
+			right: -5px;
+			top: 20px;
+			width: 120px;}	
+			
 	.right-image {clear:both;
 		width:100%;
 		margin-right: -10px;
@@ -749,6 +807,8 @@ padding-bottom: 20px;}
 .icon {padding-left:38px;
 	padding-top:10px;}
 
+
+	#page4 {overflow: hidden;}
 
 .bubbles-container-arrived{
 	opacity: 1;
